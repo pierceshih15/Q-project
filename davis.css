@@ -1,0 +1,369 @@
+/* navbar */
+
+.body {
+	background-color: #f6f6f6;
+}
+
+.my-nav {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: transparent;
+}
+
+.my-nav a {
+	color: black;
+	text-decoration: underline;
+	font-family: HelveticaNeue;
+	font-size: 40px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+
+.header-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.footer {
+	height: 200px;
+	background-color: black;
+}
+
+
+/* Content - The Opportunity */
+#section1 img {
+	position: relative;
+}
+
+#section1 h2 {
+	position: absolute;
+	font-size: 50px;
+	left: 350px;
+	top: 114px;
+	width: 100%;
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+
+#section1 p {
+	position: absolute;
+	font-size: 14px;
+	left: 350px;
+	top: 311px;
+	width: 100%;
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #ffffff;
+}
+
+/* Content - Quincy-Davis-III */
+
+#section2 {
+	margin-top: 110.5px;
+}
+
+#section2 img {
+	position: relative;
+}
+
+#section2 h2 {
+	position: absolute;
+	top: 253px;
+	left: 331px;
+	font-family: HelveticaNeue;
+	font-size: 50px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+#section2 p {
+	position: absolute;
+	top: 330.5px;
+	left: 500px;
+	font-family: HelveticaNeue;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #0b0b0b
+}
+
+/* Content - About-DAE */
+
+#section3 {
+	margin-top: 89.5px;
+}
+
+#section3 h2 {
+	width: 385px;
+	height: 60px;
+	margin-bottom: 25px;
+	font-family: HelveticaNeue;
+	font-size: 50px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+#section3 img {
+	position: relative;
+}
+
+#section3 p {
+	position: absolute;
+	top: 187px;
+	left: 420px;
+	font-family: HelveticaNeue;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #0b0b0b
+}
+
+#section3 h3 {
+	position: absolute;
+	top: 283px;
+	left: 510px;
+	font-family: HelveticaNeue;
+	font-size: 50px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+
+/* Content - Gallery */
+#section4 {
+	margin-top: 135px;
+	margin-left: 84px;
+}
+
+#section4 .row:nth-child(2) {
+	margin-top: 45px;
+	margin-bottom: 37px
+}
+
+
+#section4 #galley-image-1 {
+	position: relative;
+}
+
+#section4 h2 {
+	position: absolute;
+	font-size: 50px;
+	left: 178px;
+	top: -33px;
+	width: 100%;
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+#section4 p {
+	position: absolute;
+	top: 103px;
+	left: 346px;
+	font-family: HelveticaNeue;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #0b0b0b;
+	text-decoration: underline;
+}
+
+/* Content - Banner */
+#section5 {
+	margin-top: 124px;
+}
+
+#section5 img {
+	position: relative;
+}
+
+#section5 h2:nth-child(2) {
+	position: absolute;
+	font-size: 50px;
+	left: 780px;
+	top: 248px;
+	width: 100%;
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+
+#section5 h2:nth-child(3) {
+	position: absolute;
+	font-size: 50px;
+	left: 780px;
+	top: 320px;
+	width: 100%;
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+
+/* Content - Reference */
+#section6 {
+	margin-top: 85px;
+}
+
+#section6 .row {
+	margin-bottom: 30px;
+}
+
+#section6 .reference-person {
+	margin-top: 30px;
+}
+
+#section6 img {
+	position: relative;
+}
+
+#section6 h3 {
+	font-size: 22px;
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+#section6 p {
+	position: absolute;
+	font-size: 18px;
+	left: 87px;
+	top: 92px;
+	width: 100%;
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+/* Content - Form */
+#section7 {
+	margin-top: 120px;
+}
+
+#section7 .form-header {
+	margin-bottom: 36px;
+}
+
+#section7 .form-process {
+	margin-top: 24px;
+}
+
+#section7 .form-process h5:nth-child(1) {
+	margin-bottom: 56px;
+}
+
+#section7 .form-process h5:nth-child(2),
+#section7 .form-process h5:nth-child(3) {
+	margin-bottom: 50px;
+}
+
+#section7 #form-1,
+#section7 #form-2,
+#section7 #form-3,
+#section7 #form-4 {
+	margin-bottom: 20px;
+}
+
+#section7 .icon {
+	font-size: 31px;
+}
+
+#section7 h5 {
+	display: inline-block;
+	margin-left: 22px;
+}
+
+/* Content - Sponsors */
+#section8 {
+	margin-top: 85px;
+	margin-bottom: 132px;
+}
+
+
+#section8 h2 {
+	text-align: center;
+	font-family: HelveticaNeue;
+	font-size: 50px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	margin-bottom: 27px;
+}
+
+#section8 p {
+	text-align: center;
+	font-family: HelveticaNeue;
+	font-size: 22px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #0b0b0b;
+}
+
+#section8 .row:first-child {
+	margin-bottom: 62px;
+}
