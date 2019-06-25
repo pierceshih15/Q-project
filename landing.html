@@ -18,13 +18,15 @@
 		
 		<!-- Fontawesome CSS -->
 		<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-    <link rel="stylesheet" type="text/css" href="davis.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/css/davis.css" />
+		<link href="/stylesheets/css/offcanvas.css" rel="stylesheet">
 
     <title>Davis</title>
   </head>
   <body>
+
     <header>
-      <nav class="navbar sticky-top navbar-light my-nav">
+      <nav class="navbar sticky-top navbar-light my-nav desktop-header">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -45,7 +47,44 @@
           </div>
         </div>
       </nav>
-    </header>
+		</header>
+
+		<!-- Mobile Header -->
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-light mobile-header">
+			<div class="bg-light">
+				<img src="https://via.placeholder.com/60X27.png" />
+			</div>
+
+			<button class="navbar-toggler p-0 border-0 text-dark" type="button" data-toggle="offcanvas">
+				<span><i class="fas fa-bars icon-open"></i></span>
+			</button>
+
+			<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+				<div class="container mt-3">
+					<div class="icon-close text-secondary">X</div>
+					<div class="mobile-header-content">
+      		  <div class="row">
+      		    <div class="col-md-12">
+      		      <a href="">Home</a>
+      		    </div>
+      		    <div class="col-md-12">
+      		      <a href="">Quincy Davis</a>
+      		    </div>
+      		    <div class="col-md-12">
+      		      <a href="">About DAE</a>
+      		    </div>
+      		    <div class="col-md-12">
+      		      <a href="">Gallery</a>
+      		    </div>
+      		    <div class="col-md-12">
+      		      <a href="">Contact</a>
+      		    </div>
+      		  </div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
     <!-- Section 1  -->
     <div class="col-md-12" id="section1">
       <div class="row">
@@ -351,6 +390,8 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
-    ></script>
+		></script>
+		
+		<script src="js/offcanvas.js"></script>
   </body>
 </html>
