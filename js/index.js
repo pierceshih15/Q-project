@@ -19,7 +19,6 @@ $(function () {
   // 開啟 Mobile-Schedule
   $('[data-toggle="mobileSchedule"]').on('click', function () {
     $('#mobileSchedule').toggleClass('open');
-    console.log('有喔');
   })
 
   // 關閉 Mobile-Schedule
