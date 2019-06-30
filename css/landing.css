@@ -246,11 +246,10 @@ body {
 
 #section5 .section5-content {
 	position: relative;
-	min-width: 767px;
-	min-height: 337px;
-	background-image: url(https://via.placeholder.com/767X337.png);
+	min-width: 922px;
+	min-height: 420px;
+	background-image: url(https://via.placeholder.com/922X420.png);
 	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 /* section5 - Schedule */
@@ -458,12 +457,11 @@ body {
 		display: block;
 	}
 
-	/* section4 - banner */
 	#section5 h2:nth-child(1) {
 		position: absolute;
 		font-size: 50px;
 		margin-right: 44px;
-		top: 159px;
+		top: 268px;
 		right: 44px;
 		width: 150px;
 		height: 70px;
@@ -480,7 +478,7 @@ body {
 	#section5 a h2:nth-child(1) {
 		position: absolute;
 		font-size: 50px;
-		top: 244px;
+		top: 338px;
 		right: -29px;
 		width: 200px;
 		height: 70px;
@@ -699,12 +697,11 @@ body {
 		margin-top: 84px;
 	}
 
-	/* section4 - banner */
 	#section5 h2:nth-child(1) {
 		position: absolute;
 		font-size: 50px;
 		margin-right: 44px;
-		top: 159px;
+		top: 268px;
 		right: 44px;
 		width: 150px;
 		height: 70px;
@@ -721,7 +718,7 @@ body {
 	#section5 a h2:nth-child(1) {
 		position: absolute;
 		font-size: 50px;
-		top: 244px;
+		top: 338px;
 		right: -29px;
 		width: 200px;
 		height: 70px;

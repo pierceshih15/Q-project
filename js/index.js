@@ -11,6 +11,11 @@ $(function () {
     $('#offcanvas').toggleClass('open');
   })
 
+  // 關閉 Mobile-Header
+  $('.header-close').on('click', function () {
+    $('#offcanvas').toggleClass('open');
+  })
+
   // 開啟 Mobile-Schedule
   $('[data-toggle="mobileSchedule"]').on('click', function () {
     $('#mobileSchedule').toggleClass('open');
