@@ -21,7 +21,7 @@
       defer
       src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"
     ></script>
-    <link rel="stylesheet" type="text/css" href="css/davis.css" />
+    <link rel="stylesheet" type="text/css" href="css/landing.css" />
 
     <title>Davis</title>
   </head>
@@ -31,23 +31,23 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5">
-              <a href="">Home</a>
+              <a href="#section1">Home</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5">
-              <a href="">Quincy Davis</a>
+              <a href="#section2">Quincy Davis</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5">
-              <a href="">About DAE</a>
+              <a href="#section3">About DAE</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5">
-              <a href="">Gallery</a>
+              <a href="#section4-desktop">Gallery</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5">
-              <a href="">Contact</a>
+              <a href="#section7">Contact</a>
             </div>
             <div class="col-md-7"></div>
           </div>
@@ -61,15 +61,14 @@
     >
       <div class="bg-light">
         <img src="https://via.placeholder.com/60X27.png" />
+        <button
+          class="navbar-toggler border-0 text-dark float-right px-0"
+          type="button"
+          data-toggle="offcanvas"
+        >
+          <span><i class="fas fa-bars icon-open mr-0"></i></span>
+        </button>
       </div>
-
-      <button
-        class="navbar-toggler p-0 border-0 text-dark"
-        type="button"
-        data-toggle="offcanvas"
-      >
-        <span><i class="fas fa-bars icon-open"></i></span>
-      </button>
 
       <div class="navbar-collapse offcanvas-collapse" id="offcanvas">
         <div class="container mt-3">
@@ -77,19 +76,19 @@
           <div class="mobile-header-content">
             <div class="row">
               <div class="col-md-12">
-                <a href="">Home</a>
+                <a href="#section1">Home</a>
               </div>
               <div class="col-md-12">
-                <a href="">Quincy Davis</a>
+                <a href="#section2">Quincy Davis</a>
               </div>
               <div class="col-md-12">
-                <a href="">About DAE</a>
+                <a href="#section3">About DAE</a>
               </div>
               <div class="col-md-12">
-                <a href="">Gallery</a>
+                <a href="#section4-mobile">Gallery</a>
               </div>
               <div class="col-md-12">
-                <a href="">Contact</a>
+                <a href="#section7">Contact</a>
               </div>
             </div>
           </div>
@@ -98,10 +97,16 @@
     </nav>
 
     <!-- Section 1  -->
+    <div class="tablet-navbar">
+      <div class="container text-translation">
+        <div class="d-inline-block mr-3">中</div>
+        <div class="d-inline-block">英</div>
+      </div>
+    </div>
     <div class="col-md-12" id="section1">
       <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-8 section1-content">
+        <div class="col-md-4 col-lg-3"></div>
+        <div class="col-md-8 col-lg-9 section1-content">
           <h2>The opportunity for Taiwanese youth</h2>
           <p>
             Trust in me to lead our Taiwanese youth on an inspirational journey
@@ -114,8 +119,8 @@
     <!-- Section 2  -->
     <div class="col-12 col-md-12" id="section2">
       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-10 col-md-10 ml-0 pl-0">
+        <div class="col-md-2 col-lg-3"></div>
+        <div class="col-10 col-md-10 col-lg-9 ml-0 pl-0">
           <div class="section2-content">
             <h2>Quincy Davis III</h2>
             <p>
@@ -131,20 +136,22 @@
     <!-- Section 3  -->
     <div class="col-12 col-md-12" id="section3">
       <div class="row">
-        <div class="col-12 col-md-2"></div>
-        <div class="col-12 col-md-10">
+        <div class="col-12 col-md-7 col-lg-3"></div>
+        <div class="col-12 col-md-5 col-lg-9 ml-0 pl-0">
           <h2>About DAE</h2>
         </div>
       </div>
       <div class="row col-md-12">
-        <div class="col-12 col-md-3"></div>
-        <div class="col-12 col-md-5 section3-content"></div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-3 col-lg-3"></div>
+        <div class="col-12 col-md-5 col-lg-5 section3-content"></div>
+        <div class="col-12 col-md-4 col-lg-4">
           <p>
             Travel to the United States of America with their leader Quincy
             Davis, the National Taiwanese basketball star.
           </p>
-          <h3>Contact</h3>
+          <a href="#section7">
+            <h3>Contact</h3>
+          </a>
         </div>
       </div>
     </div>
@@ -152,23 +159,23 @@
     <!-- Section 4 desktop  -->
     <div class="col-md-12" id="section4-desktop">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <img src="https://via.placeholder.com/300X218.png" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <img src="https://via.placeholder.com/300X218.png" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <img src="https://via.placeholder.com/300X218.png" />
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
+        <div class="col-md-2 col-lg-2"></div>
+        <div class="col-md-4 col-lg-4">
           <img src="https://via.placeholder.com/300X218.png" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <img
             src="https://via.placeholder.com/300X218.png"
             id="galley-image-1"
@@ -176,17 +183,17 @@
           <h2>Gallery</h2>
           <p>More</p>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-2 col-lg-2"></div>
       </div>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <img src="https://via.placeholder.com/300X218.png" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <img src="https://via.placeholder.com/300X218.png" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-lg-4">
           <img src="https://via.placeholder.com/300X218.png" />
         </div>
       </div>
@@ -226,8 +233,10 @@
         <div class="col-12 col-md-12 section5-content"></div>
       </div>
       <div class="row d-flex justify-content-around mt-5">
-        <h2 data-toggle="mobileSchedule">Schedule</h2>
-        <h2>Contact</h2>
+        <h2 data-toggle="mobileSchedule" id="schedule">Schedule</h2>
+        <a href="#section7">
+          <h2>Contact</h2>
+        </a>
       </div>
     </div>
 
@@ -237,64 +246,66 @@
         <div class="container mt-3 pl-0 pr-3 mx-0">
           <div class="icon-close-schedule text-secondary">X</div>
           <div class="mobile-schedule-content">
-            <div class="row col-12 col-md-12">
+            <div class="row col-12 col-md-12 col-lg-12">
               <h2>The schedule</h2>
               <p>25 Aug, 2019 - 17 Stp, 2019 15 days</p>
               <p>California, San Diego</p>
             </div>
-            <div class="row col-12 col-md-6">
-              <div class="col-3 col-md-3 daily onPage">Day 1</div>
-              <div class="col-3 col-md-3 daily">Day 2</div>
-              <div class="col-3 col-md-3 daily">Day 3</div>
-              <div class="col-3 col-md-3 daily">Day 4</div>
+            <div class="row col-lg-12 mb-lg-2">
+              <div class="row col-12 col-md-6 col-lg-6">
+                <div class="col-3 col-md-3 col-lg-3 daily onPage">Day 1</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 2</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 3</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 4</div>
+              </div>
+              <div class="row col-12 col-md-6 col-lg-6">
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 5</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 6</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 7</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 8</div>
+              </div>
             </div>
-            <div class="row col-12 col-md-6">
-              <div class="col-3 col-md-3 daily">Day 5</div>
-              <div class="col-3 col-md-3 daily">Day 6</div>
-              <div class="col-3 col-md-3 daily">Day 7</div>
-              <div class="col-3 col-md-3 daily">Day 8</div>
-            </div>
-            <div class="row col-12 col-md-6">
-              <div class="col-3 col-md-3 daily">Day 9</div>
-              <div class="col-3 col-md-3 daily">Day 10</div>
-              <div class="col-3 col-md-3 daily">Day 11</div>
-              <div class="col-3 col-md-3 daily">Day 12</div>
-            </div>
-            <div class="row col-12 col-md-6">
-              <div class="col-3 col-md-3 daily">Day 13</div>
-              <div class="col-3 col-md-3 daily">Day 14</div>
-              <div class="col-3 col-md-3 daily">Day 15</div>
-              <div class="col-3 col-md-3"></div>
+            <div class="row col-lg-12">
+              <div class="row col-12 col-md-6 col-lg-6">
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 9</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 10</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 11</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 12</div>
+              </div>
+              <div class="row col-12 col-md-6 col-lg-6">
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 13</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 14</div>
+                <div class="col-3 col-md-3 col-lg-3 daily">Day 15</div>
+                <div class="col-3 col-md-3 col-lg-3"></div>
+              </div>
             </div>
           </div>
           <div class="schedule-detail">
             <div class="row col-12 mb-1">
-              <div class="col-3">08:00</div>
-              <div class="col-3">Breakfast</div>
-              <div class="col-6"></div>
+              <div class="col-3 col-md-1 col-lg-1 pl-0">08:00</div>
+              <div class="col-3 col-md-1 col-lg-1">Breakfast</div>
+              <div class="col-6 col-md-10 col-lg-10"></div>
             </div>
             <div class="row col-12 mb-1">
-              <div class="col-3">08:00</div>
-              <div class="col-3">Breakfast</div>
-              <div class="col-6"></div>
+              <div class="col-3 col-md-1 col-lg-1 pl-0">08:00</div>
+              <div class="col-3 col-md-1 col-lg-1">Breakfast</div>
+              <div class="col-6 col-md-10 col-lg-10"></div>
             </div>
             <div class="row col-12 mb-1">
-              <div class="col-3">08:00</div>
-              <div class="col-3">Breakfast</div>
-              <div class="col-6"></div>
+              <div class="col-3 col-md-1 col-lg-1 pl-0">08:00</div>
+              <div class="col-3 col-md-1 col-lg-1">Breakfast</div>
+              <div class="col-6 col-md-10 col-lg-10"></div>
             </div>
             <div class="row col-12 mb-1">
-              <div class="col-3">08:00</div>
-              <div class="col-3">Breakfast</div>
-              <div class="col-6"></div>
+              <div class="col-3 col-md-1 col-lg-1 pl-0">08:00</div>
+              <div class="col-3 col-md-1 col-lg-1">Breakfast</div>
+              <div class="col-6 col-md-10 col-lg-10"></div>
             </div>
           </div>
           <div class="row col-12 mt-3 mb-5">
-            <div class="col-6"></div>
-            <div class="col-6">
-              <a href="#" download="schedule">
-                <span class="download-link">Download</span>
-              </a>
+            <div class="col-6 col-md-9"></div>
+            <div class="col-6 col-md-3">
+              <a href="#" class="download-link" download="schedule">Download</a>
             </div>
           </div>
         </div>
@@ -304,8 +315,8 @@
     <!-- Section 6  -->
     <div class="col-12 col-sm-12 col-md-12" id="section6">
       <div class="row">
-        <div class="col-1 col-sm-1 col-md-5"></div>
-        <div class="col-10 col-sm-10 col-md-7">
+        <div class="col-1 col-sm-1 col-md-5 col-lg-7"></div>
+        <div class="col-10 col-sm-10 col-md-7 col-lg-5">
           <h3>“ Learn so much in this trip! I love you Quincy Davis! ”</h3>
           <div class="reference-person">
             <img
@@ -315,12 +326,12 @@
             <p>Name, Age School</p>
           </div>
         </div>
-        <div class="col-1 col-sm-1 col-md-0"></div>
+        <div class="col-1 col-sm-1"></div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-sm-1 col-md-5"></div>
-        <div class="col-10 col-sm-10 col-md-7">
+        <div class="col-1 col-sm-1 col-md-5 col-lg-4"></div>
+        <div class="col-10 col-sm-10 col-md-7 col-lg-5">
           <h3>“ Learn so much in this trip! I love you Quincy Davis! ”</h3>
           <div class="reference-person">
             <img
@@ -330,12 +341,12 @@
             <p>Name, Age School</p>
           </div>
         </div>
-        <div class="col-1 col-sm-1 col-md-0"></div>
+        <div class="col-1 col-sm-1 col-lg-3"></div>
       </div>
 
       <div class="row">
-        <div class="col-1 col-sm-1 col-md-5"></div>
-        <div class="col-10 col-sm-10 col-md-7">
+        <div class="col-1 col-sm-1 col-md-5 col-lg-7"></div>
+        <div class="col-10 col-sm-10 col-md-7 col-lg-5">
           <h3>“ Learn so much in this trip! I love you Quincy Davis! ”</h3>
           <div class="reference-person">
             <img
@@ -345,50 +356,50 @@
             <p>Name, Age School</p>
           </div>
         </div>
-        <div class="col-1 col-sm-1 col-md-0"></div>
+        <div class="col-1 col-sm-1"></div>
       </div>
     </div>
 
     <!-- Section 7  -->
-    <div class="col-md-12" id="section7">
+    <div class="col-12 col-md-12 col-lg-12" id="section7">
       <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-3"></div>
-        <div class="col-11 col-md-7 form-header">
+        <div class="col-md-2 col-lg-3 px-0 mr-0"></div>
+        <div class="col-md-3 col-lg-3 px-0 mr-0"></div>
+        <div class="col-11 col-md-5 col-lg-3 form-header pl-lg-0">
           <h2>
             You don’t want to miss it!
           </h2>
         </div>
-        <div class="col-1"></div>
+        <div class="col-1 col-md-2 col-lg-3"></div>
       </div>
-      <div class="row">
-        <div class="col-md-5"></div>
 
-        <div class="col-12 col-md-7 form-process">
-          <div class="row mb-4">
-            <div class="col-6 mr-0 pr-0">
+      <div class="row col-lg-12">
+        <div class="col-md-5 col-lg-3"></div>
+        <div class="col-12 col-md-7 col-lg-3 form-process">
+          <div class="row mb-4 mb-lg-0">
+            <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5 pl-lg-0">
               <img src="https://via.placeholder.com/25.png" />
               <span>Apply Format</span>
             </div>
-            <div class="col-6 ml-0 pl-0">
+            <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5">
               <img src="https://via.placeholder.com/25.png" />
               <span>Personal Consultation</span>
             </div>
           </div>
           <div class="row">
-            <div class="col-6 mr-0 pr-0">
+            <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5 pl-lg-0">
               <img src="https://via.placeholder.com/25.png" />
               <span>Filling Application</span>
             </div>
-            <div class="col-6 ml-0 pl-0">
+            <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5">
               <img src="https://via.placeholder.com/25.png" />
               <span>Ready to go</span>
             </div>
           </div>
         </div>
 
-        <div class="col-md-5"></div>
-        <div class="col-12 col-md-7">
+        <div class="col-md-5 d-lg-none"></div>
+        <div class="col-12 col-md-7 col-lg-6">
           <form action="">
             <!-- 表單第一層 -->
             <div class="row" id="form-1">
@@ -464,8 +475,8 @@
 
             <!-- 表單第五層 -->
             <div class="row" id="form-5">
-              <div class="col-md-9"></div>
-              <div class="col-12 col-md-3 submit">
+              <div class="col-md-9 col-lg-10"></div>
+              <div class="col-12 col-md-3 col-lg-2 pl-lg-0 submit">
                 <button type="submit" class="btn btn-primary">
                   Send
                 </button>
@@ -554,6 +565,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="js/offcanvas.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
