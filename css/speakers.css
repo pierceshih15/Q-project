@@ -1,0 +1,661 @@
+/* navbar */
+
+.body {
+  background-color: #f6f6f6;
+}
+
+.my-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.my-nav a {
+  color: black;
+  text-decoration: underline;
+  font-family: HelveticaNeue;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+/* .header-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+} */
+
+.footer {
+  height: 200px;
+  background-color: black;
+}
+
+footer img {
+  margin-bottom: 20px;
+}
+
+/* 側邊滑動效果 */
+.offcanvas-collapse {
+  position: fixed;
+  top: 0px;
+  /* Height of navbar */
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background-color: #f6f6f6;
+  box-shadow: -5px 2px 12px 0 rgba(0, 0, 0, 0.1);
+  transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.offcanvas-collapse.open {
+  visibility: visible;
+  -webkit-transform: translateX(-80%);
+  transform: translateX(-80%);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+}
+
+.desktop-header {
+  display: inline-block;
+  margin-top: 23px;
+}
+
+.mobile-header {
+  display: none
+}
+
+.header-navbar {
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
+  background-color: #f6f6f6;
+  color: #000000;
+  padding: 15px 50px;
+}
+
+.header-navbar .text-translation {
+  width: 100%;
+  font-size: 20px;
+  font-family: HelveticaNeue;
+  font-weight: bold;
+}
+
+#schedule {
+  z-index: 100;
+}
+
+/* 基礎樣板 */
+
+/* Section1 - The Opportunity */
+#section1 {
+  margin-bottom: 217px;
+}
+
+#section1 .section1-content {
+  position: relative;
+  min-height: 316px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section1 .section1-content h2 {
+  position: absolute;
+  top: 213px;
+  left: -173px;
+  font-size: 50px;
+  font-family: HelveticaNeue;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+#section1 .section1-content .qd-name {
+  color: #000000;
+}
+
+#section1 .section1-content p {
+  position: absolute;
+  width: 320px;
+  bottom: -112px;
+  font-size: 18px;
+  font-family: HelveticaNeue;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #0b0b0b;
+}
+
+/* Section2 - Title */
+#section2 .section2-content {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section2 .section2-content h2 {
+  position: absolute;
+  font-size: 50px;
+  font-family: HelveticaNeue;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b
+}
+
+#section2 .section2-content p {
+  font-size: 18px;
+  position: absolute;
+  font-family: HelveticaNeue;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b
+}
+
+/* section3 - About-DAE */
+#section3 {
+  margin-top: 193px;
+}
+
+#section3 h2 {
+  width: 183px;
+  font-family: HelveticaNeue;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+#section3 p {
+  min-width: 307px;
+  font-family: HelveticaNeue;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 36px;
+  padding-right: 30px;
+}
+
+#desktop-speech {
+  display: flex;
+}
+
+#mobileTablet-speech {
+  display: none;
+}
+
+#section3 #desktop-speech h5 {
+  font-family: HelveticaNeue;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b;
+  font-size: 22px;
+}
+
+#section3 #desktop-speech h6 {
+  font-family: HelveticaNeue;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b;
+  font-size: 14px;
+  padding-left: 83px;
+}
+
+/* Desktop */
+@media screen and (min-width:992px) {
+
+  /* section1 - The Opportunity */
+  #section1 .section1-content {
+    min-width: 522px;
+    background-image: url(https://via.placeholder.com/522X316.png);
+  }
+
+  /* section2 - Quincy-Davis-III */
+
+  #section2 .section2-content {
+    min-width: 700px;
+    min-height: 320px;
+    margin-right: 30px;
+    background-image: url(https://via.placeholder.com/700X320.png);
+  }
+
+  #section2 .section2-content h2 {
+    top: -30px;
+    left: 560px;
+    width: 385px;
+  }
+
+  #section2 .section2-content p {
+    top: 344px;
+    left: 320px;
+    width: 380px;
+  }
+
+  /* section3 - Speech */
+
+  #section3 h3 {
+    width: 190px;
+    height: 60px;
+    margin-top: 4px;
+    margin-left: 134px;
+    font-size: 50px;
+  }
+
+  /* section4 - Speakers */
+  #section4 {
+    margin-top: 84px;
+  }
+
+  #section4 h2 {
+    width: 420px;
+    font-size: 50px;
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  #section4 .speakers {
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+    text-align: left;
+  }
+
+  #section4 .speakers .speakers-name {
+    width: 100%;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  #section4 .speakers .speakers-title,
+  #section4 .speakers .speakers-specialize {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #section4 .speakers .speakers-into {
+    width: 100%;
+    font-size: 14px;
+  }
+
+}
+
+/* Tablet */
+@media screen and (min-width:768px) and (max-width:991.98px) {
+
+  .desktop-header {
+    margin-top: 25px;
+  }
+
+  /* section1 - The Opportunity */
+  #section1 {
+    margin-top: 145px;
+  }
+
+  #section1 .section1-content {
+    min-width: 522px;
+    background-image: url(https://via.placeholder.com/522X316.png);
+  }
+
+  #section1 .section1-content h2 {
+    position: absolute;
+    top: 213px;
+    left: -134px;
+    font-size: 40px;
+  }
+
+  /* section2 - Quincy-Davis-III */
+
+  #section2 .section2-content {
+    min-width: 706px;
+    min-height: 316px;
+    background-image: url(https://via.placeholder.com/706X316.png);
+  }
+
+  #section2 .section2-content h2 {
+    top: -30px;
+    left: 500px;
+    width: 385px;
+  }
+
+  #section2 .section2-content p {
+    top: 344px;
+    left: 230px;
+    width: 380px;
+  }
+
+  /* section3 - About-DAE */
+
+  #section3 {
+    margin-top: 193px;
+    margin-bottom: 145px;
+  }
+
+  #section3 h2 {
+    width: 361px;
+    text-align: center;
+    padding-right: 30px;
+    font-size: 50px;
+  }
+
+  #desktop-speech {
+    display: none;
+  }
+
+  #mobileTablet-speech {
+    display: flex;
+  }
+
+  #section3 #mobileTablet-speech h5 {
+    font-size: 18px;
+  }
+
+  #section3 #mobileTablet-speech h6 {
+    font-size: 14px;
+    padding-left: 62px;
+  }
+
+  #section3 #mobileTablet-speech #more>h3 {
+    font-family: HelveticaNeue;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+    text-decoration: underline;
+    min-width: 325px;
+    font-size: 22px;
+    margin-top: 37.5px;
+    text-align: right;
+  }
+
+  /* section4 - Speakers */
+  #section4 {
+    margin-top: 20px;
+  }
+
+  #section4 h2 {
+    width: 420px;
+    font-size: 50px;
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  #section4 .speakers {
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+    text-align: left;
+  }
+
+  #section4 .speakers .speakers-name {
+    width: 100%;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  #section4 .speakers .speakers-title,
+  #section4 .speakers .speakers-specialize {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #section4 .speakers .speakers-into {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Mobile Device */
+@media screen and (max-width: 767.98px) {
+  body {
+    min-width: 375px;
+  }
+
+  .header-navbar {
+    display: none
+  }
+
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: inline-block;
+  }
+
+  .mobile-header img {
+    height: 27px;
+    line-height: 27px;
+  }
+
+  .icon-open {
+    margin-right: 22px;
+    font-size: 25px;
+  }
+
+  .icon-close-header {
+    text-align: right;
+    margin-right: 75px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .mobile-header-content {
+    margin-top: 50px;
+    margin-bottom: 25px
+  }
+
+  .mobile-header-content a {
+    border-bottom: #000000 2px solid;
+    text-decoration: none;
+    font-family: HelveticaNeue;
+    font-size: 34px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: normal;
+    color: #0b0b0b;
+  }
+
+  .mobile-header-content .text-translation {
+    font-size: 20px;
+    font-family: HelveticaNeue;
+    font-weight: bold;
+  }
+
+  /* section1 - The Opportunity */
+  #section1 {
+    margin-bottom: 41px;
+  }
+
+  #section1 .section1-content {
+    min-width: 375px;
+    background-image: url(https://via.placeholder.com/375X316.png);
+  }
+
+  #section1 .section1-content h2 {
+    position: absolute;
+    top: 147px;
+    left: 76px;
+    font-size: 34px;
+  }
+
+  #section1 .section1-content .qd-name {
+    color: #f6f6f6;
+  }
+
+  #section1 .section1-content p {
+    width: 217px;
+    top: 197px;
+    left: 76px;
+    font-size: 14px;
+    color: #f6f6f6;
+  }
+
+  /* section2 - Quincy-Davis-III */
+  #section2 .section2-content {
+    min-width: 301px;
+    min-height: 316px;
+    background-image: url(https://via.placeholder.com/301X316.png);
+  }
+
+  #section2 .section2-content h2 {
+    font-size: 34px;
+    top: 259px;
+    left: 168px;
+    width: 87px;
+  }
+
+  #section2 .section2-content p {
+    font-size: 14px;
+    bottom: -99px;
+    left: 168px;
+    width: 190px;
+  }
+
+  /* section3 - Speech */
+  #section3 {
+    margin-top: 145px;
+  }
+
+  #desktop-speech {
+    display: none;
+  }
+
+  #mobileTablet-speech {
+    display: flex;
+  }
+
+  #section3 #mobileTablet-speech h5 {
+    font-size: 18px;
+  }
+
+  #section3 #mobileTablet-speech h6 {
+    font-size: 14px;
+    padding-left: 62px;
+  }
+
+  #section3 #mobileTablet-speech #more>h3 {
+    font-family: HelveticaNeue;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+    text-decoration: underline;
+    min-width: 325px;
+    font-size: 22px;
+    margin-top: 37.5px;
+    text-align: center;
+  }
+
+  /* section4 - speakers */
+  #section4 {
+    margin-top: 77px;
+    height: 100%;
+    margin-bottom: 34px;
+  }
+
+  #section4 h2 {
+    width: 341px;
+    font-size: 50px;
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  #section4 .speakers {
+    font-family: HelveticaNeue;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+    text-align: center;
+    padding: 0px 60px;
+  }
+
+  #section4 .speakers .speakers-name {
+    width: 100%;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #section4 .speakers .speakers-title,
+  #section4 .speakers .speakers-specialize {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #section4 .speakers .speakers-into {
+    width: 100%;
+    font-size: 14px;
+  }
+
+}
