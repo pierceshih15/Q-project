@@ -370,7 +370,7 @@ body {
     width: 380px;
   }
 
-  /* section3 - About-DAE */
+  /* section3 - speech */
 
   #section3 {
     margin-top: 193px;
@@ -587,11 +587,16 @@ body {
 
   #section3 #mobileTablet-speech h5 {
     font-size: 18px;
+    min-width: 98px;
+    display: inline-block;
   }
 
   #section3 #mobileTablet-speech h6 {
     font-size: 14px;
-    padding-left: 62px;
+    min-width: 50px;
+    width: auto;
+    text-align: right;
+    display: inline-block;
   }
 
   #section3 #mobileTablet-speech #more>h3 {

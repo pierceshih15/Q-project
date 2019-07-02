@@ -981,6 +981,7 @@ body {
 		min-width: 375px;
 		min-height: 337px;
 		background-image: url(https://via.placeholder.com/375X337.png);
+		background-size: cover;
 	}
 
 	#section5 h2 {
