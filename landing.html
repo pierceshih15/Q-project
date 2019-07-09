@@ -73,7 +73,7 @@
 
     <!-- Mobile Header -->
     <nav
-      class="navbar navbar-expand-lg fixed-top navbar-dark bg-light mobile-header"
+      class="navbar navbar-expand-lg fixed-top my-nav navbar-dark bg-light mobile-header"
     >
       <div class="bg-light">
         <img src="https://via.placeholder.com/60X27.png" />
@@ -125,8 +125,18 @@
 
             <div class="row col-md-2 mt-3 mx-0 px-0">
               <div class="text-translation col-md-5 mx-0 px-0">
-                <div class="d-inline-block">中</div>
-                <div class="d-inline-block">英</div>
+                <div
+                  class="d-inline-block mbPOCControlsLangDrop"
+                  value="Traditional"
+                >
+                  中
+                </div>
+                <div
+                  class="d-inline-block mbPOCControlsLangDrop"
+                  value="English"
+                >
+                  英
+                </div>
               </div>
               <div class="col-md-7"></div>
             </div>
@@ -138,8 +148,16 @@
 
     <div class="header-navbar">
       <div class="text-translation d-flex justify-content-end">
-        <div class="d-inline-block mr-3">中</div>
-        <div class="d-inline-block">英</div>
+        <div
+          class="d-inline-block mr-3"
+          id="mbPOCControlsLangDrop"
+          value="Traditional"
+        >
+          中
+        </div>
+        <div class="d-inline-block" id="mbPOCControlsLangDrop" value="English">
+          英
+        </div>
       </div>
     </div>
     <!-- Section 1  -->
@@ -147,7 +165,7 @@
       <div class="row">
         <div class="col-md-4 col-lg-3"></div>
         <div class="col-md-8 col-lg-9 section1-content">
-          <h2>The opportunity for Taiwanese youth</h2>
+          <h2 data-mlr-text>The opportunity for Taiwanese youth</h2>
           <p>
             Trust in me to lead our Taiwanese youth on an inspirational journey
             abroad using sports and education!
@@ -440,7 +458,11 @@
 
         <div class="col-md-5 d-lg-none"></div>
         <div class="col-12 col-md-7 col-lg-6">
-          <form action="">
+          <form
+            action="https://script.google.com/macros/s/AKfycbwDIwLiLgiWXjFbKoOetCUnaWtNi1rfCRqh5HWmgTJM4XyCw10/exec"
+            method="POST"
+            class="form"
+          >
             <!-- 表單第一層 -->
             <div class="row" id="form-1">
               <div class="col-6 col-md-6">
@@ -448,13 +470,21 @@
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   class="form-control"
                   placeholder="type here"
                 />
               </div>
+
+<script>
+    var name = "";
+    document.getElementById("name").value = name;
+</script>
+
+
               <div class="col-6 col-md-6">
                 <small><label for="gender">Gender</label></small>
-                <select class="form-control" id="gender">
+                <select class="form-control" id="gender" name="gender">
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                 </select>
@@ -468,6 +498,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   class="form-control"
                   placeholder="type here"
                 />
@@ -477,6 +508,7 @@
                 <input
                   type="text"
                   id="phone"
+                  name="phone"
                   class="form-control"
                   placeholder="type here"
                 />
@@ -487,7 +519,7 @@
             <div class="row" id="form-3">
               <div class="col-6 col-md-6">
                 <small><label for="number"># of kids</label></small>
-                <select class="form-control" id="number">
+                <select class="form-control" id="number" name="number">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -497,7 +529,7 @@
               <div class="col-6 col-md-6">
                 <small><label for="age">Age</label></small>
                 <!-- 若有2位小孩，如何填選 -->
-                <input type="text" id="age" class="form-control" />
+                <input type="text" id="age" name="age" class="form-control" />
               </div>
             </div>
 
@@ -505,8 +537,9 @@
             <div class="row" id="form-4">
               <div class="col-12 col-md-12">
                 <textarea
-                  name=""
-                  id=""
+                  name="textarea"
+                  id="textarea"
+                  name="textarea"
                   class="form-control"
                   placeholder="type here"
                 ></textarea>
@@ -517,7 +550,7 @@
             <div class="row" id="form-5">
               <div class="col-md-9 col-lg-10"></div>
               <div class="col-12 col-md-3 col-lg-2 pl-lg-0 submit">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary" id="submit">
                   Send
                 </button>
               </div>
@@ -604,6 +637,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
     <script src="js/index.js"></script>
   </body>
