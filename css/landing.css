@@ -24,10 +24,9 @@
 	color: #000000;
 }
 
-.mbPOCControlsLangDrop {
+.translation {
 	z-index: 3;
 }
-
 
 /* .header-img {
 	width: 100%;
@@ -345,6 +344,10 @@ body {
 }
 
 /* section7 - Form */
+#section7 {
+	z-index: 3;
+}
+
 #section7 h2 {
 	width: 341px;
 	height: 80px;

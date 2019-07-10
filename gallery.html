@@ -29,28 +29,30 @@
     <title>Davis</title>
   </head>
   <body>
-    <header>
+     <header>
       <nav class="navbar sticky-top navbar-light my-nav desktop-header">
         <div class="container">
           <div class="row">
             <div class="col-md-5 mb-1">
-              <a href="/landing.html">Home</a>
+              <a href="#section1" class="lang" key="home">Home</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5 mb-1">
-              <a href="/landing.html#section2">Quincy Davis</a>
+              <a href="#section2" class="lang" key="q-name">Quincy Davis</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5 mb-1">
-              <a href="/speakers.html">About DAE</a>
+              <a href="/speakers.html" class="lang" key="about-dae"
+                >About DAE</a
+              >
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5 mb-1">
-              <a href="/gallery.html">Gallery</a>
+              <a href="/gallery.html" class="lang" key="gallery">Gallery</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5 mb-1">
-              <a href="#section4">Contact</a>
+              <a href="#section7" class="lang" key="contact">Contact</a>
             </div>
             <div class="col-md-7"></div>
 
@@ -76,7 +78,7 @@
 
     <!-- Mobile Header -->
     <nav
-      class="navbar navbar-expand-lg fixed-top navbar-dark bg-light mobile-header"
+      class="navbar navbar-expand-lg fixed-top my-nav navbar-dark bg-light mobile-header"
     >
       <div class="bg-light">
         <img src="https://via.placeholder.com/60X27.png" />
@@ -95,19 +97,33 @@
           <div class="mobile-header-content">
             <div class="row">
               <div class="col-md-12 mb-1">
-                <a href="/landing.html" class="header-close">Home</a>
+                <a href="#section1" class="header-close lang" key="home"
+                  >Home</a
+                >
               </div>
               <div class="col-md-12 mb-1">
-                <a href="/landing.html#section2" class="header-close">Quincy Davis</a>
+                <a href="#section2" class="header-close lang" key="q-name"
+                  >Quincy Davis</a
+                >
               </div>
               <div class="col-md-12 mb-1">
-                <a href="/speakers.html" class="header-close">About DAE</a>
+                <a
+                  href="/speakers.html"
+                  class="header-close lang"
+                  key="about-dae"
+                  >About DAE</a
+                >
               </div>
               <div class="col-md-12 mb-1">
-                <a href="/gallery.html" class="header-close">Gallery</a>
+                <a
+                  href="#section4-mobile"
+                  class="header-close lang"
+                  key="gallery"
+                  >Gallery</a
+                >
               </div>
               <div class="col-md-12 mb-1">
-                <a href="#section4" class="header-close"
+                <a href="#section7" class="header-close lang" key="contact"
                   >Contact</a
                 >
               </div>
@@ -130,8 +146,12 @@
 
             <div class="row col-md-2 mt-3 mx-0 px-0">
               <div class="text-translation col-md-5 mx-0 px-0">
-                <div class="d-inline-block">中</div>
-                <div class="d-inline-block">英</div>
+                <div class="d-inline-block translation" id="zh">
+                  中
+                </div>
+                <div class="d-inline-block translation" id="en">
+                  英
+                </div>
               </div>
               <div class="col-md-7"></div>
             </div>
@@ -143,8 +163,12 @@
 
     <div class="header-navbar">
       <div class="text-translation d-flex justify-content-end">
-        <div class="d-inline-block mr-3">中</div>
-        <div class="d-inline-block">英</div>
+        <div class="d-inline-block mr-3 translation" id="zh">
+          中
+        </div>
+        <div class="d-inline-block translation" id="en">
+          英
+        </div>
       </div>
     </div>
 
@@ -153,7 +177,7 @@
       <div class="row">
         <div class="col-12 col-md-5 col-lg-7"></div>
         <div class="col-9 col-md-4 col-lg-5">
-          <h2>The opportunity for Taiwanese youth</h2>
+          <h2 class="lang" key="opp-header">The opportunity for Taiwanese youth</h2>
         </div>
       </div>
     </div>
@@ -163,7 +187,7 @@
       <div class="col-12 col-md-4 col-lg-3"></div>
       <div class="col-12 col-md-8 col-lg-9">
         <div class="col-12 col-md-12 col-lg-12 ml-0 pl-0">
-          <h2 class="col-3 col-md-6 col-lg-6 pr-0 mr-0 d-inline-block">Photos</h2>
+          <h2 class="col-3 col-md-6 col-lg-6 pr-0 mr-0 d-inline-block lang" key="photos">Photos</h2>
           <h3 class="col-5 col-md-6 col-lg-4 px-0 mx-0 d-inline-block">2018</h3>
         </div>
         <div class="gallery-desktopTablet">
@@ -183,7 +207,7 @@
         
         <div class="gallery-mobile">
         <!-- Photo in sports -->
-        <h4 class="gallery-mobile-header">Sports</h4>
+        <h4 class="gallery-mobile-header lang" key="sports">Sports</h4>
         <div class="row gallery-mobile-photo">
           <img class="col-12" src="https://via.placeholder.com/340X230.png" />
           <img class="col-6 mt-2 pr-2" src="https://via.placeholder.com/165X120.png" />
@@ -191,10 +215,10 @@
           <img class="col-6 mt-2 pr-2" src="https://via.placeholder.com/165X120.png" />
           <img class="col-6 mt-2 pl-2" src="https://via.placeholder.com/165X120.png" />
         </div>
-        <h4 class="gallery-mobile-more">More</h4>
+        <h4 class="gallery-mobile-more lang" key="more">More</h4>
 
         <!-- Photo in Science -->
-        <h4 class="gallery-mobile-header">Science</h4>
+        <h4 class="gallery-mobile-header lang" key="science">Science</h4>
         <div class="row gallery-mobile-photo">
           <img class="col-12" src="https://via.placeholder.com/340X230.png" />
           <img class="col-6 mt-2 pr-2" src="https://via.placeholder.com/165X120.png" />
@@ -202,9 +226,9 @@
           <img class="col-6 mt-2 pr-2" src="https://via.placeholder.com/165X120.png" />
           <img class="col-6 mt-2 pl-2" src="https://via.placeholder.com/165X120.png" />
         </div>
-        <h4 class="gallery-mobile-more">More</h4>
+        <h4 class="gallery-mobile-more lang" key="more">More</h4>
         <!-- Photo in Tour -->
-        <h4 class="gallery-mobile-header">Tour</h4>
+        <h4 class="gallery-mobile-header lang" key="tour">Tour</h4>
         <div class="row gallery-mobile-photo">
           <img class="col-12" src="https://via.placeholder.com/340X230.png" />
           <img class="col-6 mt-2 pr-2" src="https://via.placeholder.com/165X120.png" />
@@ -212,7 +236,7 @@
           <img class="col-6 mt-2 pr-2" src="https://via.placeholder.com/165X120.png" />
           <img class="col-6 mt-2 pl-2" src="https://via.placeholder.com/165X120.png" />
         </div>
-        <h4 class="gallery-mobile-more">More</h4>
+        <h4 class="gallery-mobile-more lang" key="more">More</h4>
         </div>
 
       </div>
@@ -223,7 +247,7 @@
     <div class="row"id="section3">
       <div class="col-12 col-md-4 col-lg-3 mx-0 px-0"></div>
       <div class="col-12 col-md-8 col-lg-9 mx-0 px-0">
-        <h2>Videos</h2>
+        <h2 class="lang" key="videos">Videos</h2>
       </div>
       <div class="col-12 col-md-4 col-lg-3"></div>
       <div class="col-12 col-md-8 col-lg-9">
@@ -234,12 +258,12 @@
     </div>
 
     <!-- Section 4  -->
-    <div class="col-12 col-md-12 col-lg-12" id="section4">
+        <div class="col-12 col-md-12 col-lg-12" id="section4">
       <div class="row">
         <div class="col-md-2 col-lg-3 px-0 mr-0"></div>
         <div class="col-md-3 col-lg-3 px-0 mr-0"></div>
         <div class="col-11 col-md-5 col-lg-3 form-header pl-lg-0">
-          <h2>
+          <h2 class="lang" key="form-header">
             You don’t want to miss it!
           </h2>
         </div>
@@ -252,112 +276,140 @@
           <div class="row mb-4 mb-lg-0">
             <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5 pl-lg-0">
               <img src="https://via.placeholder.com/25.png" />
-              <span>Apply Format</span>
+              <span class="lang" key="form-apply">Apply Format</span>
             </div>
             <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5">
               <img src="https://via.placeholder.com/25.png" />
-              <span>Personal Consultation</span>
+              <span class="lang" key="form-consult">Personal Consultation</span>
             </div>
           </div>
           <div class="row">
             <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5 pl-lg-0">
               <img src="https://via.placeholder.com/25.png" />
-              <span>Filling Application</span>
+              <span class="lang" key="form-application"
+                >Filling Application</span
+              >
             </div>
             <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5">
               <img src="https://via.placeholder.com/25.png" />
-              <span>Ready to go</span>
+              <span class="lang" key="form-ready">Ready to go</span>
             </div>
           </div>
         </div>
 
         <div class="col-md-5 d-lg-none"></div>
         <div class="col-12 col-md-7 col-lg-6">
-            <!-- 表單第一層 -->
-            <div class="row" id="form-1">
-              <div class="col-6 col-md-6">
-                <small><label for="name">Name</label></small>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="form-control"
-                  placeholder="type here"
-                />
-              </div>
-              <div class="col-6 col-md-6">
-                <small><label for="gender">Gender</label></small>
-                <select class="form-control" id="gender" name="gender">
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
+          <!-- 表單第一層 -->
+          <div class="row" id="form-1">
+            <div class="col-6 col-md-6">
+              <small
+                ><label for="name" class="lang" key="form-name"
+                  >Name</label
+                ></small
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="type here"
+              />
             </div>
+            <div class="col-6 col-md-6">
+              <small
+                ><label for="gender" class="lang" key="form-gender"
+                  >Gender</label
+                ></small
+              >
+              <select class="form-control" id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
 
-            <!-- 表單第二層 -->
-            <div class="row" id="form-2">
-              <div class="col-6 col-md-6">
-                <small><label for="email">Email</label></small>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="type here"
-                />
-              </div>
-              <div class="col-6 col-md-6">
-                <small><label for="phone">Phone</label></small>
-                <input
-                  type="text"
-                  id="phone"
-                  name="phone"
-                  class="form-control"
-                  placeholder="type here"
-                />
-              </div>
+          <!-- 表單第二層 -->
+          <div class="row" id="form-2">
+            <div class="col-6 col-md-6">
+              <small
+                ><label for="email" class="lang" key="form-email"
+                  >Email</label
+                ></small
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="type here"
+              />
             </div>
+            <div class="col-6 col-md-6">
+              <small
+                ><label for="phone" class="lang" key="form-phone"
+                  >Phone</label
+                ></small
+              >
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="type here"
+              />
+            </div>
+          </div>
 
-            <!-- 表單第三層 -->
-            <div class="row" id="form-3">
-              <div class="col-6 col-md-6">
-                <small><label for="number"># of kids</label></small>
-                <select class="form-control" id="number" name="number">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>More than 3</option>
-                </select>
-              </div>
-              <div class="col-6 col-md-6">
-                <small><label for="age">Age</label></small>
-                <!-- 若有2位小孩，如何填選 -->
-                <input type="text" id="age" name="age" class="form-control" />
-              </div>
+          <!-- 表單第三層 -->
+          <div class="row" id="form-3">
+            <div class="col-6 col-md-6">
+              <small
+                ><label for="number" class="lang" key="form-number"
+                  ># of kids</label
+                ></small
+              >
+              <select class="form-control" id="number" name="number">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>More than 3</option>
+              </select>
             </div>
+            <div class="col-6 col-md-6">
+              <small
+                ><label for="age" class="lang" key="form-age">Age</label></small
+              >
+              <!-- 若有2位小孩，如何填選 -->
+              <input type="text" id="age" name="age" class="form-control" />
+            </div>
+          </div>
 
-            <!-- 表單第四層 -->
-            <div class="row" id="form-4">
-              <div class="col-12 col-md-12">
-                <textarea
-                  name="textarea"
-                  id="textarea"
-                                  name="textarea"
-                  class="form-control"
-                  placeholder="type here"
-                ></textarea>
-              </div>
+          <!-- 表單第四層 -->
+          <div class="row" id="form-4">
+            <div class="col-12 col-md-12">
+              <textarea
+                name="textarea"
+                id="textarea"
+                name="textarea"
+                class="form-control"
+                placeholder="type here"
+              ></textarea>
             </div>
+          </div>
 
-            <!-- 表單第五層 -->
-            <div class="row" id="form-5">
-              <div class="col-md-9 col-lg-10"></div>
-              <div class="col-12 col-md-3 col-lg-2 pl-lg-0 submit">
-                <button type="submit" class="btn btn-primary submit-send">
-                  Send
-                </button>
-              </div>
+          <!-- 表單第五層 -->
+          <div class="row" id="form-5">
+            <div class="col-md-9 col-lg-10"></div>
+            <div class="col-12 col-md-3 col-lg-2 pl-lg-0 submit">
+              <button
+                type="submit"
+                class="btn btn-primary submit-send lang"
+                key="form-send"
+              >
+                Send
+              </button>
             </div>
+          </div>
         </div>
       </div>
     </div>
@@ -416,6 +468,8 @@
     ></script>
 
     <script src="js/index.js"></script>
+    <script src="js/translation.js"></script>
+
     <script src="js/slick.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>

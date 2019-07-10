@@ -31,23 +31,25 @@
         <div class="container">
           <div class="row">
             <div class="col-md-5 mb-1">
-              <a href="#section1">Home</a>
+              <a href="#section1" class="lang" key="home">Home</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5 mb-1">
-              <a href="#section2">Quincy Davis</a>
+              <a href="#section2" class="lang" key="q-name">Quincy Davis</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5 mb-1">
-              <a href="/speakers.html">About DAE</a>
+              <a href="/speakers.html" class="lang" key="about-dae"
+                >About DAE</a
+              >
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5 mb-1">
-              <a href="/gallery.html">Gallery</a>
+              <a href="/gallery.html" class="lang" key="gallery">Gallery</a>
             </div>
             <div class="col-md-7"></div>
             <div class="col-md-5 mb-1">
-              <a href="#section7">Contact</a>
+              <a href="#section7" class="lang" key="contact">Contact</a>
             </div>
             <div class="col-md-7"></div>
 
@@ -92,19 +94,35 @@
           <div class="mobile-header-content">
             <div class="row">
               <div class="col-md-12 mb-1">
-                <a href="#section1" class="header-close">Home</a>
+                <a href="#section1" class="header-close lang" key="home"
+                  >Home</a
+                >
               </div>
               <div class="col-md-12 mb-1">
-                <a href="#section2" class="header-close">Quincy Davis</a>
+                <a href="#section2" class="header-close lang" key="q-name"
+                  >Quincy Davis</a
+                >
               </div>
               <div class="col-md-12 mb-1">
-                <a href="/speakers.html" class="header-close">About DAE</a>
+                <a
+                  href="/speakers.html"
+                  class="header-close lang"
+                  key="about-dae"
+                  >About DAE</a
+                >
               </div>
               <div class="col-md-12 mb-1">
-                <a href="#section4-mobile" class="header-close">Gallery</a>
+                <a
+                  href="#section4-mobile"
+                  class="header-close lang"
+                  key="gallery"
+                  >Gallery</a
+                >
               </div>
               <div class="col-md-12 mb-1">
-                <a href="#section7" class="header-close">Contact</a>
+                <a href="#section7" class="header-close lang" key="contact"
+                  >Contact</a
+                >
               </div>
             </div>
 
@@ -125,16 +143,10 @@
 
             <div class="row col-md-2 mt-3 mx-0 px-0">
               <div class="text-translation col-md-5 mx-0 px-0">
-                <div
-                  class="d-inline-block mbPOCControlsLangDrop"
-                  value="Traditional"
-                >
+                <div class="d-inline-block translation" id="zh">
                   中
                 </div>
-                <div
-                  class="d-inline-block mbPOCControlsLangDrop"
-                  value="English"
-                >
+                <div class="d-inline-block translation" id="en">
                   英
                 </div>
               </div>
@@ -148,25 +160,24 @@
 
     <div class="header-navbar">
       <div class="text-translation d-flex justify-content-end">
-        <div
-          class="d-inline-block mr-3"
-          id="mbPOCControlsLangDrop"
-          value="Traditional"
-        >
+        <div class="d-inline-block mr-3 translation" id="zh">
           中
         </div>
-        <div class="d-inline-block" id="mbPOCControlsLangDrop" value="English">
+        <div class="d-inline-block translation" id="en">
           英
         </div>
       </div>
     </div>
+
     <!-- Section 1  -->
     <div class="col-md-12" id="section1">
       <div class="row">
         <div class="col-md-4 col-lg-3"></div>
         <div class="col-md-8 col-lg-9 section1-content">
-          <h2 data-mlr-text>The opportunity for Taiwanese youth</h2>
-          <p>
+          <h2 class="lang" key="opp-header">
+            The opportunity for Taiwanese youth
+          </h2>
+          <p class="lang" key="opp-content">
             Trust in me to lead our Taiwanese youth on an inspirational journey
             abroad using sports and education!
           </p>
@@ -180,8 +191,8 @@
         <div class="col-md-2 col-lg-3"></div>
         <div class="col-10 col-md-10 col-lg-9 ml-0 pl-0">
           <div class="section2-content">
-            <h2>Quincy Davis III</h2>
-            <p>
+            <h2 class="lang" key="qd-header">Quincy Davis III</h2>
+            <p class="lang" key="qd-content">
               Travel to the United States of America with their leader Quincy
               Davis, the National Taiwanese basketball star.
             </p>
@@ -196,19 +207,19 @@
       <div class="row">
         <div class="col-12 col-md-7 col-lg-3"></div>
         <div class="col-12 col-md-5 col-lg-9 ml-0 pl-0">
-          <h2>About DAE</h2>
+          <h2 class="lang" key="about-dae">About DAE</h2>
         </div>
       </div>
       <div class="row col-md-12">
         <div class="col-12 col-md-3 col-lg-3"></div>
         <div class="col-12 col-md-5 col-lg-5 section3-content"></div>
         <div class="col-12 col-md-4 col-lg-4">
-          <p>
+          <p class="lang" key="dae-content">
             Travel to the United States of America with their leader Quincy
             Davis, the National Taiwanese basketball star.
           </p>
           <a href="#section7">
-            <h3>Contact</h3>
+            <h3 class="lang" key="contact">Contact</h3>
           </a>
         </div>
       </div>
@@ -238,8 +249,8 @@
             src="https://via.placeholder.com/300X218.png"
             id="galley-image-1"
           />
-          <h2>Gallery</h2>
-          <p>More</p>
+          <h2 class="lang" key="gallery">Gallery</h2>
+          <p class="lang" key="more">More</p>
         </div>
         <div class="col-md-2 col-lg-2"></div>
       </div>
@@ -259,7 +270,7 @@
 
     <!-- Section 4 mobile -->
     <div class="col-md-12" id="section4-mobile">
-      <h2>Gallery</h2>
+      <h2 class="lang" key="gallery">Gallery</h2>
       <div class="row">
         <img
           class="col-6 mr-0 pr-0"
@@ -282,7 +293,7 @@
           alt=""
         />
       </div>
-      <p>More</p>
+      <p class="lang" key="more">More</p>
     </div>
 
     <!-- Section 5  -->
@@ -291,9 +302,16 @@
         <div class="col-12 col-md-12 section5-content"></div>
       </div>
       <div class="row d-flex justify-content-around mt-5">
-        <h2 data-toggle="mobileSchedule" id="schedule">Schedule</h2>
+        <h2
+          data-toggle="mobileSchedule"
+          id="schedule"
+          class="lang"
+          key="schedule"
+        >
+          Schedule
+        </h2>
         <a href="#section7">
-          <h2>Contact</h2>
+          <h2 class="lang" key="contact">Contact</h2>
         </a>
       </div>
     </div>
@@ -305,9 +323,11 @@
           <div class="icon-close-schedule text-secondary">X</div>
           <div class="mobile-schedule-content">
             <div class="row col-12 col-md-12 col-lg-12">
-              <h2>The schedule</h2>
-              <p>25 Aug, 2019 - 17 Stp, 2019 15 days</p>
-              <p>California, San Diego</p>
+              <h2 class="lang" key="schedule">The schedule</h2>
+              <p class="lang" key="schedule-time">
+                25 Aug, 2019 - 17 Stp, 2019 15 days
+              </p>
+              <p class="lang" key="schedule-location">California, San Diego</p>
             </div>
             <div class="row col-lg-12 mb-lg-2">
               <div class="row col-12 col-md-6 col-lg-6">
@@ -363,7 +383,13 @@
           <div class="row col-12 mt-3 mb-5">
             <div class="col-6 col-md-9"></div>
             <div class="col-6 col-md-3">
-              <a href="#" class="download-link" download="schedule">Download</a>
+              <a
+                href="#"
+                class="download-link lang"
+                download="schedule"
+                key="download"
+                >Download</a
+              >
             </div>
           </div>
         </div>
@@ -375,13 +401,15 @@
       <div class="row">
         <div class="col-1 col-sm-1 col-md-5 col-lg-7"></div>
         <div class="col-10 col-sm-10 col-md-7 col-lg-5">
-          <h3>“ Learn so much in this trip! I love you Quincy Davis! ”</h3>
+          <h3 class="lang" key="reference-content-1">
+            “ Learn so much in this trip! I love you Quincy Davis! ”
+          </h3>
           <div class="reference-person">
             <img
               class="rounded-circle"
               src="https://via.placeholder.com/60.png"
             />
-            <p>Name, Age School</p>
+            <p class="lang" key="reference-person-1">Name, Age School</p>
           </div>
         </div>
         <div class="col-1 col-sm-1"></div>
@@ -390,13 +418,15 @@
       <div class="row">
         <div class="col-1 col-sm-1 col-md-5 col-lg-4"></div>
         <div class="col-10 col-sm-10 col-md-7 col-lg-5">
-          <h3>“ Learn so much in this trip! I love you Quincy Davis! ”</h3>
+          <h3 class="lang" key="reference-content-2">
+            “ Learn so much in this trip! I love you Quincy Davis! ”
+          </h3>
           <div class="reference-person">
             <img
               class="rounded-circle"
               src="https://via.placeholder.com/60.png"
             />
-            <p>Name, Age School</p>
+            <p class="lang" key="reference-person-2">Name, Age School</p>
           </div>
         </div>
         <div class="col-1 col-sm-1 col-lg-3"></div>
@@ -405,13 +435,15 @@
       <div class="row">
         <div class="col-1 col-sm-1 col-md-5 col-lg-7"></div>
         <div class="col-10 col-sm-10 col-md-7 col-lg-5">
-          <h3>“ Learn so much in this trip! I love you Quincy Davis! ”</h3>
+          <h3 class="lang" key="reference-content-3">
+            “ Learn so much in this trip! I love you Quincy Davis! ”
+          </h3>
           <div class="reference-person">
             <img
               class="rounded-circle"
               src="https://via.placeholder.com/60.png"
             />
-            <p>Name, Age School</p>
+            <p class="lang" key="reference-person-3">Name, Age School</p>
           </div>
         </div>
         <div class="col-1 col-sm-1"></div>
@@ -424,7 +456,7 @@
         <div class="col-md-2 col-lg-3 px-0 mr-0"></div>
         <div class="col-md-3 col-lg-3 px-0 mr-0"></div>
         <div class="col-11 col-md-5 col-lg-3 form-header pl-lg-0">
-          <h2>
+          <h2 class="lang" key="form-header">
             You don’t want to miss it!
           </h2>
         </div>
@@ -437,21 +469,23 @@
           <div class="row mb-4 mb-lg-0">
             <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5 pl-lg-0">
               <img src="https://via.placeholder.com/25.png" />
-              <span>Apply Format</span>
+              <span class="lang" key="form-apply">Apply Format</span>
             </div>
             <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5">
               <img src="https://via.placeholder.com/25.png" />
-              <span>Personal Consultation</span>
+              <span class="lang" key="form-consult">Personal Consultation</span>
             </div>
           </div>
           <div class="row">
             <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5 pl-lg-0">
               <img src="https://via.placeholder.com/25.png" />
-              <span>Filling Application</span>
+              <span class="lang" key="form-application"
+                >Filling Application</span
+              >
             </div>
             <div class="col-6 col-lg-12 mx-0 px-0 mb-lg-5">
               <img src="https://via.placeholder.com/25.png" />
-              <span>Ready to go</span>
+              <span class="lang" key="form-ready">Ready to go</span>
             </div>
           </div>
         </div>
@@ -461,7 +495,11 @@
           <!-- 表單第一層 -->
           <div class="row" id="form-1">
             <div class="col-6 col-md-6">
-              <small><label for="name">Name</label></small>
+              <small
+                ><label for="name" class="lang" key="form-name"
+                  >Name</label
+                ></small
+              >
               <input
                 type="text"
                 id="name"
@@ -471,7 +509,11 @@
               />
             </div>
             <div class="col-6 col-md-6">
-              <small><label for="gender">Gender</label></small>
+              <small
+                ><label for="gender" class="lang" key="form-gender"
+                  >Gender</label
+                ></small
+              >
               <select class="form-control" id="gender" name="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -482,7 +524,11 @@
           <!-- 表單第二層 -->
           <div class="row" id="form-2">
             <div class="col-6 col-md-6">
-              <small><label for="email">Email</label></small>
+              <small
+                ><label for="email" class="lang" key="form-email"
+                  >Email</label
+                ></small
+              >
               <input
                 type="email"
                 id="email"
@@ -492,7 +538,11 @@
               />
             </div>
             <div class="col-6 col-md-6">
-              <small><label for="phone">Phone</label></small>
+              <small
+                ><label for="phone" class="lang" key="form-phone"
+                  >Phone</label
+                ></small
+              >
               <input
                 type="text"
                 id="phone"
@@ -506,7 +556,11 @@
           <!-- 表單第三層 -->
           <div class="row" id="form-3">
             <div class="col-6 col-md-6">
-              <small><label for="number"># of kids</label></small>
+              <small
+                ><label for="number" class="lang" key="form-number"
+                  ># of kids</label
+                ></small
+              >
               <select class="form-control" id="number" name="number">
                 <option>1</option>
                 <option>2</option>
@@ -515,7 +569,9 @@
               </select>
             </div>
             <div class="col-6 col-md-6">
-              <small><label for="age">Age</label></small>
+              <small
+                ><label for="age" class="lang" key="form-age">Age</label></small
+              >
               <!-- 若有2位小孩，如何填選 -->
               <input type="text" id="age" name="age" class="form-control" />
             </div>
@@ -538,7 +594,11 @@
           <div class="row" id="form-5">
             <div class="col-md-9 col-lg-10"></div>
             <div class="col-12 col-md-3 col-lg-2 pl-lg-0 submit">
-              <button type="submit" class="btn btn-primary submit-send">
+              <button
+                type="submit"
+                class="btn btn-primary submit-send lang"
+                key="form-send"
+              >
                 Send
               </button>
             </div>
@@ -552,8 +612,10 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <h2>Sponsors</h2>
-          <p>Join sponsorship to help our youth.</p>
+          <h2 class="lang" key="sponsors">Sponsors</h2>
+          <p class="lang" key="sponsors-content">
+            Join sponsorship to help our youth.
+          </p>
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -628,5 +690,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
     <script src="js/index.js"></script>
+    <script src="js/translation.js"></script>
   </body>
 </html>
