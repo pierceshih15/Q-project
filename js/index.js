@@ -33,38 +33,49 @@ $(function () {
 $(function () {
   // 監聽 送出訂單 按鈕點擊
   // 下面這段主要在組合資料，還有擋使用者不填資料不能送出
-  $('#submit').click(function (e) {
+  $('.submit-send').click(function () {
 
     var status = true;
 
-    var params = e.parameter;
-    var name = params.name;
-    var gender = params.gender;
-    var email = params.email;
-    var phone = params.phone;
-    var number = params.number;
-    var age = params.age;
-    var textarea = params.textarea;
+    var name = $('#name').val();
+    var gender = $('#gender').val();
+    var email = $('#email').val();
+    var phone = $('#phone').val();
+    var number = $('#number').val();
+    var age = $('#age').val();
+    var textarea = $('#textarea').val();
 
-    // // 擋住不填資料邏輯
-    // if (name == '') {
-    //   $('#name').css('border', '1px solid #ff0000');
-    //   status = false;
-    // }
-    // if (phone == '') {
-    //   $('#phone').css('border', '1px solid #ff0000');
-    //   status = false;
-    // }
-    // if (order == '') {
-    //   alert('請選擇訂購品項喔');
-    //   status = false;
-    // }
+    // 擋住不填資料邏輯
+    if (name == '') {
+      $('#name').css('border', '1px solid #ff0000');
+      status = false;
+    }
+    if (gender == '') {
+      $('#gender').css('border', '1px solid #ff0000');
+      status = false;
+    }
+    if (email == '') {
+      $('#email').css('border', '1px solid #ff0000');
+      status = false;
+    }
+    if (phone == '') {
+      $('#phone').css('border', '1px solid #ff0000');
+      status = false;
+    }
+    if (number == '') {
+      $('#number').css('border', '1px solid #ff0000');
+      status = false;
+    }
+    if (age == '') {
+      $('#age').css('border', '1px solid #ff0000');
+      status = false;
+    }
 
-    // 如果 �必填欄位都過了 才會到這邊
+    // 若資料皆填寫完畢，才執行
     if (status) {
       // 增加日期資料
-      var currentdate = new Date();
-      var timeStamps = currentdate.getFullYear() + "/" +
+      let currentdate = new Date();
+      let timeStamps = currentdate.getFullYear() + "/" +
         (currentdate.getMonth() + 1) + "/" +
         currentdate.getDate() + "  " +
         currentdate.getHours() + ":" +
@@ -72,7 +83,7 @@ $(function () {
         currentdate.getSeconds();
 
       // 打包 要的資料
-      var data = {
+      let data = {
         'name': name,
         'gender': gender,
         'email': email,
@@ -82,7 +93,6 @@ $(function () {
         'textarea': textarea,
         'time': timeStamps
       }
-      console.log(data);
       // 呼叫 send ajax function
       send(data);
     }
@@ -91,17 +101,17 @@ $(function () {
 
 function send(data) {
   $.ajax({
-    type: "post",
+    type: "get",
     // api url - google appscript 產出的 url
     url: "https://script.google.com/macros/s/AKfycbwDIwLiLgiWXjFbKoOetCUnaWtNi1rfCRqh5HWmgTJM4XyCw10/exec",
     // 剛剛整理好的資料帶入
     data: data,
     // 資料格式是JSON 
     dataType: "JSON",
-    // 成功送出 會回頭觸發下面這塊感謝
+    // 成功送出觸發事件
     success: function (response) {
       console.log(response);
-      alert('感謝您，我們將會安排專人盡快與您聯繫！！');
+      alert(`感謝您，我們將會安排專人盡快與您聯繫！！`);
     }
   });
 }

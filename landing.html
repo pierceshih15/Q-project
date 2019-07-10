@@ -458,104 +458,91 @@
 
         <div class="col-md-5 d-lg-none"></div>
         <div class="col-12 col-md-7 col-lg-6">
-          <form
-            action="https://script.google.com/macros/s/AKfycbwDIwLiLgiWXjFbKoOetCUnaWtNi1rfCRqh5HWmgTJM4XyCw10/exec"
-            method="POST"
-            class="form"
-          >
-            <!-- 表單第一層 -->
-            <div class="row" id="form-1">
-              <div class="col-6 col-md-6">
-                <small><label for="name">Name</label></small>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="form-control"
-                  placeholder="type here"
-                />
-              </div>
-
-<script>
-    var name = "";
-    document.getElementById("name").value = name;
-</script>
-
-
-              <div class="col-6 col-md-6">
-                <small><label for="gender">Gender</label></small>
-                <select class="form-control" id="gender" name="gender">
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
+          <!-- 表單第一層 -->
+          <div class="row" id="form-1">
+            <div class="col-6 col-md-6">
+              <small><label for="name">Name</label></small>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="type here"
+              />
             </div>
-
-            <!-- 表單第二層 -->
-            <div class="row" id="form-2">
-              <div class="col-6 col-md-6">
-                <small><label for="email">Email</label></small>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="type here"
-                />
-              </div>
-              <div class="col-6 col-md-6">
-                <small><label for="phone">Phone</label></small>
-                <input
-                  type="text"
-                  id="phone"
-                  name="phone"
-                  class="form-control"
-                  placeholder="type here"
-                />
-              </div>
+            <div class="col-6 col-md-6">
+              <small><label for="gender">Gender</label></small>
+              <select class="form-control" id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
             </div>
+          </div>
 
-            <!-- 表單第三層 -->
-            <div class="row" id="form-3">
-              <div class="col-6 col-md-6">
-                <small><label for="number"># of kids</label></small>
-                <select class="form-control" id="number" name="number">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>More than 3</option>
-                </select>
-              </div>
-              <div class="col-6 col-md-6">
-                <small><label for="age">Age</label></small>
-                <!-- 若有2位小孩，如何填選 -->
-                <input type="text" id="age" name="age" class="form-control" />
-              </div>
+          <!-- 表單第二層 -->
+          <div class="row" id="form-2">
+            <div class="col-6 col-md-6">
+              <small><label for="email">Email</label></small>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="type here"
+              />
             </div>
+            <div class="col-6 col-md-6">
+              <small><label for="phone">Phone</label></small>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="type here"
+              />
+            </div>
+          </div>
 
-            <!-- 表單第四層 -->
-            <div class="row" id="form-4">
-              <div class="col-12 col-md-12">
-                <textarea
-                  name="textarea"
-                  id="textarea"
-                  name="textarea"
-                  class="form-control"
-                  placeholder="type here"
-                ></textarea>
-              </div>
+          <!-- 表單第三層 -->
+          <div class="row" id="form-3">
+            <div class="col-6 col-md-6">
+              <small><label for="number"># of kids</label></small>
+              <select class="form-control" id="number" name="number">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>More than 3</option>
+              </select>
             </div>
+            <div class="col-6 col-md-6">
+              <small><label for="age">Age</label></small>
+              <!-- 若有2位小孩，如何填選 -->
+              <input type="text" id="age" name="age" class="form-control" />
+            </div>
+          </div>
 
-            <!-- 表單第五層 -->
-            <div class="row" id="form-5">
-              <div class="col-md-9 col-lg-10"></div>
-              <div class="col-12 col-md-3 col-lg-2 pl-lg-0 submit">
-                <button type="submit" class="btn btn-primary" id="submit">
-                  Send
-                </button>
-              </div>
+          <!-- 表單第四層 -->
+          <div class="row" id="form-4">
+            <div class="col-12 col-md-12">
+              <textarea
+                name="textarea"
+                id="textarea"
+                name="textarea"
+                class="form-control"
+                placeholder="type here"
+              ></textarea>
             </div>
-          </form>
+          </div>
+
+          <!-- 表單第五層 -->
+          <div class="row" id="form-5">
+            <div class="col-md-9 col-lg-10"></div>
+            <div class="col-12 col-md-3 col-lg-2 pl-lg-0 submit">
+              <button type="submit" class="btn btn-primary submit-send">
+                Send
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
