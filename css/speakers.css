@@ -109,18 +109,16 @@ body {
   margin-bottom: 217px;
 }
 
-#section1 .section1-content {
+#section1 .section1-content img {
   position: relative;
-  min-height: 316px;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 #section1 .section1-content h2 {
   position: absolute;
-  top: 213px;
-  left: -173px;
-  font-size: 50px;
   font-family: HelveticaNeue;
   font-weight: bold;
   font-style: normal;
@@ -128,10 +126,6 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
-}
-
-#section1 .section1-content .qd-name {
-  color: #000000;
 }
 
 #section1 .section1-content p {
@@ -147,11 +141,10 @@ body {
   color: #0b0b0b;
 }
 
-/* Section2 - Title */
-#section2 .section2-content {
+/* Section2 - Intro */
+#section2 .section2-content img {
   position: relative;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #section2 .section2-content h2 {
@@ -163,11 +156,10 @@ body {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #0b0b0b
+  color: #000000
 }
 
 #section2 .section2-content p {
-  font-size: 18px;
   position: absolute;
   font-family: HelveticaNeue;
   font-weight: normal;
@@ -219,6 +211,10 @@ body {
   display: none;
 }
 
+#section3 #desktop-speech img {
+  position: relative;
+}
+
 #section3 #desktop-speech h5 {
   font-family: HelveticaNeue;
   font-weight: normal;
@@ -239,7 +235,6 @@ body {
   letter-spacing: normal;
   color: #0b0b0b;
   font-size: 14px;
-  padding-left: 83px;
 }
 
 /* Desktop */
@@ -249,33 +244,69 @@ body {
   }
 
   /* section1 - The Opportunity */
-  #section1 .section1-content {
+  #section1 .section1-content img {
     min-width: 522px;
-    background-image: url(https://via.placeholder.com/522X316.png);
+    min-height: 316px;
+  }
+
+  #section1 .section1-content h2 {
+    top: 213px;
+    left: -163px;
+    font-size: 50px;
+  }
+
+  #section1 .section1-content .qd-first-name {
+    color: #000000;
+    top: 213px;
+    left: -175px;
+    font-size: 50px;
+  }
+
+  #section1 .section1-content .qd-last-name {
+    color: #f6f6ff;
+    top: 213px;
+    left: 13px;
+    font-size: 50px;
+  }
+
+  #section1 .section1-content p {
+    width: 420px;
+    bottom: -171px;
+    left: 0px;
+    font-size: 18px;
+    color: #0b0b0b;
   }
 
   /* section2 - Quincy-Davis-III */
 
-  #section2 .section2-content {
+  #section2 .section2-content img {
     min-width: 700px;
     min-height: 320px;
-    margin-right: 30px;
-    background-image: url(https://via.placeholder.com/700X320.png);
+    width: 95%;
   }
 
   #section2 .section2-content h2 {
     top: -30px;
     left: 560px;
-    width: 385px;
+    width: 112px;
+    font-size: 50px;
   }
 
   #section2 .section2-content p {
-    top: 344px;
+    top: 354px;
     left: 320px;
     width: 380px;
+    font-size: 18px;
   }
 
   /* section3 - Speech */
+
+  #section3 h2 {
+    width: 361px;
+    text-align: center;
+    padding-right: 30px;
+    font-size: 50px;
+  }
 
   #section3 h3 {
     width: 190px;
@@ -283,6 +314,18 @@ body {
     margin-top: 4px;
     margin-left: 134px;
     font-size: 50px;
+  }
+
+  #section3 #desktop-speech h5 {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  #section3 #desktop-speech h6 {
+    position: relative;
+    bottom: 0px;
+    right: -70px;
   }
 
   /* section4 - Speakers */
@@ -345,36 +388,52 @@ body {
     margin-top: 145px;
   }
 
-  #section1 .section1-content {
+  #section1 .section1-content img {
     min-width: 522px;
-    background-image: url(https://via.placeholder.com/522X316.png);
+    min-height: 316px;
   }
 
-  #section1 .section1-content h2 {
-    position: absolute;
-    top: 213px;
+  #section1 .section1-content .qd-first-name {
+    color: #000000;
+    top: 273px;
     left: -134px;
     font-size: 40px;
   }
 
+  #section1 .section1-content .qd-last-name {
+    color: #f6f6ff;
+    top: 273px;
+    left: 13px;
+    font-size: 40px;
+  }
+
+  #section1 .section1-content p {
+    width: 356px;
+    bottom: -191px;
+    left: 0px;
+    font-size: 18px;
+    color: #0b0b0b;
+  }
+
   /* section2 - Quincy-Davis-III */
 
-  #section2 .section2-content {
+  #section2 .section2-content img {
     min-width: 706px;
     min-height: 316px;
-    background-image: url(https://via.placeholder.com/706X316.png);
   }
 
   #section2 .section2-content h2 {
     top: -30px;
     left: 500px;
-    width: 385px;
+    width: 112px;
+    font-size: 50px;
   }
 
   #section2 .section2-content p {
     top: 344px;
     left: 230px;
     width: 380px;
+    font-size: 18px;
   }
 
   /* section3 - speech */
@@ -391,21 +450,35 @@ body {
     font-size: 50px;
   }
 
-  #desktop-speech {
+  #section3 #desktop-speech {
     display: none;
   }
 
-  #mobileTablet-speech {
+  #section3 #mobileTablet-speech {
     display: flex;
   }
 
+  #section3 #mobileTablet-speech img {
+    position: relative;
+    max-width: 229px;
+    min-height: 222px;
+    width: 95%;
+    padding-bottom: 30px;
+  }
+
   #section3 #mobileTablet-speech h5 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 102px;
     font-size: 18px;
   }
 
   #section3 #mobileTablet-speech h6 {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
     font-size: 14px;
-    padding-left: 62px;
   }
 
   #section3 #mobileTablet-speech #more>h3 {
@@ -529,38 +602,43 @@ body {
 
   /* section1 - The Opportunity */
   #section1 {
-    margin-bottom: 41px;
+    margin-bottom: 91px;
   }
 
-  #section1 .section1-content {
+  #section1 .section1-content img {
+    margin-top: 50px;
     min-width: 375px;
-    background-image: url(https://via.placeholder.com/375X316.png);
+    min-height: 336px;
   }
 
-  #section1 .section1-content h2 {
-    position: absolute;
-    top: 147px;
+  #section1 .section1-content .qd-first-name {
+    color: #f6f6ff;
+    top: 187px;
     left: 76px;
+    width: 186px;
     font-size: 34px;
   }
 
-  #section1 .section1-content .qd-name {
-    color: #f6f6f6;
+  #section1 .section1-content .qd-last-name {
+    color: #f6f6ff;
+    top: 187px;
+    left: 196px;
+    width: 136px;
+    font-size: 34px;
   }
 
   #section1 .section1-content p {
-    width: 217px;
-    top: 197px;
+    width: 233px;
+    top: 247px;
     left: 76px;
     font-size: 14px;
     color: #f6f6f6;
   }
 
   /* section2 - Quincy-Davis-III */
-  #section2 .section2-content {
-    min-width: 301px;
+  #section2 .section2-content img {
+    max-width: 301px;
     min-height: 316px;
-    background-image: url(https://via.placeholder.com/301X316.png);
   }
 
   #section2 .section2-content h2 {
@@ -568,18 +646,27 @@ body {
     top: 259px;
     left: 168px;
     width: 87px;
+    color: #ffffff;
   }
 
   #section2 .section2-content p {
     font-size: 14px;
-    bottom: -99px;
+    top: 335px;
     left: 168px;
     width: 190px;
+    color: #0b0b0b;
   }
 
   /* section3 - Speech */
   #section3 {
     margin-top: 145px;
+  }
+
+  #section3 h2 {
+    margin-top: 50px;
+    width: 100%;
+    text-align: left;
+    font-size: 34px;
   }
 
   #desktop-speech {
@@ -590,18 +677,26 @@ body {
     display: flex;
   }
 
+  #mobileTablet-speech img {
+    min-width: 163px;
+    min-height: 158px;
+    width: 90%;
+    padding-bottom: 30px;
+  }
+
   #section3 #mobileTablet-speech h5 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 102px;
     font-size: 18px;
-    min-width: 98px;
-    display: inline-block;
   }
 
   #section3 #mobileTablet-speech h6 {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
     font-size: 14px;
-    min-width: 50px;
-    width: auto;
-    text-align: right;
-    display: inline-block;
   }
 
   #section3 #mobileTablet-speech #more>h3 {

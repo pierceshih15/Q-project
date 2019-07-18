@@ -53,6 +53,8 @@ let arrLang = {
     "tour": 'Tour',
 
     // Speakers Page
+    "qd-first-name": 'Quincy',
+    "qd-last-name": 'Davis III',
     "qd-content-in-speakers-page": 'I have a Taiwanese dream, to establish an English school which basketball is the main part of it. And now I’ve been plan to contribute myself in finding the balance between Sports and Education.',
     "intro-header": 'Intro',
     "intro-content": 'Quincy Davis III, the first American-born who renounce his siticizenship to naturalize in Taiwan in 2013. Now focusing on youth education and sports developement.',
@@ -66,6 +68,9 @@ let arrLang = {
     "location-4": 'PCSH',
     "location-5": 'PCSH',
     "location-6": 'PCSH',
+    "location-7": 'PCSH',
+    "location-8": 'PCSH',
+    "location-9": 'PCSH',
 
     // 第四層
     "team-intro": 'Speakers, coaches and trainers',
@@ -139,19 +144,24 @@ let arrLang = {
     "tour": '旅遊',
 
     // Speakers Page
+    "qd-first-name": '戴維斯',
+    "qd-last-name": '',
     "qd-content-in-speakers-page": '「運動是有年限的，但教育與知識是從你出生到死亡都跟著你一輩子的，當你有了知識當後盾，你將能有更多的選擇與機會。」 儘管自己是名籃球員，但我卻認為，運動不能沒有教育，教育也不能沒有運動，而如今，我決定透過自己的方式實現這個理念。',
     "intro-header": '介紹',
-    "intro-content": 'Quincy Spencer Davis III，土生土長的美國黑人，於2013年成為台灣籃壇史上首名歸化球員，先後效力於SBL璞園籃球隊及中華國家代表隊，現致力於運動與教育平衡發展。',
+    "intro-content": '戴維斯，土生土長的美國黑人，於2013年成為台灣籃壇史上首名歸化球員，先後效力於SBL璞園籃球隊及中華國家代表隊，現致力於運動與教育平衡發展。',
 
     // 第三層
     "speech-header": '校園演講',
-    "speech-content": '大專院校、國高中、小學，邀請戴維斯前往你的學校演講。',
+    "speech-content": '歡迎大專院校、國高中、小學，邀請戴維斯前往你的學校演講。',
     "location-1": '板橋高中',
     "location-2": '板橋高中',
     "location-3": '板橋高中',
     "location-4": '板橋高中',
     "location-5": '板橋高中',
     "location-6": '板橋高中',
+    "location-7": '板橋高中',
+    "location-8": '板橋高中',
+    "location-9": '板橋高中',
     "team-intro": '講者、教練及訓練員',
 
     // 第四層
