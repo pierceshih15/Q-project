@@ -113,7 +113,8 @@ body {
 
 .translation:hover,
 .desktop-header a:hover,
-.mobile-header a:hover {
+.mobile-header a:hover,
+.section3 a:hover {
 	cursor: pointer;
 }
 
@@ -124,14 +125,20 @@ body {
 /* 基礎樣板 */
 
 /* Section1 - The Opportunity */
-#section1 .section1-content {
-	min-height: 410px;
+#section1 .section1-content img {
+	width: 100%;
+	height: 410px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 }
 
 #section1 .section1-content h2 {
-	padding: 116px 50px 0px 296px;
+	position: absolute;
+	top: 116px;
+	left: 296px;
+	width: 400px;
+	height: 100%;
 	font-size: 50px;
 	font-family: HelveticaNeue;
 	font-weight: bold;
@@ -143,7 +150,11 @@ body {
 }
 
 #section1 .section1-content p {
-	padding: 15px 102px 51px 296px;
+	position: absolute;
+	top: 311px;
+	left: 296px;
+	width: 317px;
+	height: 100%;
 	font-size: 14px;
 	font-family: HelveticaNeue;
 	font-weight: normal;
@@ -159,9 +170,12 @@ body {
 	margin-top: 110.5px;
 }
 
-#section2 .section2-content {
-	position: relative;
+#section2 .section2-content img {
+	width: 100%;
+	height: auto;
 	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
 #section2 .section2-content h2 {
@@ -203,9 +217,11 @@ body {
 	color: #0b0b0b
 }
 
-#section3 .section3-content {
-	position: relative;
+#section3 .section3-content img {
+	width: 100%;
+	height: auto;
 	background-repeat: no-repeat;
+	position: relative;
 }
 
 #section3 p {
@@ -225,7 +241,7 @@ body {
 	font-stretch: normal;
 	line-height: normal;
 	letter-spacing: normal;
-	color: #0b0b0b;
+	color: #df732b;
 	text-decoration: underline;
 }
 
@@ -239,6 +255,12 @@ body {
 	margin-bottom: 37px
 }
 
+#section4-desktop img {
+	min-width: 300px;
+	min-height: 218px;
+	width: 100%;
+	height: 100%;
+}
 
 #section4-desktop #galley-image-1 {
 	position: relative;
@@ -279,12 +301,35 @@ body {
 	margin-top: 124px;
 }
 
-#section5 .section5-content {
+#section5 .section5-content .section5-img-desktopTablet {
 	position: relative;
-	min-width: 922px;
-	min-height: 420px;
-	background-image: url(https://via.placeholder.com/922X420.png);
 	background-repeat: no-repeat;
+}
+
+#section5 .section5-content .section5-img-mobile {
+	display: none;
+}
+
+#section5 .row:nth-child(2) h2 {
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+
+#section5 .row:nth-child(2) a {
+	font-family: HelveticaNeue;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #df732b;
+	text-decoration: underline;
 }
 
 /* section5 - Schedule */
@@ -439,32 +484,25 @@ body {
 		margin-top: 70px;
 	}
 
-	/* section1 - The Opportunity */
-	#section1 .section1-content {
-		min-width: 715px;
-		background-image: url(https://via.placeholder.com/715X410.png);
-	}
-
 	/* section2 - Quincy-Davis-III */
 
-	#section2 .section2-content {
-		min-width: 460px;
-		min-height: 440px;
-		background-image: url(https://via.placeholder.com/460X440.png);
+	#section2 .section2-content img {
+		max-width: 460px;
+		max-height: 440px;
 	}
 
 	#section2 .section2-content h2 {
-		top: 253px;
+		top: 233px;
 		left: 331px;
 		width: 385px;
-		height: 60px;
+		height: 100%;
 	}
 
 	#section2 .section2-content p {
-		top: 330.5px;
+		top: 310.5px;
 		left: 480px;
-		width: 210px;
-		height: 109px;
+		width: 244px;
+		height: 100%;
 	}
 
 	/* section3 - About-DAE */
@@ -476,67 +514,58 @@ body {
 		font-size: 50px;
 	}
 
-	#section3 .section3-content {
-		min-width: 376px;
-		min-height: 260px;
-		background-image: url(https://via.placeholder.com/376X260.png);
+	#section3 .section3-content img {
+		max-width: 376px;
+		max-height: 260px;
 	}
 
 	#section3 p {
+		position: absolute;
+		top: 87px;
+		left: 14px;
 		width: 300px;
-		height: 109px;
-		margin-top: 87px;
+		height: 147px;
 		font-size: 18px;
 	}
 
 	#section3 h3 {
-		width: 190px;
+		position: absolute;
+		top: 207px;
+		left: 104px;
+		width: 240px;
 		height: 60px;
-		margin-top: 4px;
-		margin-left: 134px;
 		font-size: 50px;
 	}
 
 	/* section4 - Gallery */
 	#section4-desktop {
 		margin-top: 135px;
-		margin-left: 84px;
+		padding-right: 42px;
+		padding-left: 42px;
 		display: block;
 	}
 
-	#section5 h2:nth-child(1) {
-		position: absolute;
-		font-size: 50px;
-		margin-right: 44px;
-		top: 268px;
-		right: 44px;
-		width: 150px;
-		height: 70px;
-		font-family: HelveticaNeue;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #000000;
-		text-decoration: underline;
+	/* section5 - Banner */
+	#section5 .section5-content .section5-img-desktopTablet {
+		min-width: 922px;
+		min-height: 405px;
 	}
 
-	#section5 a h2:nth-child(1) {
+	#section5 .row:nth-child(2) h2 {
+		position: absolute;
+		top: 248px;
+		right: 70px;
+		height: 60px;
+		font-size: 50px;
+	}
+
+	#section5 .row:nth-child(2) a {
 		position: absolute;
 		font-size: 50px;
-		top: 338px;
-		right: -29px;
+		top: 318px;
+		right: 70px;
 		width: 200px;
 		height: 70px;
-		font-family: HelveticaNeue;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #000000;
-		text-decoration: underline;
 	}
 
 	/* section5 - Schedule info. */
@@ -630,45 +659,46 @@ body {
 	}
 
 	/* section1 - The Opportunity */
-	#section1 .section1-content {
-		min-width: 100%;
-		background-image: url(https://via.placeholder.com/768X410.png);
-	}
 
 	#section1 .section1-content h2 {
-		padding: 129px 56px 0px 302px;
-		font-size: 50px;
+		top: 116px;
+		left: 334px;
+		width: 414px;
+		height: 100%;
 	}
 
 	#section1 .section1-content p {
-		padding: 34px 149px 67px 296px;
-		font-size: 14px;
+		top: 331px;
+		left: 334px;
+		width: 388px;
+		height: 100%;
 	}
 
 	/* section2 - Quincy-Davis-III */
 
 	#section2 {
 		margin-top: 50px;
+		margin-bottom: 126px;
 	}
 
-	#section2 .section2-content {
-		min-width: 368px;
-		min-height: 352px;
-		background-image: url(https://via.placeholder.com/368X352.png);
+	#section2 .section2-content img {
+		max-width: 368px;
+		max-height: 352px;
 	}
 
 	#section2 .section2-content h2 {
-		top: 112px;
-		left: 420px;
-		width: 243px;
-		height: 70px;
+		top: 140px;
+		left: 235px;
+		width: 385px;
+		height: 100%;
 	}
 
 	#section2 .section2-content p {
-		top: 241px;
-		left: 420px;
-		width: 210px;
-		height: 109px;
+		padding-right: 46px;
+		top: 211px;
+		left: 402px;
+		width: 240px;
+		height: 100%;
 	}
 
 	/* section3 - About-DAE */
@@ -679,24 +709,20 @@ body {
 	}
 
 	#section3 h2 {
-		width: 361px;
+		width: 100%;
 		height: 70px;
-		text-align: center;
-		padding-right: 30px;
 		font-size: 50px;
 	}
 
-	#section3 .section3-content {
-		position: relative;
-		min-width: 330px;
-		min-height: 207px;
-		background-image: url(https://via.placeholder.com/330X207.png);
+	#section3 .section3-content img {
+		max-width: 330px;
+		max-height: 207px;
 	}
 
 	#section3 p {
 		position: absolute;
-		top: -207px;
-		left: 542px;
+		top: 0px;
+		left: 14px;
 		width: 180px;
 		height: 210px;
 		font-size: 18px;
@@ -704,8 +730,8 @@ body {
 
 	#section3 h3 {
 		position: absolute;
-		top: 27px;
-		left: 510px;
+		top: 227px;
+		left: 0px;
 		width: 200px;
 		height: 70px;
 		font-size: 50px;
@@ -715,8 +741,16 @@ body {
 
 	#section4-desktop {
 		margin-top: 54px;
-		margin-left: -64px;
+		padding-right: 30px;
+		padding-left: 30px;
 		display: block;
+	}
+
+	#section4-desktop img {
+		min-width: 239px;
+		min-height: 173px;
+		width: 100%;
+		height: 100%;
 	}
 
 	/* section5 - Banner */
@@ -724,39 +758,28 @@ body {
 		margin-top: 84px;
 	}
 
-	#section5 h2:nth-child(1) {
-		position: absolute;
-		font-size: 50px;
-		margin-right: 44px;
-		top: 268px;
-		right: 44px;
-		width: 150px;
-		height: 70px;
-		font-family: HelveticaNeue;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #000000;
-		text-decoration: underline;
+	#section5 .section5-content .section5-img-desktopTablet {
+		min-width: 767px;
+		min-height: 337px;
+		width: 100%;
+		height: 100%;
 	}
 
-	#section5 a h2:nth-child(1) {
+	#section5 .row:nth-child(2) h2 {
+		position: absolute;
+		top: 180px;
+		right: 35px;
+		height: 60px;
+		font-size: 50px;
+	}
+
+	#section5 .row:nth-child(2) a {
 		position: absolute;
 		font-size: 50px;
-		top: 338px;
-		right: -29px;
+		top: 250px;
+		right: 35px;
 		width: 200px;
 		height: 70px;
-		font-family: HelveticaNeue;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #000000;
-		text-decoration: underline;
 	}
 
 	/* section5 - Schedule info. */
@@ -893,52 +916,55 @@ body {
 
 	/* section1 - The Opportunity */
 	#section1 .section1-content {
-		min-width: 375px;
-		background-image: url(https://via.placeholder.com/375X410.png);
+		margin-top: 70px;
 	}
 
 	#section1 .section1-content h2 {
-		padding: 150px 17px 0px 70px;
+		top: 150px;
+		left: 70px;
+		width: 282px;
+		height: 100%;
 		font-size: 34px;
 	}
 
 	#section1 .section1-content p {
-		padding: 15px 82px 61px 70px;
-		font-size: 14px;
+		top: 285px;
+		left: 70px;
+		width: 217px;
+		height: 100%;
 	}
 
 	/* section2 - Quincy-Davis-III */
 
 	#section2 {
 		margin-top: 40px;
+		margin-bottom: 156px;
 	}
 
-	#section2 .section2-content {
-		min-width: 298px;
-		min-height: 335px;
-		background-image: url(https://via.placeholder.com/298X335.png);
+	#section2 .section2-content img {
+		max-width: 298px;
+		max-height: 335px;
 	}
 
 	#section2 .section2-content h2 {
-		font-size: 34px;
-		top: 215px;
+		top: 165px;
 		left: 129px;
 		width: 141px;
-		height: 80px;
+		height: 100%;
+		font-size: 34px;
 	}
 
 	#section2 .section2-content p {
-		font-size: 14px;
 		top: 305px;
 		left: 129px;
-		width: 200px;
-		height: 109px;
+		width: 210px;
+		height: 100%;
+		font-size: 14px;
 	}
 
 	/* section3 - About-DAE */
-
 	#section3 {
-		margin-top: 65px;
+		margin-top: 56px;
 	}
 
 	#section3 h2 {
@@ -946,17 +972,17 @@ body {
 		height: 40px;
 		font-size: 34px;
 		padding-left: 16px;
+		margin-bottom: 10px;
 	}
 
-	#section3 .section3-content {
+	#section3 .section3-content img {
 		min-width: 375px;
-		min-height: 242px;
+		max-height: 242px;
 		margin-left: -15px;
-		background-image: url(https://via.placeholder.com/375X242.png);
 	}
 
 	#section3 p {
-		width: 342px;
+		width: 312px;
 		margin-top: 18px;
 		font-size: 14px;
 	}
@@ -978,7 +1004,7 @@ body {
 	}
 
 	#section4-mobile h2 {
-		width: 123px;
+		width: 142px;
 		height: 40px;
 		font-family: HelveticaNeue;
 		font-size: 34px;
@@ -988,6 +1014,13 @@ body {
 		line-height: normal;
 		letter-spacing: normal;
 		color: #0b0b0b;
+	}
+
+	#section4-mobile img {
+		min-width: 167px;
+		min-height: 124px;
+		width: 100%;
+		height: 100%;
 	}
 
 	#section4-mobile p {
@@ -1012,38 +1045,32 @@ body {
 	}
 
 	#section5 .section5-content {
+		padding: 0px;
+	}
+
+	#section5 .section5-content .section5-img-desktopTablet {
+		display: none
+	}
+
+	#section5 .section5-content .section5-img-mobile {
+		display: inline-block;
 		min-width: 375px;
 		min-height: 337px;
-		background-image: url(https://via.placeholder.com/375X337.png);
+		width: 100%;
+		height: 100%;
 		background-size: cover;
 	}
 
-	#section5 h2 {
-		width: 84px;
+	#section5 .row:nth-child(2) h2 {
+		width: 100px;
 		height: 26px;
-		font-family: HelveticaNeue;
 		font-size: 22px;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #0b0b0b;
-		text-decoration: underline;
 	}
 
-	#section5 a {
-		width: 84px;
+	#section5 .row:nth-child(2) a {
+		width: 100px;
 		height: 26px;
-		font-family: HelveticaNeue;
 		font-size: 22px;
-		font-weight: bold;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #0b0b0b;
-		text-decoration: underline;
 	}
 
 	/* section5 - Schedule info. */

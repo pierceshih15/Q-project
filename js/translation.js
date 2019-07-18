@@ -11,9 +11,9 @@ let arrLang = {
     "opp-content": 'Trust in me to lead our Taiwanese youth on an inspirational journey abroad using sports and education!',
     // 第二層
     "qd-header": 'Quincy Davis III',
-    "qd-content": 'Travel to the United States of America with their leader Quincy Davis, the National Taiwanese basketball star',
+    "qd-content": 'The very first American-born Taiwanese basketball player who renounced citizenship in June 2013 to naturalize in Taiwan.',
     // 第三層
-    "dae-content": 'Travel to the United States of America with their leader Quincy Davis, the National Taiwanese basketball star',
+    "dae-content": 'Travel to the United States of America with their leader Quincy Davis, the National Taiwanese basketball star.',
     // 第四層
     "more": 'More',
     // 第五層
@@ -53,8 +53,9 @@ let arrLang = {
     "tour": 'Tour',
 
     // Speakers Page
-    "intro-header": 'Title',
-    "intro-content": 'Travel to the United States of America with their leader QuincyDavis, the National Taiwanese basketball star.',
+    "qd-content-in-speakers-page": 'I have a Taiwanese dream, to establish an English school which basketball is the main part of it. And now I’ve been plan to contribute myself in finding the balance between Sports and Education.',
+    "intro-header": 'Intro',
+    "intro-content": 'Quincy Davis III, the first American-born who renounce his siticizenship to naturalize in Taiwan in 2013. Now focusing on youth education and sports developement.',
 
     // 第三層
     "speech-header": 'Speech',
@@ -68,11 +69,20 @@ let arrLang = {
 
     // 第四層
     "team-intro": 'Speakers, coaches and trainers',
+    // 第一位
     "speaker-name-1": 'Marcus Kinzer',
+    "speakers-title-1": 'Development Coach',
+    "speakers-specialize-1": '(Basketball)',
     "speaker-intro-1": 'As a senior: Led his team in assists (119, 4.57 per game, 4th in C-USA), free throw percentage (.845, 4th in C-USA) and steals (37). Also ranked eighth in C-USA in assist-to-turnover ratio (1.72).',
+    // 第二位
     "speaker-name-2": 'Don Singleterry',
+    "speakers-title-2": 'Skills Development',
+    "speakers-specialize-2": '(Basketball)',
     "speaker-intro-2": 'Swish aspires to create a community of partners who work together with us to teach, inspire and improve the lives of children in Taiwan in sports and in the classroom. We are working with schools, businesses, and people of like mind & purpose to promote this balance of school and play to the participants of our programs.',
+    // 第三位
     "speaker-name-3": 'Dr. Tanis King Starck',
+    "speakers-title-3": 'Development Coach',
+    "speakers-specialize-3": '(Basketball)',
     "speaker-intro-3-1": 'Assistant Dean of Special Projects, SDSU College of Education Director, Cultural Proficiency Institute for Educators.',
     "speaker-intro-3-2": 'As a noted Psychologist and Educational Administrator, and currently the Assistant Dean for Special Projects, College of Education at San Diego State University, Dr. Tanis King Starck has over 20 years of proven educational and administrative leadership in secondary and postsecondary education.',
   },
@@ -89,7 +99,7 @@ let arrLang = {
     "qd-header": '戴維斯 III',
     "qd-content": '戴維斯，美裔台灣人，為籃球運動員。生於美國加州洛杉磯，後於2013年歸化中華民國國籍並放棄美國國籍，成為第一位透過歸化程序而加入中華台北代表隊選手的運動員。',
     // 第三層
-    "dae-content": '戴維斯，美裔台灣人，為籃球運動員。生於美國加州洛杉磯，後於2013年歸化中華民國國籍並放棄美國國籍，成為第一位透過歸化程序而加入中華台北代表隊選手的運動員。',
+    "dae-content": '一個國際性的旅遊探索和夏令營機構，戴維斯將率領年輕的學員去到戴維斯的家鄉，也就是富有多元文化的加州洛杉磯，讓學員有機會體驗全美式教育。',
     // 第四層
     "more": '更多',
     // 第五層
@@ -129,8 +139,9 @@ let arrLang = {
     "tour": '旅遊',
 
     // Speakers Page
+    "qd-content-in-speakers-page": '「運動是有年限的，但教育與知識是從你出生到死亡都跟著你一輩子的，當你有了知識當後盾，你將能有更多的選擇與機會。」 儘管自己是名籃球員，但我卻認為，運動不能沒有教育，教育也不能沒有運動，而如今，我決定透過自己的方式實現這個理念。',
     "intro-header": '介紹',
-    "intro-content": '戴維斯，美裔台灣人，為籃球運動員。生於美國加州洛杉磯，後於2013年歸化中華民國國籍並放棄美國國籍，成為第一位透過歸化程序而加入中華台北代表隊選手的運動員。',
+    "intro-content": 'Quincy Spencer Davis III，土生土長的美國黑人，於2013年成為台灣籃壇史上首名歸化球員，先後效力於SBL璞園籃球隊及中華國家代表隊，現致力於運動與教育平衡發展。',
 
     // 第三層
     "speech-header": '校園演講',
@@ -145,11 +156,20 @@ let arrLang = {
 
     // 第四層
     "team-intro": 'Speakers, coaches and trainers',
+    // 第一位
     "speaker-name-1": 'Marcus Kinzer',
+    "speakers-title-1": '職業發展教練',
+    "speakers-specialize-1": '(籃球)',
     "speaker-intro-1": '作為一名大四生： 帶領他的球隊助攻（ 119 場比賽， 每場比賽4 .57 次， C - USA排名第4）， 罰球命中率（ .845， C - USA排名第4） 和搶斷（ 37 次）。 在輔助轉換率（ 1.72） 中， C - USA也排名第八。',
+    // 第二位
     "speaker-name-2": 'Don Singleterry',
+    "speakers-title-2": '職能發展訓練員',
+    "speakers-specialize-2": '(籃球)',
     "speaker-intro-2": '我們希望建立一個合作夥伴社區，與我們一起工作，教育，激勵和改善台灣兒童在體育和課堂上的生活。我們正在與學校，企業以及有同樣想法和目的的人們合作，以促進學校的平衡，並為我們課程的參與者提供遊戲。',
+    // 第三位
     "speaker-name-3": 'Dr. Tanis King Starck',
+    "speakers-title-3": '講者',
+    "speakers-specialize-3": '(籃球)',
     "speaker-intro-3-1": '聖地亞哥州立大學教育學院特殊項目助理院長，教育者文化能力研究所所長。',
     "speaker-intro-3-2": '作為著名的心理學家和教育管理員，現任聖地亞哥州立大學教育學院特殊項目助理院長，Tanis King Starck博士在中學和高等教育方面擁有20多年的教育和行政領導經驗。',
   },
