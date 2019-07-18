@@ -162,7 +162,6 @@ let arrLang = {
     "location-7": '板橋高中',
     "location-8": '板橋高中',
     "location-9": '板橋高中',
-    "team-intro": '講者、教練及訓練員',
 
     // 第四層
     "team-intro": '講者、教練及訓練員',
