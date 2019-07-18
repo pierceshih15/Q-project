@@ -33,6 +33,17 @@
   </head>
   <body>
     <header>
+      <div class="header-navbar">
+        <div class="text-translation d-flex justify-content-end">
+          <div class="d-inline-block mr-3 translation" id="zh">
+            <img src="css/img/zh.png" alt="zh" />
+          </div>
+          <div class="d-inline-block translation" id="en">
+            <img src="css/img/eng.png" alt="en" />
+          </div>
+        </div>
+      </div>
+
       <nav class="navbar sticky-top navbar-light my-nav desktop-header">
         <div class="container">
           <div class="row">
@@ -87,13 +98,12 @@
     >
       <div class="bg-light">
         <img src="css/img/logo-60-x-27.png" />
-        <button
-          class="navbar-toggler border-0 text-dark float-right px-0"
-          type="button"
+        <img
+          src="css/img/menu-2.png"
+          alt="menu"
+          class="icon-open float-right"
           data-toggle="offcanvas"
-        >
-          <span><i class="fas fa-bars icon-open mr-0"></i></span>
-        </button>
+        />
       </div>
 
       <div class="navbar-collapse offcanvas-collapse" id="offcanvas">
@@ -152,10 +162,10 @@
             <div class="row col-md-2 mt-3 mx-0 px-0">
               <div class="text-translation col-md-5 mx-0 px-0">
                 <div class="d-inline-block translation" id="zh">
-                  中
+                  <img src="css/img/zh.png" alt="zh" />
                 </div>
                 <div class="d-inline-block translation" id="en">
-                  英
+                  <img src="css/img/eng.png" alt="en" />
                 </div>
               </div>
               <div class="col-md-7"></div>
@@ -165,17 +175,6 @@
         </div>
       </div>
     </nav>
-
-    <div class="header-navbar">
-      <div class="text-translation d-flex justify-content-end">
-        <div class="d-inline-block mr-3 translation" id="zh">
-          中
-        </div>
-        <div class="d-inline-block translation" id="en">
-          英
-        </div>
-      </div>
-    </div>
 
     <!-- Section 1  -->
     <div class="col-md-12" id="section1">

@@ -1,6 +1,6 @@
 /* navbar */
 
-.body {
+body {
 	background-color: #f6f6f6;
 }
 
@@ -26,6 +26,10 @@
 
 .translation {
 	z-index: 3;
+}
+
+.translation:hover {
+	cursor: pointer;
 }
 
 /* .header-img {
@@ -412,6 +416,10 @@ body {
 /* Desktop */
 @media screen and (min-width:992px) {
 
+	.desktop-header {
+		margin-top: 70px;
+	}
+
 	/* section1 - The Opportunity */
 	#section1 .section1-content {
 		min-width: 715px;
@@ -598,7 +606,8 @@ body {
 @media screen and (min-width:768px) and (max-width:991.98px) {
 
 	.desktop-header {
-		margin-top: 25px;
+		margin-top: 15px;
+		padding-top: 0px;
 	}
 
 	/* section1 - The Opportunity */
@@ -821,16 +830,14 @@ body {
 
 	.mobile-header {
 		display: inline-block;
-	}
-
-	.mobile-header img {
-		height: 27px;
-		line-height: 27px;
+		padding-top: 18px;
+		padding-bottom: 18px;
 	}
 
 	.icon-open {
-		margin-right: 22px;
-		font-size: 25px;
+		font-size: 24px;
+		line-height: 50px;
+		font-weight: bold;
 	}
 
 	.icon-close-header {
