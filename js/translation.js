@@ -155,11 +155,42 @@ let arrLang = {
   },
 }
 
+// 取得預設語言，顯示該語系資料
+function getDefaultLang() {
+  let userLang = navigator.language || navigator.userLanguage;
+
+  if (userLang === "en-US" || userLang === "en") {
+    $('.en-img').attr("src", "css/img/eng-target.png");
+    let lang = 'en';
+    $('.lang').each(function (index, element) {
+      $(this).text(arrLang[lang][$(this).attr('key')])
+    });
+  } else {
+    $('.zh-img').attr("src", "css/img/zh-target.png");
+    let lang = 'zh';
+    $('.lang').each(function (index, element) {
+      $(this).text(arrLang[lang][$(this).attr('key')])
+    });
+  }
+}
+
+// 第一次讀取
+getDefaultLang()
+
 $(function () {
   $('.translation').click(function () {
     var lang = $(this).attr('id');
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
     })
+
+    // 依照所選擇改變 中英文圖片樣式
+    if (lang === 'zh') {
+      $('.zh-img').attr("src", "css/img/zh-target.png");
+      $('.en-img').attr("src", "css/img/eng.png");
+    } else {
+      $('.zh-img').attr("src", "css/img/zh.png");
+      $('.en-img').attr("src", "css/img/eng-target.png");
+    }
   })
 })
