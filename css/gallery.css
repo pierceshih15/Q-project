@@ -6,8 +6,12 @@ body {
 
 .my-nav {
   position: fixed;
-  top: 1;
-  z-index: 1;
+  top: 0;
+  /* mobile-header z-index 5 */
+  /* my-nav z-index 3 */
+  /* translation z-index 3 */
+  /* section4 form  z-index2 */
+  z-index: 3;
   background-color: transparent;
 }
 
@@ -25,6 +29,10 @@ body {
 }
 
 .translation {
+  /* mobile-header z-index 5 */
+  /* my-nav z-index 3 */
+  /* translation z-index 3 */
+  /* section4 form  z-index2 */
   z-index: 3;
 }
 
@@ -79,7 +87,12 @@ body {
 }
 
 .mobile-header {
-  display: none
+  display: none;
+  /* mobile-header z-index 5 */
+  /* my-nav z-index 3 */
+  /* translation z-index 3 */
+  /* section4 form  z-index2 */
+  z-index: 5
 }
 
 .header-navbar {
@@ -169,7 +182,11 @@ body {
 
 /* section4 - Form */
 #section4 {
-  z-index: 3;
+  /* mobile-header z-index 5 */
+  /* my-nav z-index 3 */
+  /* translation z-index 3 */
+  /* section7 form  z-index2 */
+  z-index: 2;
 }
 
 #section4 h2 {

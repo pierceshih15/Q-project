@@ -7,7 +7,11 @@ body {
 .my-nav {
 	position: fixed;
 	top: 0;
-	z-index: 1;
+	/* mobile-header z-index 5 */
+	/* my-nav z-index 3 */
+	/* translation z-index 3 */
+	/* section7 form  z-index2 */
+	z-index: 3;
 	background-color: transparent;
 }
 
@@ -22,14 +26,6 @@ body {
 	line-height: normal;
 	letter-spacing: normal;
 	color: #000000;
-}
-
-.translation {
-	z-index: 3;
-}
-
-.translation:hover {
-	cursor: pointer;
 }
 
 /* .header-img {
@@ -83,7 +79,12 @@ body {
 }
 
 .mobile-header {
-	display: none
+	display: none;
+	/* mobile-header z-index 5 */
+	/* my-nav z-index 3 */
+	/* translation z-index 3 */
+	/* section7 form  z-index2 */
+	z-index: 5
 }
 
 .header-navbar {
@@ -100,6 +101,20 @@ body {
 	font-size: 20px;
 	font-family: HelveticaNeue;
 	font-weight: bold;
+}
+
+.translation {
+	/* mobile-header z-index 5 */
+	/* my-nav z-index 3 */
+	/* translation z-index 3 */
+	/* section7 form  z-index2 */
+	z-index: 3;
+}
+
+.translation:hover,
+.desktop-header a:hover,
+.mobile-header a:hover {
+	cursor: pointer;
 }
 
 #schedule {
@@ -349,7 +364,11 @@ body {
 
 /* section7 - Form */
 #section7 {
-	z-index: 3;
+	/* mobile-header z-index 5 */
+	/* my-nav z-index 3 */
+	/* translation z-index 3 */
+	/* section7 form  z-index2 */
+	z-index: 2;
 }
 
 #section7 h2 {
