@@ -159,6 +159,42 @@ body {
   color: #0b0b0b;
 }
 
+
+
+/* section3 - Schedule */
+#mobileSchedule {
+  font-family: HelveticaNeue;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b;
+}
+
+.icon-close-schedule {
+  position: absolute;
+  z-index: 101;
+}
+
+.mobile-schedule-content .daily {
+  width: 100%;
+  font-size: 18px;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+.mobile-schedule-content .onPage {
+  color: #df732b;
+}
+
+#mobileSchedule .download-link {
+  position: absolute;
+  font-size: 22px;
+  color: #df732b;
+  text-decoration: underline;
+}
+
 /* section4 - photo */
 #section4 .gallery-desktopTablet {
   padding-right: 45px;
@@ -730,6 +766,77 @@ body {
     font-size: 14px;
     margin-bottom: 40px;
     padding: 0px 40px;
+  }
+
+  .dae-footer h2 {
+    width: 100px;
+    height: 26px;
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+    text-decoration: underline;
+    z-index: 1;
+  }
+
+  .dae-footer .dae-footer-contact {
+    width: 100px;
+    height: 26px;
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #df732b;
+    text-decoration: underline;
+  }
+
+  /* section3 - Schedule info. */
+
+  .mobile-schedule.open {
+    visibility: visible;
+    -webkit-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+
+  .icon-close-schedule {
+    top: 20px;
+    left: 260px;
+    padding-right: 19px;
+    font-size: 25px;
+  }
+
+  .mobile-schedule-content {
+    margin-top: 63px;
+    padding: 0px 15px 0px 10px;
+  }
+
+  .mobile-schedule-content h2 {
+    width: 100%;
+    margin-bottom: 13px;
+    font-size: 22px;
+  }
+
+  .mobile-schedule-content p {
+    width: 100%;
+    margin-bottom: 28px;
+    font-size: 18px;
+  }
+
+  .schedule-detail {
+    margin-top: 16px;
+    padding: 0px 89px 0px 10px;
+  }
+
+  #mobileSchedule .download-link {
+    top: 27px;
+    left: 20px;
   }
 
   /* section4 - photo */

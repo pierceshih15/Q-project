@@ -28,7 +28,6 @@ $(function () {
 
 })
 
-
 // Google API 儲存前端資料
 $(function () {
   // 監聽 送出訂單 按鈕點擊
