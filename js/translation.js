@@ -46,6 +46,15 @@ let arrLang = {
     "sponsors-content": 'Join sponsorship to help our youth.',
 
     // Galley Page
+    // 第二層
+    "dae-intro-header-1": "Experince local American culture with Quincy Davis.",
+    "dae-intro-content-1": "The Summer Immersion truly offers an in-depth look at the people and culture of San Diego. This is a great way to learn a new culture, meet new people, grow in cultural understanding, while helping others through sports and other social activities.",
+    "dae-intro-header-2": "Explore knowledge through sports and science.",
+    "dae-intro-content-2": "Focusing in the principles of Teaching, participants in our academy should grow in an understanding of global solidarity, working others through sports, the dignity of the human person, for underserved populations, as well as growing in their own identity and role as a global citizen.",
+    "dae-intro-header-3": "Traveling with professional teacher and leader.",
+    "dae-intro-content-3": "We have the best teachers and leader Quincy Davis traveling with your kids. Through daily activities, students will be given the opportunity to socialize with one another and see what Southern California has to offer. Each activity will help to improve the students' English communication skills and cultural competency.",
+
+    // 第四層
     "photos": 'Photos',
     "videos": 'Videos',
     "sports": 'Sports',
@@ -137,6 +146,15 @@ let arrLang = {
     "sponsors-content": '加入我們，成為孩子們的助力',
 
     // Galley Page
+    // 第二層
+    "dae-intro-header-1": "與戴維斯一同前往他的故鄉聖地牙哥，體驗最道地的美國文化。",
+    "dae-intro-content-1": "戴維斯將率領年輕的學員去到戴維斯的家鄉，也就是富有多元文化的加州洛杉磯，讓學員有機會體驗全美式教育。夏令營期間，戴維斯也會和學員分享他對於科學和籃球的知識和心得。大家都能負擔的行程，絕對物超所值，讓來自不同經濟背景的孩子們能擁有探索世界的機會。",
+    "dae-intro-header-2": "運動與科學的體驗，身體力行的去探索知識。",
+    "dae-intro-content-2": "透過實際的科學營、籃球訓練營等課程，學習到課堂上學不到的知識，戴維斯也會和學員們一同實作，喚起小小科學家與小小運動員的夢想。",
+    "dae-intro-header-3": "最專業的隨隊老師，讓孩子玩得開心，家長也放心。",
+    "dae-intro-content-3": "本次Davis' Camp與聖地牙哥州立大學( San Diego State University ) 等機構合作，將會依照每個學員的需求，爲孩子量身訂做個人的英語學習計劃。全程隨團老師照顧同時也會開設 Line 群組，保持二十四小時的機動聯絡，讓在台灣的家長放心，也能時刻瞭解孩子們的動態，即時獲得孩子的消息。",
+
+    // 第四層
     "photos": '照片',
     "videos": '影片',
     "sports": '運動',

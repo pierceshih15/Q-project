@@ -10,7 +10,7 @@ body {
   /* mobile-header z-index 5 */
   /* my-nav z-index 3 */
   /* translation z-index 3 */
-  /* section4 form  z-index2 */
+  /* section6 form  z-index2 */
   z-index: 3;
   background-color: transparent;
 }
@@ -32,7 +32,7 @@ body {
   /* mobile-header z-index 5 */
   /* my-nav z-index 3 */
   /* translation z-index 3 */
-  /* section4 form  z-index2 */
+  /* section6 form  z-index2 */
   z-index: 3;
 }
 
@@ -91,7 +91,7 @@ body {
   /* mobile-header z-index 5 */
   /* my-nav z-index 3 */
   /* translation z-index 3 */
-  /* section4 form  z-index2 */
+  /* section6 form  z-index2 */
   z-index: 5
 }
 
@@ -115,10 +115,57 @@ body {
   z-index: 100;
 }
 
-/* section2 - photo */
+/* section2 - banner */
+#section2 .section2-content .section2-img-desktopTablet {
+  background-repeat: no-repeat;
+}
 
-#section2 h2 {
+#section2 .section2-content .section2-img-mobile {
+  display: none;
+}
+
+/* section3 - DAR intro */
+#section3-desktopTablet {
+  display: block;
+  padding-right: 45px;
+}
+
+#section3-mobile {
+  display: none;
+}
+
+#section3-desktopTablet h5,
+#section3-mobile h5 {
+  width: 320px;
+  font-family: PingFangTC;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b;
+}
+
+#section3-desktopTablet p,
+#section3-mobile p {
+  font-family: PingFangTC;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b;
+}
+
+/* section4 - photo */
+#section4 .gallery-desktopTablet {
+  padding-right: 45px;
   padding-left: 20px;
+}
+
+#section4 h2 {
   font-family: HelveticaNeue;
   font-weight: bold;
   font-style: normal;
@@ -128,7 +175,7 @@ body {
   color: #0b0b0b
 }
 
-#section2 h3 {
+#section4 h3 {
   font-family: HelveticaNeue;
   font-weight: bold;
   font-style: normal;
@@ -139,21 +186,13 @@ body {
   text-decoration: underline;
 }
 
-#section2 .gallery-mobile {
+#section4 .gallery-mobile {
   display: none;
 }
 
-/* section3 - Video */
-
-#section3 {
-  margin-top: 32px;
-  padding: 0px 20px;
-}
-
-#section3 h2 {
+/* section5 - Video */
+#section5 h2 {
   width: 176px;
-  padding-left: 20px;
-  margin-bottom: 30px;
   font-family: HelveticaNeue;
   font-size: 34px;
   font-weight: bold;
@@ -164,7 +203,7 @@ body {
   color: #0b0b0b;
 }
 
-#section3 .video-container {
+#section5 .video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -172,7 +211,7 @@ body {
   overflow: hidden;
 }
 
-#section3 .video-container iframe {
+#section5 .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -180,8 +219,8 @@ body {
   height: 100%;
 }
 
-/* section4 - Form */
-#section4 {
+/* section6 - Form */
+#section6 {
   /* mobile-header z-index 5 */
   /* my-nav z-index 3 */
   /* translation z-index 3 */
@@ -189,7 +228,7 @@ body {
   z-index: 2;
 }
 
-#section4 h2 {
+#section6 h2 {
   width: 341px;
   height: 80px;
   font-family: HelveticaNeue;
@@ -202,11 +241,11 @@ body {
   color: #0b0b0b;
 }
 
-#section4 .form-header {
+#section6 .form-header {
   margin-bottom: 36px;
 }
 
-#section4 .form-process span {
+#section6 .form-process span {
   padding-left: 6px;
   width: 100%;
   height: 100%;
@@ -228,92 +267,165 @@ body {
 
   /* section1 - The Opportunity */
   #section1 {
-    margin-top: 100px;
+    margin-top: 130px;
   }
 
-  #section1 p {
-    padding: 0px 122px 0px 442px;
-    width: 460px;
+  #section1 h2 {
+    width: 500px;
     font-size: 50px;
   }
 
-  /* section2 - photo */
-
+  /* section2 - Banner */
   #section2 {
-    margin-top: 180px;
+    margin-top: 200px;
   }
 
-  #section2 h2 {
+  #section2 .section2-content .section2-img-desktopTablet {
+    min-width: 1024px;
+    min-height: 450px;
     width: 100%;
-    font-size: 50px;
-    margin-bottom: 60px;
+    background-size: cover;
   }
 
-  #section2 .gallery-desktopTablet {
-    padding: 0px 20px;
+  /* section3 - DAR intro */
+  #section3-desktopTablet {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-right: 42px;
+    padding-left: 301px;
   }
 
-  #section2 h3 {
-    width: calc(50%-176px);
+  #section3-desktopTablet .dae-intro {
+    margin-bottom: 80px;
+  }
+
+  #section3-desktopTablet img {
+    position: relative;
+    min-width: 300px;
+    min-height: 253px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #section3-desktopTablet .dae-intro-img-2 {
+    padding-left: 50px;
+  }
+
+  #section3-desktopTablet h5 {
+    position: absolute;
+    top: -140px;
+    width: 320px;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  #section3-desktopTablet p {
+    position: absolute;
+    top: -70px;
+    width: 320px;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: -0.3px;
+  }
+
+  #section3-desktopTablet .dae-intro-header-1,
+  #section3-desktopTablet .dae-intro-header-3,
+  #section3-desktopTablet .dae-intro-content-1,
+  #section3-desktopTablet .dae-intro-content-3 {
+    left: 30px;
+  }
+
+  #section3-desktopTablet .dae-intro-header-2,
+  #section3-desktopTablet .dae-intro-content-2 {
+    left: 0px;
+    padding-right: 18px;
+  }
+
+  /* section4 - photo */
+
+  #section4 .section4-header {
+    padding: 0px 17px;
+    min-width: 700px;
+    width: 100%;
+  }
+
+  #section4 .section4-header h2 {
+    max-width: 176px;
+    font-size: 34px;
+    width: 100%;
+  }
+
+  #section4 .section4-header h3 {
+    min-width: 500px;
     font-size: 22px;
     text-align: right;
   }
 
-  #section2 .gallery-desktopTablet {
-    padding: 0px 40px;
-  }
-
-  #section2 .slick-prev:before,
-  #section2 .slick-next:before {
-    color: black;
-    font-size: 30px;
-  }
-
-  #section2 .slick-slide img {
+  #section4 .gallery-desktopTablet-photo {
+    min-width: 489px;
     width: 100%;
-    border: 2px solid #fff;
   }
 
-  /* Section 3 Video */
+  #section4 .gallery-desktopTablet-header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 
-  #section3 {
+  #section4 .gallery-desktopTablet-photo-1 {
+    min-width: 460px;
+    height: 280px;
+  }
+
+  #section4 .gallery-desktopTablet-photo-2 {
+    min-width: 220px;
+    height: 280px;
+  }
+
+  #section4 .gallery-desktopTablet-photo-3 {
+    min-width: 220px;
+    height: 140px;
+  }
+
+  /* Section5 Video */
+  #section5 {
     margin-top: 32px;
-    padding-left: 50px;
+    padding-right: 50px;
+    padding-left: 300px;
   }
 
-  #section3 h2 {
+  #section5 h2 {
     width: 100%;
     font-size: 50px;
     margin-bottom: 30px;
   }
 
-  /* section4 - Form */
-  #section4 {
+  /* section6 - Form */
+  #section6 {
     margin-top: 125px;
     margin-bottom: 50px;
   }
 
-  #section4 .form-process {
+  #section6 .form-process {
     margin-top: 24px;
   }
 
-  #section4 .form-process img {
+  #section6 .form-process img {
     padding-right: 16px;
   }
 
-  #section4 .form-process span:nth-child(1) {
+  #section6 .form-process span:nth-child(1) {
     margin-bottom: 56px;
   }
 
-  #section4 .form-process span:nth-child(2),
-  #section4 .form-process span:nth-child(3) {
+  #section6 .form-process span:nth-child(2),
+  #section6 .form-process span:nth-child(3) {
     margin-bottom: 50px;
   }
 
-  #section4 #form-1,
-  #section4 #form-2,
-  #section4 #form-3,
-  #section4 #form-4 {
+  #section6 #form-1,
+  #section6 #form-2,
+  #section6 #form-3,
+  #section6 #form-4 {
     margin-bottom: 20px;
   }
 
@@ -321,6 +433,9 @@ body {
 
 /* Tablet */
 @media screen and (min-width:768px) and (max-width:991.98px) {
+  .my-nav a {
+    font-size: 34px;
+  }
 
   .desktop-header {
     margin-top: 15px;
@@ -329,80 +444,157 @@ body {
 
   /* section1 - The Opportunity */
   #section1 {
-    margin-top: 210px;
+    margin-top: 180px;
+    margin-bottom: 74px;
   }
 
-  #section1 p {
-    padding: 0px 46px 0px 302px;
+  #section1 h2 {
+    padding-right: 46px;
     width: 420px;
     font-size: 50px;
   }
 
-  /* section2 - photo */
-
-  #section2 {
-    margin-top: 144px;
+  /* section2 - Banner */
+  #section2 .section2-content .section2-img-desktopTablet {
+    min-width: 767px;
+    min-height: 337px;
+    width: 100%;
+    background-size: cover;
   }
 
-  #section2 h2 {
-    width: 176px;
-    font-size: 50px;
-    margin-bottom: 40px;
+  /* section3 - DAR intro */
+  #section3-desktopTablet {
+    margin-top: 50px;
+    padding-right: 46px;
+    padding-left: 222px;
   }
 
-  #section2 h3 {
-    width: calc(50%-176px);
+  #section3-desktopTablet .dae-intro {
+    margin-bottom: 80px;
+  }
+
+  #section3-desktopTablet img {
+    position: relative;
+    min-width: 200px;
+    min-height: 169px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #section3-desktopTablet .dae-intro-img-2 {
+    padding-left: 10px;
+  }
+
+  #section3-desktopTablet h5 {
+    position: absolute;
+    top: -100px;
+    width: 260px;
+    font-size: 18px;
+  }
+
+  #section3-desktopTablet p {
+    position: absolute;
+    top: -30px;
+    width: 260px;
+    font-size: 14px;
+  }
+
+  #section3-desktopTablet .dae-intro-header-1,
+  #section3-desktopTablet .dae-intro-header-3,
+  #section3-desktopTablet .dae-intro-content-1,
+  #section3-desktopTablet .dae-intro-content-3 {
+    left: 30px;
+
+  }
+
+  #section3-desktopTablet .dae-intro-header-2,
+  #section3-desktopTablet .dae-intro-content-2 {
+    left: 0px;
+    padding-left: 18px;
+  }
+
+  /* section4 - photo */
+
+  #section4 {
+    padding-right: 47px;
+  }
+
+  #section4 .section4-header {
+    padding: 0px 17px;
+    min-width: 526px;
+    width: 100%;
+  }
+
+  #section4 .section4-header h2 {
+    max-width: 176px;
+    font-size: 34px;
+    width: 100%;
+  }
+
+  #section4 .section4-header h3 {
+    min-width: 250px;
     font-size: 22px;
     text-align: right;
   }
 
-  #section2 .gallery-desktopTablet {
-    padding: 0px 50px;
-  }
-
-  #section2 .slick-prev:before,
-  #section2 .slick-next:before {
-    color: black;
-  }
-
-  #section2 .slick-slide img {
+  #section4 .gallery-desktopTablet-photo {
+    min-width: 489px;
     width: 100%;
-    border: 2px solid #fff;
   }
 
-  /* section3 - Video */
+  #section4 .gallery-desktopTablet-header {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
 
-  #section3 {
+  #section4 .gallery-desktopTablet-photo-1 {
+    min-width: 315px;
+    height: 192px;
+  }
+
+  #section4 .gallery-desktopTablet-photo-2 {
+    min-width: 150px;
+    height: 192px;
+  }
+
+  #section4 .gallery-desktopTablet-photo-3 {
+    min-width: 151px;
+    height: 96px;
+  }
+
+  /* section5 - Video */
+  #section5 {
     margin-top: 32px;
-    padding-left: 50px;
+    padding-right: 50px;
+    padding-left: 280px;
   }
 
-  #section3 h2 {
+  #section5 h2 {
     width: 100%;
     font-size: 50px;
     margin-bottom: 30px;
   }
 
   /* Content - Form */
-  #section4 {
+  #section6 {
     margin-top: 50px;
     margin-bottom: 60px;
   }
 
-  #section4 .form-header {
+  #section6 .form-header {
     margin-bottom: 12px;
     margin-left: -30px;
   }
 
-  #section4 .form-process {
+  #section6 .form-process {
     margin-bottom: 20px;
     margin-left: -4px;
   }
 
-  #section4 #form-1,
-  #section4 #form-2,
-  #section4 #form-3,
-  #section4 #form-4 {
+  #section6 #form-1,
+  #section6 #form-2,
+  #section6 #form-3,
+  #section6 #form-4 {
     margin-bottom: 20px;
   }
 
@@ -468,42 +660,112 @@ body {
 
   /* section1 - The Opportunity */
   #section1 {
-    margin-top: 100px;
+    margin-top: 160px;
+    text-align: center;
   }
 
-  #section1 p {
-    padding: 0px 111px 0px 24px;
-    width: 240px;
+  #section1 h2 {
     font-size: 34px;
+    width: 100%;
   }
 
-  /* section2 - photo */
-
+  /* section2 - banner */
   #section2 {
+    margin-top: 80px;
+  }
+
+  #section2 .section2-content .section2-img-desktopTablet {
+    display: none;
+  }
+
+  #section2 .section2-content .section2-img-mobile {
+    display: block;
+    background-repeat: no-repeat;
+    min-width: 374px;
+    min-height: 337px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  /* section3 - DAR intro */
+  #section3-desktopTablet {
+    display: none;
+  }
+
+  #section3-mobile {
+    display: block;
+  }
+
+  #section3-mobile {
+    margin-top: 126px;
+    text-align: center;
+  }
+
+  #section3-mobile img {
+    margin-bottom: 18px;
+    width: 200px;
+    height: 169px;
+  }
+
+  #section3-mobile .dae-intro h5 {
+    width: 100%;
+    font-size: 18px;
+
+  }
+
+  #section3-mobile .dae-intro .dae-intro-header-1 {
+    padding: 0px 29px;
+  }
+
+  #section3-mobile .dae-intro .dae-intro-header-2 {
+    padding: 0px 45px;
+  }
+
+  #section3-mobile .dae-intro .dae-intro-header-3 {
+    padding: 0px 67px;
+  }
+
+  #section3-mobile .dae-intro p {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding: 0px 40px;
+  }
+
+  /* section4 - photo */
+
+  #section4 {
     margin-top: 50px;
     margin-bottom: 30px;
   }
 
-  #section2 h2 {
-    width: 176px;
-    font-size: 34px;
+  #section4 .section4-header {
+    padding: 0px 17px;
+    min-width: 375px;
+    width: 100%;
   }
 
-  #section2 h3 {
-    width: calc(50%-176px);
+  #section4 .section4-header h2 {
+    max-width: 165px;
+    font-size: 34px;
+    width: 100%;
+  }
+
+  #section4 .section4-header h3 {
+    min-width: 165px;
     font-size: 22px;
     text-align: right;
   }
 
-  #section2 .gallery-mobile {
+  #section4 .gallery-mobile {
     display: block;
   }
 
-  #section2 .gallery-desktopTablet {
+  #section4 .gallery-desktopTablet {
     display: none;
   }
 
-  #section2 .gallery-mobile-header {
+  #section4 .gallery-mobile-header {
     margin-top: 40px;
     margin-bottom: 30px;
     width: 100%;
@@ -518,11 +780,11 @@ body {
     text-align: center;
   }
 
-  #section2 .gallery-mobile-photo {
+  #section4 .gallery-mobile-photo {
     padding: 0 17px;
   }
 
-  #section2 .gallery-mobile-more {
+  #section4 .gallery-mobile-more {
     margin-top: 19px;
     width: 100%;
     font-size: 18px;
@@ -537,46 +799,48 @@ body {
     text-decoration: underline;
   }
 
-  /* section3 - Video */
+  /* section5 - Video */
 
-  #section3 {
+  #section5 {
     margin-top: 32px;
+    padding: 0px 17px;
   }
 
-  #section3 h2 {
+  #section5 h2 {
+    padding: 0px 17px;
     width: 176px;
     margin-bottom: 30px;
     font-size: 34px;
   }
 
-  /* section4 - Form */
-  #section4 {
+  /* section6 - Form */
+  #section6 {
     margin-top: 44px;
     margin-bottom: 100px;
   }
 
-  #section4 .form-header {
-    margin-left: 15px;
+  #section6 .form-header {
+    padding: 0px 17px;
   }
 
-  #section4 .form-process {
+  #section6 .form-process {
     margin-top: 20px;
     margin-bottom: 40px;
     margin-left: 15px;
   }
 
-  #section4 .form-process span {
+  #section6 .form-process span {
     font-size: 12px;
   }
 
-  #section4 #form-1,
-  #section4 #form-2,
-  #section4 #form-3,
-  #section4 #form-4 {
+  #section6 #form-1,
+  #section6 #form-2,
+  #section6 #form-3,
+  #section6 #form-4 {
     margin-bottom: 15px;
   }
 
-  #section4 #form-5 .submit {
+  #section6 #form-5 .submit {
     text-align: center;
   }
 

@@ -377,6 +377,9 @@ body {
 
 /* Tablet */
 @media screen and (min-width:768px) and (max-width:991.98px) {
+  .my-nav a {
+    font-size: 34px;
+  }
 
   .desktop-header {
     margin-top: 15px;
