@@ -159,7 +159,28 @@ body {
   color: #0b0b0b;
 }
 
+/* Schedule and Contact */
+#scheduleContact h2 {
+  font-family: HelveticaNeue;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0b0b0b;
+  text-decoration: underline;
+}
 
+#scheduleContact .contact {
+  font-family: HelveticaNeue;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #df732b;
+  text-decoration: underline;
+}
 
 /* section3 - Schedule */
 #mobileSchedule {
@@ -377,6 +398,62 @@ body {
     padding-right: 18px;
   }
 
+  /* Schedule and Contact */
+  #scheduleContact {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding-right: 60px;
+    text-align: right;
+  }
+
+  #scheduleContact h2 {
+    width: 222px;
+    height: 60px;
+    font-size: 50px;
+    z-index: 100;
+  }
+
+  #scheduleContact .contact {
+    width: 222px;
+    height: 60px;
+    font-size: 50px;
+  }
+
+  /* section3 - Schedule info. */
+  .icon-close-schedule {
+    top: 30px;
+    left: 750px;
+    padding-right: 42px;
+  }
+
+  .mobile-schedule-content {
+    /* margin-top: 92px; */
+    padding: 92px 80px 0px 42px;
+  }
+
+  .mobile-schedule-content h2 {
+    width: 100%;
+    margin-bottom: 22px;
+    font-size: 50px;
+  }
+
+  .mobile-schedule-content p {
+    width: 100%;
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  .schedule-detail {
+    position: relative;
+    margin-top: 16px;
+    padding: 0px 80px 0px 42px;
+  }
+
+  #mobileSchedule .download-link {
+    top: -45px;
+    left: -20px;
+  }
+
   /* section4 - photo */
 
   #section4 .section4-header {
@@ -548,6 +625,63 @@ body {
     left: 0px;
     padding-left: 18px;
   }
+
+  /* Schedule and Contact */
+  #scheduleContact {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding-right: 60px;
+    text-align: right;
+  }
+
+  #scheduleContact h2 {
+    width: 222px;
+    height: 60px;
+    font-size: 50px;
+    z-index: 100;
+  }
+
+  #scheduleContact .contact {
+    width: 222px;
+    height: 60px;
+    font-size: 50px;
+  }
+
+  /* section3 - Schedule info. */
+  .icon-close-schedule {
+    top: 25px;
+    left: 550px;
+    padding-right: 34px;
+    font-size: 30px;
+  }
+
+  .mobile-schedule-content {
+    margin-top: 72px;
+    padding: 0px 46px 0px 44px;
+  }
+
+  .mobile-schedule-content h2 {
+    width: 100%;
+    margin-bottom: 9px;
+    font-size: 50px;
+  }
+
+  .mobile-schedule-content p {
+    width: 100%;
+    margin-bottom: 21px;
+    font-size: 18px;
+  }
+
+  .schedule-detail {
+    margin-top: 16px;
+    padding: 0px 80px 0px 44px;
+  }
+
+  #mobileSchedule .download-link {
+    top: -45px;
+    left: -55px;
+  }
+
 
   /* section4 - photo */
 
@@ -768,33 +902,24 @@ body {
     padding: 0px 40px;
   }
 
-  .dae-footer h2 {
+  /* Schedule and Contact */
+  #scheduleContact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  #scheduleContact h2 {
     width: 100px;
     height: 26px;
-    font-family: HelveticaNeue;
     font-size: 22px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #0b0b0b;
-    text-decoration: underline;
     z-index: 1;
   }
 
-  .dae-footer .dae-footer-contact {
+  #scheduleContact .contact {
     width: 100px;
     height: 26px;
-    font-family: HelveticaNeue;
     font-size: 22px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #df732b;
-    text-decoration: underline;
   }
 
   /* section3 - Schedule info. */
@@ -837,6 +962,41 @@ body {
   #mobileSchedule .download-link {
     top: 27px;
     left: 20px;
+  }
+
+  /* section3 - Schedule info. */
+  .icon-close-schedule {
+    top: 25px;
+    left: 550px;
+    padding-right: 34px;
+    font-size: 30px;
+  }
+
+  .mobile-schedule-content {
+    margin-top: 72px;
+    padding: 0px 46px 0px 44px;
+  }
+
+  .mobile-schedule-content h2 {
+    width: 100%;
+    margin-bottom: 9px;
+    font-size: 50px;
+  }
+
+  .mobile-schedule-content p {
+    width: 100%;
+    margin-bottom: 21px;
+    font-size: 18px;
+  }
+
+  .schedule-detail {
+    margin-top: 16px;
+    padding: 0px 80px 0px 44px;
+  }
+
+  #mobileSchedule .download-link {
+    top: -45px;
+    left: -55px;
   }
 
   /* section4 - photo */
