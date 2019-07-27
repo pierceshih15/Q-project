@@ -16,10 +16,62 @@ let arrLang = {
     "dae-content": 'Travel to the United States of America with their leader Quincy Davis, the National Taiwanese basketball star.',
     // 第四層
     "more": 'More',
-    // 第五層
+    // 第五層 - schedule info.
     "schedule": 'Schedule',
     "schedule-time": '25 Aug, 2019 - 17 Stp, 2019 15 days',
     "schedule-location": 'California, San Diego',
+    // Day 1
+    "day1-1": 'Taiwan Taoyuan international airport >> Los Angeles international airport >> San Diego State University College',
+    // Day 2
+    "breakfast": 'breakfast',
+    "day2-1": 'Basketball training : Event - 1v1',
+    "lunch": 'Recovery functional lunch',
+    "day2-2": 'Basketball activity and campus tour',
+    "shower": 'Shower and laundry',
+    "dinner": 'Dinner',
+    "teacher": 'Teacher time',
+    "bedtime": 'BedTime',
+    // Day 3
+    "day3-1": 'Basketball training : Event - 3v3',
+    "day3-2": 'Basketball activity and campus tour',
+    // Day 4
+    "day4-1": 'Basketball training : Event - 5v5 Scrimmage',
+    "day4-2": 'Basketball activity and campus tour',
+    // Day 5
+    "day5-1": 'Basketball training : Event - Skills Challenge',
+    "day5-2": 'Basketball activity and campus tour',
+    // Day 6
+    "day6-1": 'Basketball training',
+    "day6-2": 'Phase 1 training reward and free challenge',
+    // Day 7
+    "day7-1": 'Theme parks, museums and city tours',
+    "day7-2": 'Basketball activity and campus tour',
+    // Day 8
+    "day8-1": 'Theme parks, museums and city tours',
+    "day8-2": 'City tour',
+    // Day 9
+    "day9-1": 'Basketball training : Event - 1v1',
+    "day9-2": 'Basketball activity and campus tour',
+    // Day 10
+    "day10-1": 'Basketball training : Event - 3v3',
+    "day10-2": 'Basketball activity and campus tour',
+    // Day 11
+    "day11-1": 'Basketball training : Event - 5v5 Scrimmage',
+    "day11-2": 'Basketball activity and campus tour',
+    // Day 12
+    "day12-1": 'Basketball training : Event - Skills Challenge',
+    "day12-2": 'Basketball activity and campus tour',
+    // Day 13
+    "day13-1": 'Basketball training',
+    "day13-2": 'Phase 2 training reward and free challenge',
+    // Day 14
+    "day14-1": 'Theme parks, museums',
+    "day14-2": 'Free lunch',
+    "day14-3": 'City tours',
+    "day14-4": 'Dinner at American restaurant',
+    // Day 15
+    "day15-1": 'San Diego State University College >> Los Angeles international airport >> Taiwan Taoyuan international airport',
+    // Schedule Download
     "download": 'Download',
     // 第六層
     "reference-content-1": '“ Learn so much in this trip! I love you Quincy Davis! ”',
@@ -120,6 +172,58 @@ let arrLang = {
     "schedule": '行程表',
     "schedule-time": '2019年8月25日到9月7日，共15天。',
     "schedule-location": '加州聖地牙哥 ',
+    // Day 1
+    "day1-1": '桃園國際機場 >> 洛杉磯國際機場 >> 聖地牙哥州立大學宿舍',
+    // Day 2
+    "breakfast": '起床早餐',
+    "day2-1": '籃球訓練：Event - 1v1 一對一基礎訓練',
+    "lunch": '恢復性機能午餐',
+    "day2-2": '籃球活動或校外參觀',
+    "shower": '洗澡以及家務',
+    "dinner": '晚餐',
+    "teacher": '老師時間',
+    "bedtime": '熄燈睡覺',
+    // Day 3
+    "day3-1": '籃球訓練：Event - 3v3 三對三對抗訓練',
+    "day3-2": '籃球活動或校外參觀',
+    // Day 4
+    "day4-1": '籃球訓練：Event - 5v5 / Scrimmage 五對五混戰',
+    "day4-2": '籃球活動或校外參觀',
+    // Day 5
+    "day5-1": '籃球訓練：Event - Skills Challenge 實戰技巧檢測及挑戰訓練',
+    "day5-2": '籃球活動或校外參觀',
+    // Day 6
+    "day6-1": '籃球訓練：自由對戰',
+    "day6-2": '第一階段訓練成果頒獎以及自由對戰',
+    // Day 7
+    "day7-1": '主題樂園、博物館、城市觀光',
+    "day7-2": '籃球活動或校外參觀',
+    // Day 8
+    "day8-1": '主題樂園、博物館、城市觀光',
+    "day8-2": '城市觀光',
+    // Day 9
+    "day9-1": '籃球訓練：Event - 1v1 一對一基礎訓練',
+    "day9-2": '籃球活動或校外參觀',
+    // Day 10
+    "day10-1": '籃球訓練：Event - 3v3 三對三對抗訓練',
+    "day10-2": '籃球活動或校外參觀',
+    // Day 11
+    "day11-1": '籃球訓練：Event - 5v5 / Scrimmage 五對五混戰',
+    "day11-2": '籃球活動或校外參觀',
+    // Day 12
+    "day12-1": '籃球訓練：Event - Skills Challenge 實戰技巧檢測及挑戰訓練',
+    "day12-2": '籃球活動或校外參觀',
+    // Day 13
+    "day13-1": '籃球訓練：自由對戰',
+    "day13-2": '第二階段訓練成果頒獎以及自由對戰',
+    // Day 14
+    "day14-1": '主題樂園、博物館',
+    "day14-2": '自由午餐',
+    "day14-3": '城市觀光',
+    "day14-4": '美式餐廳晚餐',
+    // Day 15
+    "day15-1": '聖地牙哥州立大學宿舍 >> 洛杉磯國際機場 >> 桃園國際機場 >> 溫暖的家',
+
     "download": '下載',
     // 第六層
     "reference-content-1": '“ 在這趟旅程學習到了好多經歷，真的很喜歡戴維斯！”',
@@ -212,12 +316,14 @@ function getDefaultLang() {
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
     });
+    $('.download-link').attr("href", "assets/file/DAEinfo_schedule_English.pdf");
   } else {
     $('.zh-img').attr("src", "css/img/zh-target.png");
     let lang = 'zh';
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
     });
+    $('.download-link').attr("href", "assets/file/DAEinfo_schedule_Chinese.pdf");
   }
 }
 
@@ -235,9 +341,11 @@ $(function () {
     if (lang === 'zh') {
       $('.zh-img').attr("src", "css/img/zh-target.png");
       $('.en-img').attr("src", "css/img/eng.png");
+      $('.download-link').attr("href", "assets/file/DAEinfo_schedule_Chinese.pdf");
     } else {
       $('.zh-img').attr("src", "css/img/zh.png");
       $('.en-img').attr("src", "css/img/eng-target.png");
+      $('.download-link').attr("href", "assets/file/DAEinfo_schedule_English.pdf");
     }
   })
 })

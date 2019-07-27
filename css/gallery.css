@@ -28,6 +28,10 @@ body {
   color: #000000;
 }
 
+.my-nav .logo {
+  font-size: 1rem;
+}
+
 .translation {
   /* mobile-header z-index 5 */
   /* my-nav z-index 3 */
@@ -426,9 +430,14 @@ body {
     padding-right: 42px;
   }
 
+  .icon-close-schedule img {
+    width: 50px;
+    height: 50px;
+  }
+
   .mobile-schedule-content {
-    /* margin-top: 92px; */
-    padding: 92px 80px 0px 42px;
+    margin-top: 60px;
+    padding: 0px 80px 0px 42px;
   }
 
   .mobile-schedule-content h2 {
@@ -447,11 +456,12 @@ body {
     position: relative;
     margin-top: 16px;
     padding: 0px 80px 0px 42px;
+    font-size: 20px;
   }
 
   #mobileSchedule .download-link {
-    top: -45px;
-    left: -20px;
+    top: 0px;
+    left: -30px;
   }
 
   /* section4 - photo */
@@ -655,6 +665,11 @@ body {
     font-size: 30px;
   }
 
+  .icon-close-schedule img {
+    width: 40px;
+    height: 40px;
+  }
+
   .mobile-schedule-content {
     margin-top: 72px;
     padding: 0px 46px 0px 44px;
@@ -678,10 +693,9 @@ body {
   }
 
   #mobileSchedule .download-link {
-    top: -45px;
-    left: -55px;
+    top: 0px;
+    left: -40px;
   }
-
 
   /* section4 - photo */
 
@@ -922,7 +936,7 @@ body {
     font-size: 22px;
   }
 
-  /* section3 - Schedule info. */
+  /* section5 - Schedule info. */
 
   .mobile-schedule.open {
     visibility: visible;
@@ -932,9 +946,12 @@ body {
 
   .icon-close-schedule {
     top: 20px;
-    left: 260px;
-    padding-right: 19px;
-    font-size: 25px;
+    right: 25%;
+  }
+
+  .icon-close-schedule img {
+    width: 24px;
+    height: 24px;
   }
 
   .mobile-schedule-content {
@@ -956,47 +973,12 @@ body {
 
   .schedule-detail {
     margin-top: 16px;
-    padding: 0px 89px 0px 10px;
+    padding: 0px 30px 0px 10px;
   }
 
   #mobileSchedule .download-link {
     top: 27px;
-    left: 20px;
-  }
-
-  /* section3 - Schedule info. */
-  .icon-close-schedule {
-    top: 25px;
-    left: 550px;
-    padding-right: 34px;
-    font-size: 30px;
-  }
-
-  .mobile-schedule-content {
-    margin-top: 72px;
-    padding: 0px 46px 0px 44px;
-  }
-
-  .mobile-schedule-content h2 {
-    width: 100%;
-    margin-bottom: 9px;
-    font-size: 50px;
-  }
-
-  .mobile-schedule-content p {
-    width: 100%;
-    margin-bottom: 21px;
-    font-size: 18px;
-  }
-
-  .schedule-detail {
-    margin-top: 16px;
-    padding: 0px 80px 0px 44px;
-  }
-
-  #mobileSchedule .download-link {
-    top: -45px;
-    left: -55px;
+    right: 30%;
   }
 
   /* section4 - photo */

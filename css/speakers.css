@@ -24,6 +24,10 @@ body {
   color: #000000;
 }
 
+.my-nav .logo {
+  font-size: 1rem;
+}
+
 .translation {
   z-index: 3;
 }

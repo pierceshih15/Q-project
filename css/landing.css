@@ -15,6 +15,10 @@ body {
 	background-color: transparent;
 }
 
+.my-nav .logo {
+	font-size: 1rem;
+}
+
 .my-nav a {
 	color: black;
 	text-decoration: underline;
@@ -575,9 +579,14 @@ body {
 		padding-right: 42px;
 	}
 
+	.icon-close-schedule img {
+		width: 50px;
+		height: 50px;
+	}
+
 	.mobile-schedule-content {
-		/* margin-top: 92px; */
-		padding: 92px 80px 0px 42px;
+		margin-top: 60px;
+		padding: 0px 80px 0px 42px;
 	}
 
 	.mobile-schedule-content h2 {
@@ -596,11 +605,12 @@ body {
 		position: relative;
 		margin-top: 16px;
 		padding: 0px 80px 0px 42px;
+		font-size: 20px;
 	}
 
 	#mobileSchedule .download-link {
-		top: -45px;
-		left: -20px;
+		top: 0px;
+		left: -30px;
 	}
 
 	/* section6 - Reference */
@@ -793,6 +803,11 @@ body {
 		font-size: 30px;
 	}
 
+	.icon-close-schedule img {
+		width: 40px;
+		height: 40px;
+	}
+
 	.mobile-schedule-content {
 		margin-top: 72px;
 		padding: 0px 46px 0px 44px;
@@ -816,8 +831,8 @@ body {
 	}
 
 	#mobileSchedule .download-link {
-		top: -45px;
-		left: -55px;
+		top: 0px;
+		left: -40px;
 	}
 
 	/* section6 - Reference */
@@ -1089,9 +1104,12 @@ body {
 
 	.icon-close-schedule {
 		top: 20px;
-		left: 260px;
-		padding-right: 19px;
-		font-size: 25px;
+		right: 25%;
+	}
+
+	.icon-close-schedule img {
+		width: 24px;
+		height: 24px;
 	}
 
 	.mobile-schedule-content {
@@ -1113,12 +1131,12 @@ body {
 
 	.schedule-detail {
 		margin-top: 16px;
-		padding: 0px 89px 0px 10px;
+		padding: 0px 30px 0px 10px;
 	}
 
 	#mobileSchedule .download-link {
 		top: 27px;
-		left: 20px;
+		right: 30%;
 	}
 
 	/* section6 - Reference */
@@ -1148,11 +1166,11 @@ body {
 		margin-top: 44px;
 	}
 
-	#section7 .form-header {
-		margin-left: 15px;
+	#section7 h2 {
+		padding: 0px 20px;
 	}
 
-	#section7 .form-process {
+	#section7 d.form-process {
 		margin-top: 20px;
 		margin-bottom: 40px;
 		margin-left: 15px;
