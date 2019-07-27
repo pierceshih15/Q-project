@@ -936,7 +936,7 @@ body {
     font-size: 22px;
   }
 
-  /* section5 - Schedule info. */
+  /* section3 - Schedule info. */
 
   .mobile-schedule.open {
     visibility: visible;
@@ -1031,6 +1031,16 @@ body {
 
   #section4 .gallery-mobile-photo {
     padding: 0 17px;
+  }
+
+  #section4 .gallery-mobile-photo .gallery-mobile-photo-1 {
+    min-width: 340px;
+    max-height: 230px
+  }
+
+  #section4 .gallery-mobile-photo .gallery-mobile-photo-2 {
+    min-width: 165px;
+    max-height: 120px
   }
 
   #section4 .gallery-mobile-more {
