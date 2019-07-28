@@ -130,8 +130,10 @@ body {
 
 /* Section1 - The Opportunity */
 #section1 .section1-content img {
-	width: 100%;
+	width: 715px;
 	height: 410px;
+	width: 100%;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -371,12 +373,22 @@ body {
 }
 
 /* section6 - Reference */
+#section6 {
+	margin-top: 35px;
+	padding-right: 42px;
+}
+
+#section6 h3 {
+	font-size: 22px;
+}
+
 #section6 .row {
 	margin-bottom: 30px;
 }
 
 #section6 .reference-person {
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #section6 h3 {
@@ -419,7 +431,6 @@ body {
 	/* section7 form  z-index2 */
 	z-index: 2;
 }
-
 
 #section7 .form-header {
 	font-family: HelveticaNeue;
@@ -562,6 +573,7 @@ body {
 	/* section5 - Banner */
 	#section5 .section5-content .section5-img-desktopTablet {
 		min-width: 922px;
+		width: 80%;
 		min-height: 405px;
 	}
 
@@ -631,26 +643,25 @@ body {
 
 	#section6 h3 {
 		font-size: 22px;
+		width: 380px;
 	}
 
 	/* Section7 - Form */
 	#section7 {
 		margin-top: 125px;
-		padding: 0px 50px 0px 283px;
+		padding: 0px 50px 0px 80px;
 		margin-bottom: 80px;
 	}
 
 	#section7 .form-header {
-		padding: 0px 112px 0px 400px;
+		padding: 0px 165px 0px 0px;
 		margin-bottom: 36px;
+		min-width: 340px;
+		width: 100%;
 	}
 
 	#section7 .form-process {
-		vertical-align: top;
-		max-width: 230px;
-		width: 25%;
-		margin-left: 160px;
-		padding-top: 30px;
+		padding: 30px 0px 0px 0px;
 		display: inline-block;
 	}
 
@@ -671,8 +682,9 @@ body {
 	/* Section7 - formInput */
 	#section7 .form-input {
 		display: inline-block;
-		max-width: 460px;
-		width: 40%;
+		padding: 0px;
+		min-width: 460px;
+		width: 100%;
 	}
 
 	/* Section7 - FormInput */
@@ -737,19 +749,17 @@ body {
 		line-height: normal;
 		letter-spacing: normal;
 		color: #0b0b0b;
-		position: relative;
 	}
 
 	#section7 #form-5 .form-submit-success-content {
-		width: 50%;
-		position: absolute;
-		left: 676px;
-		bottom: 5px;
+		width: 100%;
+		margin-top: 15px;
+		text-align: center;
 	}
 
 	#section7 #form-5 .form-submit-success {
 		font-family: HelveticaNeue;
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: normal;
 		font-style: normal;
 		font-stretch: normal;
@@ -963,8 +973,7 @@ body {
 	}
 
 	#section7 .form-process {
-		padding: 0px 20px;
-		margin-bottom: 40px;
+		margin: 0px 20px 40px 20px;
 	}
 
 	#section7 .form-process img {
@@ -1046,14 +1055,12 @@ body {
 		line-height: normal;
 		letter-spacing: normal;
 		color: #0b0b0b;
-		position: relative;
 	}
 
 	#section7 #form-5 .form-submit-success-content {
 		width: 100%;
-		position: absolute;
-		right: -300px;
-		bottom: 5px;
+		margin-top: 15px;
+		text-align: center;
 	}
 
 	#section7 #form-5 .form-submit-success {
@@ -1373,7 +1380,7 @@ body {
 
 	#section7 .form-process {
 		padding: 0px 20px;
-		margin-bottom: 40px;
+		margin: 0px 15px 20px 15px;
 	}
 
 	#section7 .form-process img {
