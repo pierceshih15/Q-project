@@ -836,24 +836,28 @@ body {
 
   #section4 .gallery-desktopTablet-photo-1 {
     min-width: 315px;
-    min-height: 192px;
+    max-height: 192px;
+    width: 100%;
   }
 
   #section4 .gallery-desktopTablet-photo-2 {
     min-width: 150px;
-    min-height: 192px;
+    max-height: 192px;
+    width: 100%;
   }
 
   #section4 .gallery-desktopTablet-photo-3 {
     min-width: 151px;
     min-height: 96px;
+    width: 100%;
+    height: 100%;
   }
 
   /* section5 - Video */
   #section5 {
     margin-top: 32px;
     padding-right: 50px;
-    padding-left: 280px;
+    padding-left: 315px;
   }
 
   #section5 h2 {
@@ -1233,8 +1237,8 @@ body {
   }
 
   #section4 .gallery-mobile-photo .gallery-mobile-photo-2 {
-    min-width: 165px;
-    max-height: 120px
+    min-width: 205px;
+    max-height: 160px
   }
 
   #section4 .gallery-mobile-more {
