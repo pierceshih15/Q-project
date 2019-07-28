@@ -285,13 +285,11 @@ body {
   /* mobile-header z-index 5 */
   /* my-nav z-index 3 */
   /* translation z-index 3 */
-  /* section7 form  z-index2 */
+  /* section6 form  z-index2 */
   z-index: 2;
 }
 
-#section6 h2 {
-  width: 341px;
-  height: 80px;
+#section6 .form-header {
   font-family: HelveticaNeue;
   font-size: 34px;
   font-weight: bold;
@@ -302,14 +300,7 @@ body {
   color: #0b0b0b;
 }
 
-#section6 .form-header {
-  margin-bottom: 36px;
-}
-
-#section6 .form-process span {
-  padding-left: 6px;
-  width: 100%;
-  height: 100%;
+#section6 .form-process .form-process-text {
   font-family: HelveticaNeue;
   font-size: 16px;
   font-weight: bold;
@@ -318,6 +309,20 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #0b0b0b;
+}
+
+/* section6 - FormInput */
+/* 移除 Select 預設效果 */
+#section6 select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+#section6 select::-ms-expand {
+  display: none;
 }
 
 /* Desktop */
@@ -497,16 +502,22 @@ body {
   #section4 .gallery-desktopTablet-photo-1 {
     min-width: 460px;
     min-height: 280px;
+    max-height: 550px;
+    width: 100%;
   }
 
   #section4 .gallery-desktopTablet-photo-2 {
     min-width: 220px;
     min-height: 280px;
+    max-height: 550px;
+    width: 100%;
   }
 
   #section4 .gallery-desktopTablet-photo-3 {
     min-width: 220px;
     min-height: 140px;
+    width: 100%;
+    height: 100%;
   }
 
   /* Section5 Video */
@@ -522,34 +533,126 @@ body {
     margin-bottom: 30px;
   }
 
-  /* section6 - Form */
+  /* Section6 - Form */
   #section6 {
     margin-top: 125px;
-    margin-bottom: 50px;
+    padding: 0px 50px 0px 70px;
+    margin-bottom: 80px;
+  }
+
+  #section6 .form-header {
+    padding: 0px 165px 0px 0px;
+    margin-bottom: 36px;
+    min-width: 340px;
+    width: 100%;
   }
 
   #section6 .form-process {
-    margin-top: 24px;
+    padding: 30px 0px 0px 0px;
+    display: inline-block;
   }
 
   #section6 .form-process img {
-    padding-right: 16px;
-  }
-
-  #section6 .form-process span:nth-child(1) {
-    margin-bottom: 56px;
-  }
-
-  #section6 .form-process span:nth-child(2),
-  #section6 .form-process span:nth-child(3) {
+    width: 35px;
+    height: 35px;
+    vertical-align: top;
+    margin-right: 20px;
     margin-bottom: 50px;
   }
 
-  #section6 #form-1,
-  #section6 #form-2,
-  #section6 #form-3,
-  #section6 #form-4 {
-    margin-bottom: 20px;
+  #section6 .form-process .form-process-text {
+    width: 132px;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  /* Section6 - formInput */
+  #section6 .form-input {
+    display: inline-block;
+    padding: 0px;
+    min-width: 460px;
+    width: 100%;
+  }
+
+  /* Section6 - FormInput */
+  #section6 .form-label-style {
+    padding: 9px 0px 9px 12px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+  }
+
+  #section6 .form-input-style {
+    border: 0 none;
+    background-color: #f6f6f6;
+    border-radius: 0px;
+    width: 220px;
+    width: 100%;
+    padding: 9px 21px 9px 12px;
+    border-bottom: 2px #0b0b0b solid;
+    margin-bottom: 7px;
+    position: relative;
+  }
+
+  #section6 .form-input-select-arrowDown {
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+  }
+
+  #section6 .form-textarea-style {
+    border: 0 none;
+    background-color: #f6f6f6;
+    width: 450px;
+    width: 100%;
+    height: 141px;
+    border-radius: 4px;
+    border: 2px #0b0b0b solid;
+    padding: 6px 22px 9px 12px;
+    margin-top: 30px;
+  }
+
+  #section6 #form-5 .form-submit-content {
+    width: 100%;
+    margin-top: 21px;
+    text-align: right;
+    padding-right: 24px;
+  }
+
+  #section6 #form-5 .submit {
+    border: 0 none;
+    background-color: #f6f6f6;
+    border-bottom: 2px #0b0b0b solid;
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+  }
+
+  #section6 #form-5 .form-submit-success-content {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  #section6 #form-5 .form-submit-success {
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #df732b;
   }
 
 }
@@ -759,27 +862,118 @@ body {
     margin-bottom: 30px;
   }
 
-  /* Content - Form */
+  /* Section6 - Form */
   #section6 {
     margin-top: 50px;
-    margin-bottom: 60px;
+    padding: 0px 50px 0px 300px;
+    margin-bottom: 50px;
   }
 
   #section6 .form-header {
-    margin-bottom: 12px;
-    margin-left: -30px;
+    width: 341px;
+    margin-bottom: 44px;
   }
 
   #section6 .form-process {
-    margin-bottom: 20px;
-    margin-left: -4px;
+    margin: 0px 15px 40px 15px;
   }
 
-  #section6 #form-1,
-  #section6 #form-2,
-  #section6 #form-3,
-  #section6 #form-4 {
-    margin-bottom: 20px;
+  #section6 .form-process img {
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+
+  #section6 .form-process .form-process-1,
+  #section6 .form-process .form-process-2 {
+    margin-bottom: 35px;
+  }
+
+  #section6 .form-process .form-process-text {
+    width: 132px;
+    font-size: 18px;
+  }
+
+  /* Section6 - FormInput */
+  #section6 .form-label-style {
+    padding: 9px 0px 9px 12px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+  }
+
+  #section6 .form-input-style {
+    border: 0 none;
+    background-color: #f6f6f6;
+    border-radius: 0px;
+    width: 341px;
+    width: 100%;
+    padding: 9px 21px 9px 12px;
+    border-bottom: 2px #0b0b0b solid;
+    margin-bottom: 7px;
+    position: relative;
+  }
+
+  #section6 .form-input-select-arrowDown {
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+  }
+
+  #section6 .form-textarea-style {
+    border: 0 none;
+    background-color: #f6f6f6;
+    width: 342px;
+    width: 100%;
+    height: 141px;
+    border-radius: 4px;
+    border: 2px #0b0b0b solid;
+    padding: 6px 22px 9px 12px;
+    margin-top: 30px;
+  }
+
+  #section6 #form-5 .form-submit-content {
+    width: 100%;
+    margin-top: 21px;
+    text-align: right;
+    padding-right: 24px;
+  }
+
+  #section6 #form-5 .submit {
+    border: 0 none;
+    background-color: #f6f6f6;
+    border-bottom: 2px #0b0b0b solid;
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+  }
+
+  #section6 #form-5 .form-submit-success-content {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  #section6 #form-5 .form-submit-success {
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #df732b;
   }
 
 }
@@ -1072,35 +1266,117 @@ body {
     font-size: 34px;
   }
 
-  /* section6 - Form */
+  /* Section6 - Form */
   #section6 {
     margin-top: 44px;
-    margin-bottom: 100px;
+    padding: 0px 20px;
+    margin-bottom: 50px;
   }
 
   #section6 .form-header {
-    padding: 0px 17px;
+    margin-bottom: 44px;
   }
 
   #section6 .form-process {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left: 15px;
+    padding: 0px 20px;
+    margin: 0px 15px 20px 15px;
   }
 
-  #section6 .form-process span {
-    font-size: 12px;
+  #section6 .form-process img {
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    margin-right: 14px;
   }
 
-  #section6 #form-1,
-  #section6 #form-2,
-  #section6 #form-3,
-  #section6 #form-4 {
-    margin-bottom: 15px;
+  #section6 .form-process .form-process-1,
+  #section6 .form-process .form-process-2 {
+    margin-bottom: 35px;
+  }
+
+  #section6 .form-process .form-process-text {
+    font-size: 14px;
+    width: 85px;
+  }
+
+  /* Section6 - FormInput */
+  #section6 .form-label-style {
+    padding: 9px 0px 9px 12px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+  }
+
+  #section6 .form-input-style {
+    border: 0 none;
+    background-color: #f6f6f6;
+    border-radius: 0px;
+    width: 341px;
+    width: 100%;
+    padding: 9px 21px 9px 12px;
+    border-bottom: 2px #0b0b0b solid;
+    margin-bottom: 7px;
+    position: relative;
+  }
+
+  #section6 .form-input-select-arrowDown {
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+  }
+
+  #section6 .form-textarea-style {
+    border: 0 none;
+    background-color: #f6f6f6;
+    width: 342px;
+    width: 100%;
+    height: 141px;
+    border-radius: 4px;
+    border: 2px #0b0b0b solid;
+    padding: 6px 22px 9px 12px;
+    margin-top: 30px;
+  }
+
+  #section6 #form-5 .form-submit-content {
+    width: 100%;
+    margin-top: 21px;
+    text-align: center;
   }
 
   #section6 #form-5 .submit {
+    border: 0 none;
+    background-color: #f6f6f6;
+    border-bottom: 2px #0b0b0b solid;
+    font-family: HelveticaNeue;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0b0b0b;
+  }
+
+  #section6 #form-5 .form-submit-success-content {
+    width: 100%;
+    margin-top: 15px;
     text-align: center;
+  }
+
+  #section6 #form-5 .form-submit-success {
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #df732b;
   }
 
 }
