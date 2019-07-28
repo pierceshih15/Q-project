@@ -25,15 +25,48 @@ $(function () {
   $('.icon-close-schedule').on('click', function () {
     $('#mobileSchedule').toggleClass('open');
   })
+})
+
+// 依照使用者所選擇的孩童數，增加相對應的年齡欄位
+const Num = document.getElementById('number');
+Num.addEventListener('change', function (e) {
+  const numOfKids = e.target.value;
+
+  if (numOfKids == 1) {
+    $('#age-2').addClass('d-none');
+    $('#age-3').addClass('d-none');
+  }
+
+  if (numOfKids == 2) {
+    $('#age-2').removeClass('d-none');
+    $('#age-3').addClass('d-none');
+  }
+
+  if (numOfKids == 3) {
+    $('#age-1').removeClass('d-none')
+    $('#age-2').removeClass('d-none')
+    $('#age-3').removeClass('d-none')
+  }
 
 })
+
+// // 表單 email 驗證
+// function checkEmail(strEmail) {
+//   if (strEmail.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/) != -1) {
+//     $('.email-message').toggleClass('d-none')
+//     return true;
+//   } else {
+//     $('#email').focus();
+//     $('.email-message').toggleClass('d-none');
+//     return false;
+//   }
+// }
 
 // Google API 儲存前端資料
 $(function () {
   // 監聽 送出訂單 按鈕點擊
   // 下面這段主要在組合資料，還有擋使用者不填資料不能送出
   $('.submit-send').click(function () {
-
     var status = true;
 
     var name = $('#name').val();
@@ -41,7 +74,9 @@ $(function () {
     var email = $('#email').val();
     var phone = $('#phone').val();
     var number = $('#number').val();
-    var age = $('#age').val();
+    var age1 = $('#age1').val();
+    var age2 = $('#age2').val();
+    var age3 = $('#age3').val();
     var textarea = $('#textarea').val();
 
     // 擋住不填資料邏輯
@@ -49,7 +84,7 @@ $(function () {
       $('#name').css('border', '1px solid #ff0000');
       status = false;
     }
-    if (gender == '') {
+    if (gender == 'select') {
       $('#gender').css('border', '1px solid #ff0000');
       status = false;
     }
@@ -61,11 +96,11 @@ $(function () {
       $('#phone').css('border', '1px solid #ff0000');
       status = false;
     }
-    if (number == '') {
+    if (number == 'select') {
       $('#number').css('border', '1px solid #ff0000');
       status = false;
     }
-    if (age == '') {
+    if (age1 == 'select' || age2 == 'select' || age3 == 'select') {
       $('#age').css('border', '1px solid #ff0000');
       status = false;
     }
@@ -81,19 +116,43 @@ $(function () {
         currentdate.getMinutes() + ":" +
         currentdate.getSeconds();
 
+      // 檢查 age1 是否已選擇，若已選擇，則 age2 & age3 為空
+      if (age1 != 'select') {
+        $('#age2').val('');
+        $('#age3').val('');
+      }
+
+      // 檢查 age2 是否已選擇，若已選擇，則 age3 為空
+      if (age2 != 'select') {
+        $('#age3').val('');
+      }
+
       // 打包 要的資料
       let data = {
+        'time': timeStamps,
         'name': name,
         'gender': gender,
         'email': email,
         'phone': phone,
         'number': number,
-        'age': age,
+        'age1': age1,
+        'age2': age2,
+        'age3': age3,
         'textarea': textarea,
-        'time': timeStamps
       }
       // 呼叫 send ajax function
+      // console.log(data);
       send(data);
+
+      $('#name').val('');
+      $('#gender').val('');
+      $('#email').val('');
+      $('#phone').val('');
+      $('#number').val('');
+      $('#age1').val('');
+      $('#age2').val('');
+      $('#age3').val('');
+      $('#textarea').val('');
     }
   });
 });
@@ -109,8 +168,8 @@ function send(data) {
     dataType: "JSON",
     // 成功送出觸發事件
     success: function (response) {
-      console.log(response);
-      alert(`感謝您，我們將會安排專人盡快與您聯繫！！`);
+      $(".form-submit-success-content").removeClass('d-none');
+      // alert(`感謝您，我們將會安排專人盡快與您聯繫！！`);
     }
   });
 }

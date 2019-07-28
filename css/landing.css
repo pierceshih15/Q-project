@@ -38,8 +38,8 @@ body {
 	overflow: hidden;
 } */
 
-.footer {
-	height: 200px;
+footer {
+	height: 100%;
 	background-color: black;
 }
 
@@ -420,9 +420,8 @@ body {
 	z-index: 2;
 }
 
-#section7 h2 {
-	width: 341px;
-	height: 80px;
+
+#section7 .form-header {
 	font-family: HelveticaNeue;
 	font-size: 34px;
 	font-weight: bold;
@@ -433,14 +432,7 @@ body {
 	color: #0b0b0b;
 }
 
-#section7 .form-header {
-	margin-bottom: 36px;
-}
-
-#section7 .form-process span {
-	padding-left: 6px;
-	width: 100%;
-	height: 100%;
+#section7 .form-process .form-process-text {
 	font-family: HelveticaNeue;
 	font-size: 16px;
 	font-weight: bold;
@@ -449,6 +441,20 @@ body {
 	line-height: normal;
 	letter-spacing: normal;
 	color: #0b0b0b;
+}
+
+/* section7 - FormInput */
+/* 移除 Select 預設效果 */
+#section7 select {
+	/* for Firefox */
+	-moz-appearance: none;
+	/* for Chrome */
+	-webkit-appearance: none;
+}
+
+/* For IE10 */
+#section7 select::-ms-expand {
+	display: none;
 }
 
 /* section8 - Sponsors */
@@ -481,11 +487,15 @@ body {
 	margin-bottom: 62px;
 }
 
+.clearfix {
+	clear: both;
+}
+
 /* Desktop */
 @media screen and (min-width:992px) {
 
 	.desktop-header {
-		margin-top: 70px;
+		margin-top: 50px;
 	}
 
 	/* section2 - Quincy-Davis-III */
@@ -623,39 +633,135 @@ body {
 		font-size: 22px;
 	}
 
-	/* section7 - Form */
+	/* Section7 - Form */
 	#section7 {
 		margin-top: 125px;
+		padding: 0px 50px 0px 283px;
+		margin-bottom: 80px;
+	}
+
+	#section7 .form-header {
+		padding: 0px 112px 0px 400px;
+		margin-bottom: 36px;
 	}
 
 	#section7 .form-process {
-		margin-top: 24px;
+		vertical-align: top;
+		max-width: 230px;
+		width: 25%;
+		margin-left: 160px;
+		padding-top: 30px;
+		display: inline-block;
 	}
 
 	#section7 .form-process img {
-		padding-right: 16px;
-	}
-
-	#section7 .form-process span:nth-child(1) {
-		margin-bottom: 56px;
-	}
-
-	#section7 .form-process span:nth-child(2),
-	#section7 .form-process span:nth-child(3) {
+		width: 35px;
+		height: 35px;
+		vertical-align: top;
+		margin-right: 20px;
 		margin-bottom: 50px;
 	}
 
-	#section7 #form-1,
-	#section7 #form-2,
-	#section7 #form-3,
-	#section7 #form-4 {
-		margin-bottom: 20px;
+	#section7 .form-process .form-process-text {
+		width: 132px;
+		font-size: 18px;
+		margin-bottom: 50px;
+	}
+
+	/* Section7 - formInput */
+	#section7 .form-input {
+		display: inline-block;
+		max-width: 460px;
+		width: 40%;
+	}
+
+	/* Section7 - FormInput */
+	#section7 .form-label-style {
+		padding: 9px 0px 9px 12px;
+		font-family: HelveticaNeue;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #0b0b0b;
+	}
+
+	#section7 .form-input-style {
+		border: 0 none;
+		background-color: #f6f6f6;
+		border-radius: 0px;
+		width: 220px;
+		width: 100%;
+		padding: 9px 21px 9px 12px;
+		border-bottom: 2px #0b0b0b solid;
+		margin-bottom: 7px;
+		position: relative;
+	}
+
+	#section7 .form-input-select-arrowDown {
+		position: absolute;
+		right: 25px;
+		bottom: 15px;
+	}
+
+	#section7 .form-textarea-style {
+		border: 0 none;
+		background-color: #f6f6f6;
+		width: 450px;
+		width: 100%;
+		height: 141px;
+		border-radius: 4px;
+		border: 2px #0b0b0b solid;
+		padding: 6px 22px 9px 12px;
+		margin-top: 30px;
+	}
+
+	#section7 #form-5 .form-submit-content {
+		width: 100%;
+		margin-top: 21px;
+		text-align: right;
+		padding-right: 24px;
+	}
+
+	#section7 #form-5 .submit {
+		border: 0 none;
+		background-color: #f6f6f6;
+		border-bottom: 2px #0b0b0b solid;
+		font-family: HelveticaNeue;
+		font-size: 22px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #0b0b0b;
+		position: relative;
+	}
+
+	#section7 #form-5 .form-submit-success-content {
+		width: 50%;
+		position: absolute;
+		left: 676px;
+		bottom: 5px;
+	}
+
+	#section7 #form-5 .form-submit-success {
+		font-family: HelveticaNeue;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #df732b;
 	}
 
 	/* Content - Sponsors */
 	#section8 {
 		margin-top: 85px;
-		margin-bottom: 132px;
+		margin-bottom: 130px;
 	}
 }
 
@@ -845,26 +951,120 @@ body {
 		font-size: 22px;
 	}
 
-	/* Content - Form */
+	/* Section7 - Form */
 	#section7 {
 		margin-top: 50px;
+		padding: 0px 50px 0px 300px;
 	}
 
 	#section7 .form-header {
-		margin-bottom: 12px;
-		margin-left: -30px;
+		width: 341px;
+		margin-bottom: 44px;
 	}
 
 	#section7 .form-process {
-		margin-bottom: 20px;
-		margin-left: -4px;
+		padding: 0px 20px;
+		margin-bottom: 40px;
 	}
 
-	#section7 #form-1,
-	#section7 #form-2,
-	#section7 #form-3,
-	#section7 #form-4 {
-		margin-bottom: 20px;
+	#section7 .form-process img {
+		width: 30px;
+		height: 30px;
+		vertical-align: top;
+		margin-right: 20px;
+	}
+
+	#section7 .form-process .form-process-1,
+	#section7 .form-process .form-process-2 {
+		margin-bottom: 35px;
+	}
+
+	#section7 .form-process .form-process-text {
+		width: 132px;
+		font-size: 18px;
+	}
+
+	/* Section7 - FormInput */
+	#section7 .form-label-style {
+		padding: 9px 0px 9px 12px;
+		font-family: HelveticaNeue;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #0b0b0b;
+	}
+
+	#section7 .form-input-style {
+		border: 0 none;
+		background-color: #f6f6f6;
+		border-radius: 0px;
+		width: 341px;
+		width: 100%;
+		padding: 9px 21px 9px 12px;
+		border-bottom: 2px #0b0b0b solid;
+		margin-bottom: 7px;
+		position: relative;
+	}
+
+	#section7 .form-input-select-arrowDown {
+		position: absolute;
+		right: 25px;
+		bottom: 15px;
+	}
+
+	#section7 .form-textarea-style {
+		border: 0 none;
+		background-color: #f6f6f6;
+		width: 342px;
+		width: 100%;
+		height: 141px;
+		border-radius: 4px;
+		border: 2px #0b0b0b solid;
+		padding: 6px 22px 9px 12px;
+		margin-top: 30px;
+	}
+
+	#section7 #form-5 .form-submit-content {
+		width: 100%;
+		margin-top: 21px;
+		text-align: right;
+		padding-right: 24px;
+	}
+
+	#section7 #form-5 .submit {
+		border: 0 none;
+		background-color: #f6f6f6;
+		border-bottom: 2px #0b0b0b solid;
+		font-family: HelveticaNeue;
+		font-size: 22px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #0b0b0b;
+		position: relative;
+	}
+
+	#section7 #form-5 .form-submit-success-content {
+		width: 100%;
+		position: absolute;
+		right: -300px;
+		bottom: 5px;
+	}
+
+	#section7 #form-5 .form-submit-success {
+		font-family: HelveticaNeue;
+		font-size: 18px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #df732b;
 	}
 
 	/* section8 - Sponsors */
@@ -1161,34 +1361,116 @@ body {
 		height: 60px;
 	}
 
-	/* Content - Form */
+	/* Section7 - Form */
 	#section7 {
 		margin-top: 44px;
-	}
-
-	#section7 h2 {
 		padding: 0px 20px;
 	}
 
-	#section7 d.form-process {
-		margin-top: 20px;
+	#section7 .form-header {
+		margin-bottom: 44px;
+	}
+
+	#section7 .form-process {
+		padding: 0px 20px;
 		margin-bottom: 40px;
-		margin-left: 15px;
 	}
 
-	#section7 .form-process span {
-		font-size: 12px;
+	#section7 .form-process img {
+		width: 30px;
+		height: 30px;
+		vertical-align: top;
+		margin-right: 14px;
 	}
 
-	#section7 #form-1,
-	#section7 #form-2,
-	#section7 #form-3,
-	#section7 #form-4 {
-		margin-bottom: 15px;
+	#section7 .form-process .form-process-1,
+	#section7 .form-process .form-process-2 {
+		margin-bottom: 35px;
+	}
+
+	#section7 .form-process .form-process-text {
+		font-size: 14px;
+		width: 85px;
+	}
+
+	/* Section7 - FormInput */
+	#section7 .form-label-style {
+		padding: 9px 0px 9px 12px;
+		font-family: HelveticaNeue;
+		font-size: 14px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #0b0b0b;
+	}
+
+	#section7 .form-input-style {
+		border: 0 none;
+		background-color: #f6f6f6;
+		border-radius: 0px;
+		width: 341px;
+		width: 100%;
+		padding: 9px 21px 9px 12px;
+		border-bottom: 2px #0b0b0b solid;
+		margin-bottom: 7px;
+		position: relative;
+	}
+
+	#section7 .form-input-select-arrowDown {
+		position: absolute;
+		right: 25px;
+		bottom: 15px;
+	}
+
+	#section7 .form-textarea-style {
+		border: 0 none;
+		background-color: #f6f6f6;
+		width: 342px;
+		width: 100%;
+		height: 141px;
+		border-radius: 4px;
+		border: 2px #0b0b0b solid;
+		padding: 6px 22px 9px 12px;
+		margin-top: 30px;
+	}
+
+	#section7 #form-5 .form-submit-content {
+		width: 100%;
+		margin-top: 21px;
+		text-align: center;
 	}
 
 	#section7 #form-5 .submit {
+		border: 0 none;
+		background-color: #f6f6f6;
+		border-bottom: 2px #0b0b0b solid;
+		font-family: HelveticaNeue;
+		font-size: 22px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #0b0b0b;
+	}
+
+	#section7 #form-5 .form-submit-success-content {
+		width: 100%;
+		margin-top: 15px;
 		text-align: center;
+	}
+
+	#section7 #form-5 .form-submit-success {
+		font-family: HelveticaNeue;
+		font-size: 18px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #df732b;
 	}
 
 	/* Content - Sponsors */

@@ -88,11 +88,17 @@ let arrLang = {
     "form-ready": 'Ready to go',
     "form-name": 'Name',
     "form-gender": 'Gender',
+    "form-select": 'select here',
+    "form-male": 'Male',
+    "form-female": 'Female',
     "form-email": 'Email',
     "form-phone": 'Phone',
     "form-number": '# of kids',
+    "form-morethan3": 'More than 3',
     "form-age": 'Age',
+    "form-morethan15": 'More than 15 years old',
     "form-send": 'Send',
+    "form-submit-success": 'We will contact you as soon as possible!',
     // 第八層
     "sponsors": 'Sponsors',
     "sponsors-content": 'Join sponsorship to help our youth.',
@@ -170,7 +176,7 @@ let arrLang = {
     "more": '更多',
     // 第五層
     "schedule": '行程表',
-    "schedule-time": '2019年8月25日到9月7日，共15天。',
+    "schedule-time": '2019 年 8 月 25 日到 9 月 7 日，共 15 天。',
     "schedule-location": '加州聖地牙哥 ',
     // Day 1
     "day1-1": '桃園國際機場 >> 洛杉磯國際機場 >> 聖地牙哥州立大學宿舍',
@@ -240,11 +246,17 @@ let arrLang = {
     "form-ready": '準備出發',
     "form-name": '姓名',
     "form-gender": '性別',
+    "form-select": '請選填',
+    "form-male": '男性',
+    "form-female": '女性',
     "form-email": '電子郵件',
     "form-phone": '手機號碼',
     "form-number": '申請孩童數',
+    "form-morethan3": '大於 3 位',
+    "form-morethan15": '大於 15 歲',
     "form-age": '年齡',
     "form-send": '送出',
+    "form-submit-success": '我們會有專人盡快與您聯繫！',
     // 第八層
     "sponsors": '贊助商',
     "sponsors-content": '加入我們，成為孩子們的助力',
@@ -316,6 +328,7 @@ function getDefaultLang() {
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
     });
+    $('.form-placeholder').attr("placeholder", "type here")
     $('.download-link').attr("href", "assets/file/DAEinfo_schedule_English.pdf");
   } else {
     $('.zh-img').attr("src", "css/img/zh-target.png");
@@ -323,6 +336,7 @@ function getDefaultLang() {
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
     });
+    $('.form-placeholder').attr("placeholder", "請輸入")
     $('.download-link').attr("href", "assets/file/DAEinfo_schedule_Chinese.pdf");
   }
 }
@@ -341,10 +355,12 @@ $(function () {
     if (lang === 'zh') {
       $('.zh-img').attr("src", "css/img/zh-target.png");
       $('.en-img').attr("src", "css/img/eng.png");
+      $('.form-placeholder').attr("placeholder", "請輸入")
       $('.download-link').attr("href", "assets/file/DAEinfo_schedule_Chinese.pdf");
     } else {
       $('.zh-img').attr("src", "css/img/zh.png");
       $('.en-img').attr("src", "css/img/eng-target.png");
+      $('.form-placeholder').attr("placeholder", "type here");
       $('.download-link').attr("href", "assets/file/DAEinfo_schedule_English.pdf");
     }
   })

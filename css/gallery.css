@@ -46,8 +46,8 @@ body {
 	overflow: hidden;
 } */
 
-.footer {
-  height: 200px;
+footer {
+  height: 100%;
   background-color: black;
 }
 
@@ -323,7 +323,7 @@ body {
 /* Desktop */
 @media screen and (min-width:992px) {
   .desktop-header {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   /* section1 - The Opportunity */
