@@ -99,6 +99,10 @@ let arrLang = {
     "form-morethan15": 'More than 15 years old',
     "form-send": 'Send',
     "form-submit-success": 'We will contact you as soon as possible!',
+    // 提示訊息
+    "reminder-message": 'This field is required!',
+    "validate-message": 'The Email format is wrong!',
+
     // 第八層
     "sponsors": 'Sponsors',
     "sponsors-content": 'Join sponsorship to help our youth.',
@@ -257,6 +261,9 @@ let arrLang = {
     "form-age": '年齡',
     "form-send": '送出',
     "form-submit-success": '我們會有專人盡快與您聯繫！',
+    // 提示訊息
+    "reminder-message": '此欄位不得為空！',
+    "validate-message": 'Email格式有誤，請重新輸入',
     // 第八層
     "sponsors": '贊助商',
     "sponsors-content": '加入我們，成為孩子們的助力',

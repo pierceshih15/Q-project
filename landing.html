@@ -1211,18 +1211,20 @@
               name
             </label>
             <span class="text-danger">*</span>
+            <span class="text-danger name-message lang d-none" key="reminder-message">This field is required!</span>
             <input
               type="text"
               id="name"
               name="name"
               class="form-input-style form-placeholder"
-              placeholder="type here" required
+              placeholder="type here" onblur="checkName(this.value)"
             />
           </div>
           <div class="col-12 col-md-6">
             <label for="gender" class="lang form-label-style" key="form-gender">Gender</label>
             <span class="text-danger">*</span>
-            <select class="form-input-style" id="gender" name="gender" required>
+            <span class="text-danger gender-message lang d-none" key="reminder-message">This field is required!</span>
+            <select class="form-input-style" id="gender" name="gender" onChange="checkGender(this.value)">
               <option value="select" class="lang" key="form-select" disabled selected hidden>select here</option>
               <option class="lang" key="form-male" value="male">Male</option>
               <option class="lang" key="form-female" value="female">Female</option>
@@ -1236,26 +1238,27 @@
           <div class="col-12 col-md-6">
             <label for="email" class="lang form-label-style" key="form-email">Email</label>
             <span class="text-danger">*</span>
-            <!-- <span class="text-danger email-message lang d-none" key="email-message">Email有誤，請確認輸入</span> -->
+            <span class="text-danger email-message lang d-none" key="reminder-message">This field is required!</span>
+            <span class="text-danger emailValidate-message lang d-none" key="validate-message">The Email format is wrong!</span>
             <input
               type="email"
               id="email"
               name="email"
               class="form-input-style form-placeholder"
-              placeholder="type here" required 
-            /> <!-- onblur="checkEmail(this.value)" -->
+              placeholder="type here" onblur="checkEmail(this.value)"
+             />
           </div>
           <div class="col-12 col-md-6">
             <label for="phone" class="lang form-label-style" key="form-phone">Phone</label>
             <span class="text-danger">*</span>
-            <!-- <span class="text-danger phone-message lang d-none" key="phone-message">手機號碼有誤，請重新輸入</span> -->
+            <span class="text-danger phone-message lang d-none" key="reminder-message">This field is required!</span>
             <input
               type="text"
               id="phone"
               name="phone"
               class="form-input-style form-placeholder"
-              placeholder="type here" required 
-            /> <!-- onblur="checkPhone(this.value)" -->
+              placeholder="type here" onblur="checkPhone(this.value)"
+            />
           </div>
         </div>
 
@@ -1264,7 +1267,8 @@
           <div class="col-12 col-md-6">
             <label for="number" class="lang form-label-style" key="form-number"># of kids</label>
             <span class="text-danger">*</span>
-            <select class="form-input-style" id="number" name="number" required>
+            <span class="text-danger number-message lang d-none" key="reminder-message">This field is required!</span>
+            <select class="form-input-style" id="number" name="number" onChange="checkNum(this.value)">
               <option value="select" class="lang" key="form-select" disabled selected hidden>select here</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -1277,7 +1281,8 @@
           <div class="col-12 col-md-6" id="age-1">
             <label for="age1" class="lang form-label-style" key="form-age">Age</label>
             <span class="text-danger">*</span>
-            <select class="form-input-style" id="age1" name="age1" required>
+            <span class="text-danger number-message lang d-none" key="reminder-message">This field is required!</span>
+            <select class="form-input-style" id="age1" name="age1" onChange="checkAge(this.value)">
               <option value="select" class="lang" key="form-select" disabled selected hidden>select here</option>
               <option value="9">9</option>
               <option value="10">10</option>
@@ -1294,6 +1299,7 @@
           <div class="col-12 col-md-6 d-none" id="age-2">
             <label for="age2" class="lang form-label-style" key="form-age">Age</label>
             <span class="text-danger">*</span>
+            <span class="text-danger number-message lang d-none" key="reminder-message">This field is required!</span>
             <select class="form-input-style" id="age2" name="age2">
               <option value="select" class="lang" key="form-select" disabled selected hidden>select here</option>
               <option value="9">9</option>
@@ -1311,6 +1317,7 @@
           <div class="col-12 col-md-6 d-none" id="age-3">
             <label for="age3" class="lang form-label-style" key="form-age">Age</label>
             <span class="text-danger">*</span>
+            <span class="text-danger number-message lang d-none" key="reminder-message">This field is required!</span>
             <select class="form-input-style" id="age3" name="age3">
               <option value="select" class="lang" key="form-select" disabled selected hidden>select here</option>
               <option value="9">9</option>
@@ -1441,6 +1448,7 @@
 
     <script src="js/index.js"></script>
     <script src="js/translation.js"></script>
+    <script src="js/formValidation.js"></script>
     <script src="js/schedule.js"></script>
   </body>
 </html>
