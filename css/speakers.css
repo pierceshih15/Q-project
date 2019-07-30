@@ -293,15 +293,19 @@ body {
   }
 
   #section2 .section2-content h2 {
-    top: -30px;
-    left: 560px;
+    /* top: -30px;
+    left: 560px; */
+    bottom: -100px;
+    left: 150px;
     width: 112px;
     font-size: 50px;
   }
 
   #section2 .section2-content p {
-    top: 354px;
-    left: 320px;
+    /* top: 354px;
+    left: 320px; */
+    bottom: -150px;
+    left: 310px;
     width: 380px;
     font-size: 18px;
   }
@@ -433,14 +437,14 @@ body {
   }
 
   #section2 .section2-content h2 {
-    top: -30px;
-    left: 500px;
+    bottom: -110px;
+    left: 100px;
     width: 112px;
     font-size: 50px;
   }
 
   #section2 .section2-content p {
-    top: 344px;
+    bottom: -160px;
     left: 230px;
     width: 380px;
     font-size: 18px;
@@ -635,6 +639,7 @@ body {
     left: 196px;
     width: 136px;
     font-size: 34px;
+    padding-top: 4px;
   }
 
   #section1 .section1-content p {

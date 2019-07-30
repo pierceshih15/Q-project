@@ -286,7 +286,7 @@ let arrLang = {
 
     // Speakers Page
     "qd-first-name": '戴維斯',
-    "qd-last-name": '',
+    "qd-last-name": 'III',
     "qd-content-in-speakers-page": '「運動是有年限的，但教育與知識是從你出生到死亡都跟著你一輩子的，當你有了知識當後盾，你將能有更多的選擇與機會。」 儘管自己是名籃球員，但我卻認為，運動不能沒有教育，教育也不能沒有運動，而如今，我決定透過自己的方式實現這個理念。',
     "intro-header": '介紹',
     "intro-content": '戴維斯，土生土長的美國黑人，於2013年成為台灣籃壇史上首名歸化球員，先後效力於SBL璞園籃球隊及中華國家代表隊，現致力於運動與教育平衡發展。',
@@ -334,6 +334,9 @@ function getDefaultLang() {
     let lang = 'en';
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
+      // 更新字型
+      $(this)[0].style.fontFamily = 'HelveticaNeue';
+      // $(body).style.fontFamily = 'HelveticaNeue';
     });
     $('.form-placeholder').attr("placeholder", "type here")
     $('.download-link').attr("href", "assets/file/DAEinfo_schedule_English.pdf");
@@ -342,8 +345,11 @@ function getDefaultLang() {
     let lang = 'zh';
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
+      // console.log($(this)[0].style)
+      // 更新字型
+      $(this)[0].style.fontFamily = 'PingFangTC';
     });
-    $('.form-placeholder').attr("placeholder", "請輸入")
+    $('.form-placeholder').attr("placeholder", "請輸入");
     $('.download-link').attr("href", "assets/file/DAEinfo_schedule_Chinese.pdf");
   }
 }
@@ -356,6 +362,12 @@ $(function () {
     var lang = $(this).attr('id');
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
+      // 中英自行判斷式
+      if (lang === 'zh') {
+        $(this)[0].style.fontFamily = 'PingFangTC';
+      } else {
+        $(this)[0].style.fontFamily = 'HelveticaNeue';
+      }
     })
 
     // 依照所選擇改變 中英文圖片樣式
@@ -364,6 +376,7 @@ $(function () {
       $('.en-img').attr("src", "css/img/eng.png");
       $('.form-placeholder').attr("placeholder", "請輸入")
       $('.download-link').attr("href", "assets/file/DAEinfo_schedule_Chinese.pdf");
+      $(this)[0].style.fontFamily = 'PingFangTC';
     } else {
       $('.zh-img').attr("src", "css/img/zh.png");
       $('.en-img').attr("src", "css/img/eng-target.png");
