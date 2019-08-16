@@ -330,7 +330,7 @@ function getDefaultLang() {
   let userLang = navigator.language || navigator.userLanguage;
 
   if (userLang === "en-US" || userLang === "en") {
-    $('.en-img').attr("src", "css/img/eng-target.png");
+    $('.en-img').attr("src", "css/img/general/eng-target.svg");
     let lang = 'en';
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
@@ -341,7 +341,7 @@ function getDefaultLang() {
     $('.form-placeholder').attr("placeholder", "type here")
     $('.download-link').attr("href", "assets/file/DAEinfo_schedule_English.pdf");
   } else {
-    $('.zh-img').attr("src", "css/img/zh-target.png");
+    $('.zh-img').attr("src", "css/img/general/zh-target.svg");
     let lang = 'zh';
     $('.lang').each(function (index, element) {
       $(this).text(arrLang[lang][$(this).attr('key')])
@@ -372,14 +372,14 @@ $(function () {
 
     // 依照所選擇改變 中英文圖片樣式
     if (lang === 'zh') {
-      $('.zh-img').attr("src", "css/img/zh-target.png");
-      $('.en-img').attr("src", "css/img/eng.png");
+      $('.zh-img').attr("src", "css/img/general/zh-target.svg");
+      $('.en-img').attr("src", "css/img/general/eng.svg");
       $('.form-placeholder').attr("placeholder", "請輸入")
       $('.download-link').attr("href", "assets/file/DAEinfo_schedule_Chinese.pdf");
       $(this)[0].style.fontFamily = 'PingFangTC';
     } else {
-      $('.zh-img').attr("src", "css/img/zh.png");
-      $('.en-img').attr("src", "css/img/eng-target.png");
+      $('.zh-img').attr("src", "css/img/general/zh.svg");
+      $('.en-img').attr("src", "css/img/general/eng-target.svg");
       $('.form-placeholder').attr("placeholder", "type here");
       $('.download-link').attr("href", "assets/file/DAEinfo_schedule_English.pdf");
     }

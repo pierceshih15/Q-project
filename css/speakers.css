@@ -89,6 +89,14 @@ body {
   display: none
 }
 
+.close-icon {
+  background-image: url(../css/img/general/close.svg);
+  background-size: contain;
+  color: #0b0b0b;
+  width: 24px;
+  height: 24px;
+}
+
 .header-navbar {
   display: inline-block;
   width: 100%;
@@ -103,6 +111,12 @@ body {
   font-size: 20px;
   font-family: HelveticaNeue;
   font-weight: bold;
+}
+
+.translation:hover,
+.desktop-header a:hover,
+.mobile-header a:hover {
+  cursor: pointer;
 }
 
 #schedule {
@@ -583,8 +597,7 @@ body {
   }
 
   .icon-close-header {
-    text-align: right;
-    margin-right: 75px;
+    margin-right: 10px;
     font-size: 25px;
     font-weight: bold;
   }

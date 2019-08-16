@@ -102,6 +102,14 @@ body {
   z-index: 5
 }
 
+.close-icon {
+  background-image: url(../css/img/general/close.svg);
+  background-size: contain;
+  color: #0b0b0b;
+  width: 24px;
+  height: 24px;
+}
+
 .header-navbar {
   display: inline-block;
   width: 100%;
@@ -116,6 +124,13 @@ body {
   font-size: 20px;
   font-family: HelveticaNeue;
   font-weight: bold;
+}
+
+.translation:hover,
+.desktop-header a:hover,
+.mobile-header a:hover,
+.close-icon:hover {
+  cursor: pointer;
 }
 
 #schedule {
@@ -201,7 +216,6 @@ body {
 }
 
 .icon-close-schedule {
-  position: absolute;
   z-index: 101;
 }
 
@@ -333,7 +347,6 @@ body {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -532,18 +545,16 @@ body {
 
   /* section3 - Schedule info. */
   .icon-close-schedule {
-    top: 30px;
-    left: 750px;
-    padding-right: 42px;
+    margin-top: 14px;
   }
 
-  .icon-close-schedule img {
-    width: 50px;
-    height: 50px;
+  .close-icon {
+    width: 40px;
+    height: 40px;
   }
 
   .mobile-schedule-content {
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 0px 80px 0px 42px;
   }
 
@@ -551,12 +562,14 @@ body {
     width: 100%;
     margin-bottom: 22px;
     font-size: 50px;
+    font-weight: bold;
   }
 
   .mobile-schedule-content p {
     width: 100%;
     margin-bottom: 32px;
     font-size: 18px;
+    font-weight: normal;
   }
 
   .schedule-detail {
@@ -695,13 +708,13 @@ body {
     padding: 9px 21px 9px 12px;
     border-bottom: 2px #0b0b0b solid;
     margin-bottom: 7px;
-    position: relative;
   }
 
   #section6 .form-input-select-arrowDown {
-    position: absolute;
-    right: 25px;
-    bottom: 15px;
+    background: url(../css/img/general/arrowDown.svg) no-repeat 98% 50%;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
   }
 
   #section6 .form-textarea-style {
@@ -861,19 +874,16 @@ body {
 
   /* section3 - Schedule info. */
   .icon-close-schedule {
-    top: 25px;
-    left: 550px;
-    padding-right: 34px;
-    font-size: 30px;
+    margin-top: 14px;
   }
 
-  .icon-close-schedule img {
+  .close-icon {
     width: 40px;
     height: 40px;
   }
 
   .mobile-schedule-content {
-    margin-top: 72px;
+    margin-top: 12px;
     padding: 0px 46px 0px 44px;
   }
 
@@ -881,12 +891,14 @@ body {
     width: 100%;
     margin-bottom: 9px;
     font-size: 50px;
+    font-weight: bold;
   }
 
   .mobile-schedule-content p {
     width: 100%;
     margin-bottom: 21px;
     font-size: 18px;
+    font-weight: normal;
   }
 
   .schedule-detail {
@@ -1019,13 +1031,13 @@ body {
     padding: 9px 21px 9px 12px;
     border-bottom: 2px #0b0b0b solid;
     margin-bottom: 7px;
-    position: relative;
   }
 
   #section6 .form-input-select-arrowDown {
-    position: absolute;
-    right: 25px;
-    bottom: 15px;
+    background: url(../css/img/general/arrowDown.svg) no-repeat 98% 50%;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
   }
 
   #section6 .form-textarea-style {
@@ -1107,8 +1119,7 @@ body {
   }
 
   .icon-close-header {
-    text-align: right;
-    margin-right: 75px;
+    margin-right: 10px;
     font-size: 25px;
     font-weight: bold;
   }
@@ -1241,17 +1252,16 @@ body {
   }
 
   .icon-close-schedule {
-    top: 20px;
-    right: 25%;
+    margin-top: 0px;
   }
 
-  .icon-close-schedule img {
+  .close-icon {
     width: 24px;
     height: 24px;
   }
 
   .mobile-schedule-content {
-    margin-top: 63px;
+    margin-top: 25px;
     padding: 0px 15px 0px 10px;
   }
 
@@ -1259,12 +1269,14 @@ body {
     width: 100%;
     margin-bottom: 13px;
     font-size: 22px;
+    font-weight: bold;
   }
 
   .mobile-schedule-content p {
     width: 100%;
     margin-bottom: 28px;
     font-size: 18px;
+    font-weight: normal;
   }
 
   .schedule-detail {
@@ -1427,13 +1439,13 @@ body {
     padding: 9px 21px 9px 12px;
     border-bottom: 2px #0b0b0b solid;
     margin-bottom: 7px;
-    position: relative;
   }
 
   #section6 .form-input-select-arrowDown {
-    position: absolute;
-    right: 25px;
-    bottom: 15px;
+    background: url(../css/img/general/arrowDown.svg) no-repeat 98% 50%;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
   }
 
   #section6 .form-textarea-style {
