@@ -106,6 +106,7 @@ body {
   background-image: url(../css/img/general/close.svg);
   background-size: contain;
   color: #0b0b0b;
+  background-color: #f6f6f6;
   width: 24px;
   height: 24px;
 }
@@ -139,7 +140,14 @@ body {
 
 /* section2 - banner */
 #section2 .section2-content .section2-img-desktopTablet {
+  background-image: url(../css/img/galleryPage/section2-img-1.png);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 #section2 .section2-content .section2-img-mobile {
@@ -149,7 +157,33 @@ body {
 /* section3 - DAR intro */
 #section3-desktopTablet {
   display: block;
-  padding-right: 45px;
+}
+
+#section3-desktopTablet .section3-img-desktopTablet-1 {
+  background-image: url(../css/img/galleryPage/section3-img-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+#section3-desktopTablet .section3-img-desktopTablet-2 {
+  background-image: url(../css/img/galleryPage/section3-img-2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+#section3-desktopTablet .section3-img-desktopTablet-3 {
+  background-image: url(../css/img/galleryPage/section3-img-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
 #section3-mobile {
@@ -243,6 +277,15 @@ body {
   padding-left: 20px;
 }
 
+#section4 .gallery-desktopTablet-photo-1,
+#section4 .gallery-desktopTablet-photo-2,
+#section4 .gallery-desktopTablet-photo-3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
 #section4 h2 {
   font-family: HelveticaNeue;
   font-weight: bold;
@@ -309,8 +352,8 @@ body {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 90%;
+  max-width: 1024px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -448,78 +491,67 @@ body {
 
   /* section1 - The Opportunity */
   #section1 {
-    margin-top: 130px;
+    margin-top: 100px;
   }
 
   #section1 h2 {
     width: 500px;
     font-size: 50px;
+    font-weight: bold;
   }
 
   /* section2 - Banner */
   #section2 {
-    margin-top: 200px;
+    margin-top: 120px;
   }
 
   #section2 .section2-content .section2-img-desktopTablet {
     min-width: 1024px;
     min-height: 450px;
-    width: 100%;
-    background-size: cover;
+    height: 600px;
   }
 
   /* section3 - DAR intro */
   #section3-desktopTablet {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 30px;
-    padding-right: 42px;
-    padding-left: 301px;
+    margin-left: 312px;
   }
 
   #section3-desktopTablet .dae-intro {
     margin-bottom: 80px;
   }
 
-  #section3-desktopTablet img {
-    position: relative;
-    min-width: 300px;
-    min-height: 253px;
-    width: 100%;
-    height: 100%;
-  }
-
-  #section3-desktopTablet .dae-intro-img-2 {
-    padding-left: 50px;
+  #section3-desktopTablet .section3-img-desktopTablet-1,
+  #section3-desktopTablet .section3-img-desktopTablet-2,
+  #section3-desktopTablet .section3-img-desktopTablet-3 {
+    min-width: 268px;
+    min-height: 254px;
   }
 
   #section3-desktopTablet h5 {
-    position: absolute;
-    top: -140px;
     width: 320px;
-    height: 60px;
+    width: 100%;
     font-size: 22px;
+    margin-bottom: 20px;
   }
 
   #section3-desktopTablet p {
-    position: absolute;
-    top: -70px;
     width: 320px;
+    width: 100%;
     font-size: 18px;
-    line-height: 1.39;
-    letter-spacing: -0.3px;
   }
 
   #section3-desktopTablet .dae-intro-header-1,
   #section3-desktopTablet .dae-intro-header-3,
   #section3-desktopTablet .dae-intro-content-1,
   #section3-desktopTablet .dae-intro-content-3 {
-    left: 30px;
+    padding-right: 46px;
   }
 
   #section3-desktopTablet .dae-intro-header-2,
   #section3-desktopTablet .dae-intro-content-2 {
-    left: 0px;
-    padding-right: 18px;
+    padding-right: 20px;
   }
 
   /* Schedule and Contact */
@@ -604,44 +636,41 @@ body {
     text-align: right;
   }
 
-  #section4 .gallery-desktopTablet-photo {
-    min-width: 600px;
-    max-width: 800px;
-  }
-
   #section4 .gallery-desktopTablet-header {
     margin-top: 30px;
     margin-bottom: 20px;
   }
 
   #section4 .gallery-desktopTablet-photo-1 {
-    max-width: 528px;
-    max-height: 336px;
-    overflow: hidden;
+    min-width: 460px;
+    min-height: 280px;
+    width: 100%;
+    height: 100%;
   }
 
   #section4 .gallery-desktopTablet-photo-2 {
-    max-width: 264px;
-    max-height: 336px;
-    overflow: hidden;
+    width: 220px;
+    height: 280px;
+    width: 100%;
+    height: 100%;
   }
 
   #section4 .gallery-desktopTablet-photo-3 {
-    max-width: 264px;
-    max-height: 168px;
-    overflow: hidden;
+    width: 220px;
+    height: 140px;
+    width: 100%;
+    height: 100%;
   }
 
   /* Section5 Video */
   #section5 {
     margin-top: 32px;
-    padding-right: 50px;
-    padding-left: 300px;
+    margin-left: 4px;
   }
 
   #section5 h2 {
-    width: 100%;
-    font-size: 50px;
+    min-width: 176px;
+    font-size: 34px;
     margin-bottom: 30px;
   }
 
@@ -782,58 +811,51 @@ body {
 
   /* section1 - The Opportunity */
   #section1 {
-    margin-top: 180px;
+    margin-top: 130px;
     margin-bottom: 74px;
+
   }
 
   #section1 h2 {
-    padding-right: 46px;
     width: 420px;
     font-size: 50px;
+    font-weight: bold;
   }
 
   /* section2 - Banner */
   #section2 .section2-content .section2-img-desktopTablet {
     min-width: 767px;
     min-height: 337px;
-    width: 100%;
-    background-size: cover;
+    height: 400px;
   }
 
   /* section3 - DAR intro */
   #section3-desktopTablet {
     margin-top: 50px;
-    padding-right: 46px;
-    padding-left: 222px;
+    margin-left: 252px;
   }
 
   #section3-desktopTablet .dae-intro {
     margin-bottom: 80px;
   }
 
-  #section3-desktopTablet img {
-    position: relative;
-    min-width: 200px;
-    min-height: 169px;
-    width: 100%;
-    height: 100%;
-  }
-
-  #section3-desktopTablet .dae-intro-img-2 {
-    padding-left: 10px;
+  #section3-desktopTablet .section3-img-desktopTablet-1,
+  #section3-desktopTablet .section3-img-desktopTablet-2,
+  #section3-desktopTablet .section3-img-desktopTablet-3 {
+    min-width: 240px;
+    min-height: 199px;
   }
 
   #section3-desktopTablet h5 {
-    position: absolute;
-    top: -100px;
     width: 260px;
+    width: 100%;
     font-size: 18px;
+    margin-bottom: 20px;
   }
 
   #section3-desktopTablet p {
-    position: absolute;
-    top: -30px;
     width: 260px;
+    width: 100%;
     font-size: 14px;
   }
 
@@ -841,14 +863,12 @@ body {
   #section3-desktopTablet .dae-intro-header-3,
   #section3-desktopTablet .dae-intro-content-1,
   #section3-desktopTablet .dae-intro-content-3 {
-    left: 30px;
-
+    padding-right: 46px;
   }
 
   #section3-desktopTablet .dae-intro-header-2,
   #section3-desktopTablet .dae-intro-content-2 {
-    left: 0px;
-    padding-left: 18px;
+    padding-right: 20px;
   }
 
   /* Schedule and Contact */
@@ -914,7 +934,8 @@ body {
   /* section4 - photo */
 
   #section4 {
-    padding-right: 47px;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   #section4 .section4-header {
@@ -935,44 +956,41 @@ body {
     text-align: right;
   }
 
-  #section4 .gallery-desktopTablet-photo {
-    min-width: 500px;
-    max-width: 600px;
-  }
-
   #section4 .gallery-desktopTablet-header {
     margin-top: 35px;
     margin-bottom: 20px;
   }
 
   #section4 .gallery-desktopTablet-photo-1 {
-    max-width: 316px;
-    max-height: 192px;
-    overflow: hidden;
+    min-width: 315px;
+    min-height: 192px;
+    width: 100%;
+    height: 100%;
   }
 
   #section4 .gallery-desktopTablet-photo-2 {
-    max-width: 158px;
-    max-height: 192px;
-    overflow: hidden;
+    min-width: 150px;
+    min-height: 192px;
+    width: 100%;
+    height: 100%;
   }
 
   #section4 .gallery-desktopTablet-photo-3 {
-    max-width: 158px;
-    max-height: 96px;
-    overflow: hidden;
+    min-width: 150px;
+    min-height: 96px;
+    width: 100%;
+    height: 100%;
   }
 
   /* section5 - Video */
   #section5 {
     margin-top: 32px;
-    padding-right: 50px;
-    padding-left: 315px;
+    margin-left: 12px;
   }
 
   #section5 h2 {
-    width: 100%;
-    font-size: 50px;
+    width: 176px;
+    font-size: 34px;
     margin-bottom: 30px;
   }
 
@@ -1152,12 +1170,15 @@ body {
   /* section1 - The Opportunity */
   #section1 {
     margin-top: 160px;
+
     text-align: center;
   }
 
   #section1 h2 {
     font-size: 34px;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: bold;
   }
 
   /* section2 - banner */
@@ -1171,11 +1192,16 @@ body {
 
   #section2 .section2-content .section2-img-mobile {
     display: block;
+    background-image: url(../css/img/galleryPage/section2-img-1.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    position: relative;
     min-width: 374px;
     min-height: 337px;
     width: 100%;
-    background-size: cover;
+    height: 100%;
+    overflow: hidden;
   }
 
   /* section3 - DAR intro */
@@ -1185,35 +1211,63 @@ body {
 
   #section3-mobile {
     display: block;
-  }
-
-  #section3-mobile {
     margin-top: 126px;
     text-align: center;
   }
 
-  #section3-mobile img {
+  #section3-mobile .section3-img-mobile-1 {
+    background-image: url(../css/img/galleryPage/section3-img-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 200px;
+    min-height: 169px;
+    overflow: hidden;
     margin-bottom: 18px;
-    width: 200px;
-    height: 169px;
+  }
+
+  #section3-mobile .section3-img-mobile-2 {
+    background-image: url(../css/img/galleryPage/section3-img-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 200px;
+    min-height: 169px;
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+
+  #section3-mobile .section3-img-mobile-3 {
+    background-image: url(../css/img/galleryPage/section3-img-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 200px;
+    min-height: 169px;
+    overflow: hidden;
+    margin-bottom: 18px;
   }
 
   #section3-mobile .dae-intro h5 {
-    width: 100%;
     font-size: 18px;
-
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   #section3-mobile .dae-intro .dae-intro-header-1 {
     padding: 0px 29px;
+    width: 100%;
   }
 
   #section3-mobile .dae-intro .dae-intro-header-2 {
     padding: 0px 45px;
+    width: 100%;
   }
 
   #section3-mobile .dae-intro .dae-intro-header-3 {
     padding: 0px 67px;
+    width: 100%;
   }
 
   #section3-mobile .dae-intro p {
@@ -1344,14 +1398,24 @@ body {
   }
 
   #section4 .gallery-mobile-photo .gallery-mobile-photo-1 {
-    max-width: 408px;
-    max-height: 276px;
+    min-width: 340px;
+    min-height: 230px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
   }
 
   #section4 .gallery-mobile-photo .gallery-mobile-photo-2 {
-    max-width: 204px;
-    max-height: 144px;
+    min-width: 165px;
+    min-height: 120px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
   }
 
@@ -1378,7 +1442,6 @@ body {
   }
 
   #section5 h2 {
-    padding: 0px 17px;
     width: 176px;
     margin-bottom: 30px;
     font-size: 34px;
