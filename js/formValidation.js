@@ -9,7 +9,6 @@ function checkName(name) {
   } else {
     $('#name').css('border-bottom', '1px solid #ff0000');
     $('.name-message').addClass('d-inline-block');
-    $('#name').focus();
     return status = false;
   }
 }
@@ -19,7 +18,6 @@ function checkGender(gender) {
   if (gender == null) {
     $('#gender').css('border-bottom', '1px solid #ff0000');
     $('.gender-message').addClass('d-inline-block');
-    $('#gender').focus();
     return status = false;
   } else {
     $('#gender').css('border-bottom', '2px #0b0b0b solid');
@@ -42,7 +40,6 @@ function checkEmail(email) {
       console.log('here')
       $('#email').css('border-bottom', '1px solid #ff0000');
       $('.emailValidate-message').addClass('d-inline-block');
-      $('#email').focus();
     } else {
       $('.emailValidate-message').removeClass('d-inline-block');
       $('.emailValidate-message').addClass('d-none');
@@ -51,7 +48,6 @@ function checkEmail(email) {
   } else {
     $('#email').css('border-bottom', '1px solid #ff0000');
     $('.email-message').addClass('d-inline-block');
-    $('#email').focus();
     return status = false;
   }
 }
@@ -66,7 +62,7 @@ function checkPhone(phone) {
   } else {
     $('#phone').css('border-bottom', '1px solid #ff0000');
     $('.phone-message').addClass('d-inline-block');
-    $('#phone').focus();
+    // $('#phone').focus();
     return status = false;
   }
 }
@@ -76,7 +72,6 @@ function checkNum(number) {
   if (number == null) {
     $('#number').css('border-bottom', '1px solid #ff0000');
     $('.number-message').addClass('d-inline-block');
-    $('#number').focus();
     return status = false;
   } else {
     $('#number').css('border-bottom', '2px #0b0b0b solid');
@@ -91,7 +86,6 @@ function checkAge(age) {
   if (age == null) {
     $('#age').css('border-bottom', '1px solid #ff0000');
     $('.age-message').addClass('d-inline-block');
-    $('#age').focus();
     return status = false;
   } else {
     $('#age').css('border-bottom', '2px #0b0b0b solid');
@@ -125,6 +119,11 @@ $(function () {
     checkPhone(phone)
     checkNum(number)
     checkAge(age1)
+
+    if (!name || !gender || !email || !phone || !number || !age1) {
+      alert('記得填上表單所需的相關欄位呦！')
+      return
+    }
 
     // 若資料驗證成功才執行
     if (status) {
