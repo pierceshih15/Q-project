@@ -161,8 +161,7 @@ body {
 
 #section3-desktopTablet .section3-img-desktopTablet-1 {
   background-image: url(../css/img/galleryPage/section3-img-1.png);
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -170,8 +169,7 @@ body {
 
 #section3-desktopTablet .section3-img-desktopTablet-2 {
   background-image: url(../css/img/galleryPage/section3-img-2.png);
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -179,8 +177,7 @@ body {
 
 #section3-desktopTablet .section3-img-desktopTablet-3 {
   background-image: url(../css/img/galleryPage/section3-img-3.png);
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -520,12 +517,14 @@ body {
 
   #section3-desktopTablet .dae-intro {
     margin-bottom: 80px;
+    padding-right: 46px;
   }
 
   #section3-desktopTablet .section3-img-desktopTablet-1,
   #section3-desktopTablet .section3-img-desktopTablet-2,
   #section3-desktopTablet .section3-img-desktopTablet-3 {
-    min-width: 268px;
+    width: 100%;
+    max-width: 268px;
     min-height: 254px;
   }
 
@@ -842,7 +841,8 @@ body {
   #section3-desktopTablet .section3-img-desktopTablet-1,
   #section3-desktopTablet .section3-img-desktopTablet-2,
   #section3-desktopTablet .section3-img-desktopTablet-3 {
-    min-width: 240px;
+    width: 100%;
+    max-width: 240px;
     min-height: 199px;
   }
 
@@ -1210,42 +1210,53 @@ body {
   }
 
   #section3-mobile {
-    display: block;
+    display: inline-block;
     margin-top: 126px;
     text-align: center;
   }
 
+  /* #section3-desktopTablet .dae-intro {
+  margin-bottom: 80px;
+  padding-right: 46px;
+} */
+
   #section3-mobile .section3-img-mobile-1 {
     background-image: url(../css/img/galleryPage/section3-img-1.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    min-width: 200px;
+    width: 100%;
+    max-width: 200px;
     min-height: 169px;
     overflow: hidden;
     margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #section3-mobile .section3-img-mobile-2 {
     background-image: url(../css/img/galleryPage/section3-img-2.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    min-width: 200px;
+    width: 100%;
+    max-width: 200px;
     min-height: 169px;
     overflow: hidden;
     margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #section3-mobile .section3-img-mobile-3 {
     background-image: url(../css/img/galleryPage/section3-img-3.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    min-width: 200px;
+    width: 100%;
+    max-width: 200px;
     min-height: 169px;
     overflow: hidden;
     margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #section3-mobile .dae-intro h5 {

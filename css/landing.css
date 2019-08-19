@@ -322,8 +322,7 @@ body {
 
 #section5 .section5-content .section5-img-desktopTablet {
 	background-image: url(../css/img/landingPage/section5-img-desktop-1.png);
-	background-size: cover;
-	background-position: center;
+	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
 	width: 100%;
@@ -613,11 +612,14 @@ body {
 	}
 
 	/* section5 - Banner */
+	#section5 {
+		padding-left: 60px;
+	}
+
+
 	#section5 .section5-content .section5-img-desktopTablet {
 		min-width: 922px;
 		min-height: 405px;
-		width: 85%;
-		height: 100%;
 	}
 
 	#section5 .row:nth-child(2) h2 {
@@ -934,6 +936,8 @@ body {
 	#section5 .section5-content .section5-img-desktopTablet {
 		min-width: 767px;
 		min-height: 337px;
+		background-size: cover;
+		background-position: center;
 	}
 
 	#section5 .row:nth-child(2) h2 {
@@ -1190,21 +1194,19 @@ body {
 
 	#section1 .section1-content h2 {
 		top: 140px;
-		left: 130px;
+		left: 110px;
 		width: 282px;
-		height: 100%;
+		padding-right: 20px;
 		font-size: 34px;
 	}
 
 	#section1 .section1-content p {
 		top: 285px;
-		left: 130px;
+		left: 110px;
 		width: 217px;
-		height: 100%;
 	}
 
 	/* section2 - Quincy-Davis-III */
-
 	#section2 {
 		margin-top: 40px;
 		margin-bottom: 156px;
