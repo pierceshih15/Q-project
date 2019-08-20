@@ -386,7 +386,7 @@ body {
 .close {
   position: absolute;
   top: 15px;
-  right: 35px;
+  right: 20px;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -1403,7 +1403,8 @@ body {
   }
 
   #section4 .gallery-mobile-photo {
-    padding: 0 17px;
+    padding: 0px 17px;
+    min-width: 375px;
     max-width: 525px;
     margin: 0 auto;
   }
@@ -1424,6 +1425,7 @@ body {
     min-height: 120px;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1460,7 +1462,7 @@ body {
 
   /* Section6 - Form */
   #section6 {
-    margin-top: 44px;
+    margin-top: 100px;
     padding: 0px 20px;
     margin-bottom: 50px;
   }
