@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" class="bg-dark">
   <img src="https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/QD-basketball-academy-logo.png" alt="QD-basketball-academy-logo"/>
 </p>
 
@@ -6,13 +6,13 @@
 
 QD-basketball-academy 是一個使用原生 HTML、CSS、JavaScript 建立的籃球訓練營形象網站，產品為美國籃球訓練營隊，目標客群為年紀為 9 歲 ~ 15 歲的小孩，而網站售中鎖定小孩的家長，期望透過網站為籃球訓練營帶來新的潛在客戶（Leads）與銷售轉換。
 
-[首頁截圖](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-1.png)
+![首頁截圖](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-1.png)
 
-## Demo
+## Demo Website - 成果展示
 
 [Demo Website](https://pierceshih15.github.io/QD-basketball-academy/)
 
-## 專案緣起
+## Project Initiation - 專案緣起
 
 專案緣起於 QD-basketball-academy 改版需求，[原始網站](http://davisacademy.tw/)使用 WordPress 建立，而本次改版重點在於修正網站的 Call To Action 目標。
 
@@ -24,7 +24,7 @@ QD-basketball-academy 是一個使用原生 HTML、CSS、JavaScript 建立的籃
 
 2. 對品牌端的價值：大幅減低消費者的進入門檻，期望透過網站獲取更多新的潛在客戶（Leads）與銷售轉換。
 
-## 使用哪些技術實作專案
+## Technical Skills - 使用哪些技術實作專案
 
 - 使用 HTML / CSS / JavaScript 建立專案基礎架構
 - 使用 Bootstrap 實踐響應式網站設計
@@ -34,15 +34,15 @@ QD-basketball-academy 是一個使用原生 HTML、CSS、JavaScript 建立的籃
 - 整合 Google Spreadsheet 服務，快速建立免費資料庫完整儲存潛在客戶（Leads）資訊
 - 整合 ModalImage 實踐點擊圖片視窗化放大效果
 
-## 專案內容
+## Project - 專案內容
 
-[首頁截圖](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-1.png)
+![首頁截圖](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-1.png)
 
-[營隊截圖](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-2.png)
+![營隊截圖](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-2.png)
 
-[圖片效果](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-3.png)
+![圖片效果](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-3.png)
 
-[表單功能](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-4.png)
+![表單功能](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-4.png)
 
 ## Collaboration Tool - 專案協作工具
 
