@@ -75,11 +75,11 @@ let arrLang = {
     "download": 'Download',
     // 第六層
     "reference-content-1": '“ Learn so much in this trip! I love you Quincy Davis! ”',
-    "reference-person-1": 'Name, Age School',
+    "reference-person-1": 'Kevin, 14 JHSH',
     "reference-content-2": '“ Learn so much in this trip! I love you Quincy Davis! ”',
-    "reference-person-2": 'Name, Age School',
+    "reference-person-2": 'Lisa, 13 TMJH',
     "reference-content-3": '“ Learn so much in this trip! I love you Quincy Davis! ”',
-    "reference-person-3": 'Name, Age School',
+    "reference-person-3": 'John, 15 CSJH',
     // 第七層
     "form-header": 'You don’t want to miss it!',
     "form-apply": 'Apply Format',
@@ -237,11 +237,11 @@ let arrLang = {
     "download": '下載',
     // 第六層
     "reference-content-1": '“ 在這趟旅程學習到了好多經歷，真的很喜歡戴維斯！”',
-    "reference-person-1": '名字, 15歲 光復國中',
+    "reference-person-1": 'Kevin, 14歲 錦和國中',
     "reference-content-2": '“ 在這趟旅程學習到了好多經歷，真的很喜歡戴維斯！”',
-    "reference-person-2": '名字, 15歲 光復國中',
+    "reference-person-2": 'Lisa, 13歲 天母國中',
     "reference-content-3": '“ 在這趟旅程學習到了好多經歷，真的很喜歡戴維斯！”',
-    "reference-person-3": '名字, 15歲 光復國中',
+    "reference-person-3": 'John, 15歲 中山國中',
     // 第七層
     "form-header": '你絕對不會想讓孩子錯過的旅程！',
     "form-apply": '線上申請',
