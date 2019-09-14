@@ -4,13 +4,13 @@
 
 # QD-basketball-academy
 
-QD-basketball-academy 是一個使用原生 HTML、CSS、JavaScript 建立的籃球訓練營形象網站，產品為美國籃球訓練營隊，目標客群為年紀為 9 歲 ~ 15 歲的小孩，而網站售中鎖定小孩的家長，期望透過網站為籃球訓練營帶來新的潛在客戶（Leads）與銷售轉換。
+QD-basketball-academy 是一個使用原生 HTML、CSS、JavaScript 建立的籃球訓練營形象網站，產品為海外籃球訓練營隊，目標客群為年紀為 9 歲 ~ 15 歲的小孩。
 
-![首頁截圖](https://github.com/pierceshih15/QD-basketball-academy/blob/master/assets/README-1.png)
+而網站受眾鎖定小孩的家長，期望透過網站為籃球訓練營帶來新的潛在客戶（Leads）與銷售轉換。
 
 ## Demo Website - 成果展示
 
-[Demo Website](https://pierceshih15.github.io/QD-basketball-academy/)
+[Click for Demo Website](https://pierceshih15.github.io/QD-basketball-academy/)
 
 ## Project Initiation - 專案緣起
 
