@@ -142,7 +142,7 @@ body {
 
 /* Section1 - The Opportunity */
 #section1 .section1-img {
-	background-image: url(../css/img/landingPage/section1-img-1.png);
+	background-image: url(../css/img/indexPage/section1-img-1.png);
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -233,7 +233,7 @@ body {
 }
 
 #section3 .section3-img {
-	background-image: url(../css/img/landingPage/section3-img-1.png);
+	background-image: url(../css/img/indexPage/section3-img-1.png);
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -321,7 +321,7 @@ body {
 }
 
 #section5 .section5-content .section5-img-desktopTablet {
-	background-image: url(../css/img/landingPage/section5-img-desktop-1.png);
+	background-image: url(../css/img/indexPage/section5-img-desktop-1.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: relative;
@@ -428,8 +428,8 @@ body {
 	position: absolute;
 	font-size: 18px;
 	left: 97px;
-	top: 92px;
-	width: 132px;
+	top: 105px;
+	width: 200px;
 	height: 60px;
 	font-family: HelveticaNeue;
 	font-weight: bold;
@@ -1300,20 +1300,20 @@ body {
 	}
 
 	#section4-mobile .section4-img-mobile-1 {
-		background-image: url(../css/img/landingPage/section4-img-mobile-1.png);
+		background-image: url(../css/img/indexPage/section4-img-mobile-1.png);
 	}
 
 	#section4-mobile .section4-img-mobile-2 {
-		background-image: url(../css/img/landingPage/section4-img-mobile-2.png);
+		background-image: url(../css/img/indexPage/section4-img-mobile-2.png);
 	}
 
 	#section4-mobile .section4-img-mobile-3 {
-		background-image: url(../css/img/landingPage/section4-img-mobile-3.png);
+		background-image: url(../css/img/indexPage/section4-img-mobile-3.png);
 		background-position: bottom;
 	}
 
 	#section4-mobile .section4-img-mobile-4 {
-		background-image: url(../css/img/landingPage/section4-img-mobile-4.png);
+		background-image: url(../css/img/indexPage/section4-img-mobile-4.png);
 		background-position: center;
 	}
 
@@ -1348,7 +1348,7 @@ body {
 
 	#section5 .section5-content .section5-img-mobile {
 		display: block;
-		background-image: url(../css/img/landingPage/section5-img-desktop-1.png);
+		background-image: url(../css/img/indexPage/section5-img-desktop-1.png);
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -1435,9 +1435,9 @@ body {
 	}
 
 	#section6 .reference-person p {
-		top: 76px;
+		top: 96px;
 		left: 156px;
-		width: 118.6px;
+		width: 200px;
 		height: 60px;
 	}
 
