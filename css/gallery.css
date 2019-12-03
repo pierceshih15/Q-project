@@ -90,7 +90,7 @@ body {
 }
 
 .desktop-header {
-  display: inline-block;
+  display: block;
 }
 
 .mobile-header {
